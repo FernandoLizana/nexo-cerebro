@@ -1,0 +1,40 @@
+# Perfil integrado v16 — replicación + permutación + CLI trace (Sprint 16)
+
+profile: integrated_v16
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: integrated
+replication_mode: integrated
+permutation_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: false
+disable_processes: []
+
+tracing:
+  export_path: results/traces/integrated_v16_trace.json
+
+replication:
+  export_dir: results/replication/integrated_v16
+
+permutation:
+  n_perm: 1000
+  alpha: 0.05
+
+battery:
+  manifest: configs/battery/integrated_v2.yaml

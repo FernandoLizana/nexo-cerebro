@@ -1,0 +1,29 @@
+# Perfil integrado v10 — batería conductual y ablaciones (Sprint 10)
+
+profile: integrated_v10
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+use_legacy_adapter: false
+disable_processes: []
+
+evaluation:
+  snapshot_period_ticks: 20
+
+battery:
+  seeds: [42, 99]
+  ablations:
+    - integrated_full
+    - abl_no_memory
+    - abl_no_executive
+    - abl_no_pfc

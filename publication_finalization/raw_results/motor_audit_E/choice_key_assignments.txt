@@ -1,0 +1,20 @@
+brain\agent_loop.py:184:choice_key=choice,
+brain\agent_loop.py:206:choice_key=choice_key,
+brain\agent_loop.py:260:self.state.failed_choice_key = brain.deliberation.last.choice_key
+brain\agent_loop.py:267:self.state.failed_choice_key = ""
+brain\agent_loop.py:429:choice_key=str(delib.choice_key or ""),
+brain\agent_loop.py:441:choice_key=str(delib.choice_key or ""),
+brain\decompression_prefetch.py:85:choice_key=key,
+brain\deliberation.py:413:choice_key=winner.key,
+brain\goal_stack.py:53:if self.frames and self.frames[-1].choice_key == choice_key:
+brain\goal_stack.py:58:choice_key=choice_key,
+brain\goal_stack.py:66:choice_key=choice_key,
+brain\intention.py:79:choice_key=delib.choice_key,
+brain\intention.py:144:choice_key = str(gate_ctx.get("choice_key", ""))
+brain\memory_systems.py:94:choice_key=str(item["choice_key"]),
+brain\memory_systems.py:171:choice_key=ck, room=room, executions=1, motor_channels=channels
+brain\navigation.py:260:and top.choice_key == "drink"
+brain\navigation.py:265:and top.choice_key == "eat"
+brain\navigation.py:271:and top.choice_key == "hygiene"
+brain\navigation.py:280:if top.choice_key == "drink" or float(drives.get("seek_water", 0)) >= float(
+brain\subcortex.py:50:choice_key = str(deliberation.get("choice_key", ""))

@@ -1,0 +1,27 @@
+name: integrated_battery_v1
+version: 1
+description: Batería conductual integrada con ablaciones por capa
+profile: integrated_v10
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_memory
+  - abl_no_executive
+  - abl_no_learning
+  - abl_no_consciousness
+  - abl_no_social
+  - abl_no_sleep
+  - abl_no_pfc
+tasks:
+  - id: survival
+    runner: nexo.behavioral.tasks.run_survival_task
+    ticks: 60
+    primary_metrics: [survival_success, final_energy, mean_reward]
+  - id: distractor_control
+    runner: nexo.behavioral.tasks.run_distractor_control_task
+    ticks: 50
+    primary_metrics: [eat_ratio, distractor_ratio, adaptation_score]
+  - id: reproducibility
+    runner: nexo.behavioral.tasks.run_reproducibility_task
+    ticks: 40
+    primary_metrics: [trajectory_match]

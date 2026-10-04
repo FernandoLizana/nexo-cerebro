@@ -1,0 +1,7 @@
+seed,condition,steps,n_ticks,mean_agency,mean_spike_aligned,pfc_veto_rate,inhibited_rate,remembered_rate,mean_surprise,mean_drive_coherent,mean_homeostatic_abs_dev,final_homeostatic_abs_dev,agency_override_rate,profile,n_neurons,git_commit,timestamp_utc,survival_time
+0,full,40,40,0.2000000000000001,1.0,1.0,1.0,0.975,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:25Z,MISSING_not_formalized
+1,full,40,40,0.2000000000000001,1.0,1.0,1.0,0.975,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:31Z,MISSING_not_formalized
+0,nopfc,40,40,0.0,0.725,0.0,0.0,0.975,1.0,0.5,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:41Z,MISSING_not_formalized
+1,nopfc,40,40,0.0,0.725,0.0,0.0,0.975,1.0,0.5,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:51Z,MISSING_not_formalized
+0,nohippo,40,40,0.2000000000000001,1.0,1.0,1.0,0.0,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:54Z,MISSING_not_formalized
+1,nohippo,40,40,0.2000000000000001,1.0,1.0,1.0,0.0,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,neuro-biológico,624,NO_GIT_REPOSITORY,2026-07-22T21:43:58Z,MISSING_not_formalized

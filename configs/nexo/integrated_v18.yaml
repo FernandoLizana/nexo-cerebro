@@ -1,0 +1,47 @@
+# Perfil integrado v18 — meta-análisis entre réplicas + curiosity_explore (Sprint 18)
+
+profile: integrated_v18
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: integrated
+replication_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+eventlog_mode: integrated
+meta_analysis_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: false
+disable_processes: []
+
+tracing:
+  export_path: results/traces/integrated_v18_trace.json
+
+replication:
+  export_dir: results/replication/integrated_v18
+
+correction:
+  method: benjamini_hochberg
+  alpha: 0.05
+
+meta_analysis:
+  replication_root: results/replication
+  export_path: results/meta_analysis/integrated_v18_summary.json
+
+battery:
+  manifest: configs/battery/integrated_v4.yaml

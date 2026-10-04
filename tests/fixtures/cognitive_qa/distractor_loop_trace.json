@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "run-fixture-distractor",
+  "seed": 42,
+  "ticks": 20,
+  "events": [
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 1, "simulation_time": 1.0, "trace_id": "t1", "payload": {"progress": {"level": "none", "status": "ACTIVE"}}},
+    {"event_type": "deliberation.completed", "source": "prefrontal_deliberation", "tick": 2, "simulation_time": 2.0, "trace_id": "t2", "payload": {"conflict": 0.42, "choice_key": "web:activate:0002"}},
+    {"event_type": "action.selected", "source": "basal_ganglia_integrated", "tick": 2, "simulation_time": 2.0, "trace_id": "t3", "payload": {"action": "web:activate:0002", "confidence": 0.55}},
+    {"event_type": "goal.behavior_loop", "source": "task_goal", "tick": 8, "simulation_time": 8.0, "trace_id": "t4", "payload": {"recent_actions": ["web:activate:0002", "web:activate:0002"]}},
+    {"event_type": "goal.drift", "source": "task_goal", "tick": 10, "simulation_time": 10.0, "trace_id": "t5", "payload": {"url": "http://127.0.0.1/distractor.html"}},
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 20, "simulation_time": 20.0, "trace_id": "t6", "payload": {"progress": {"level": "none", "status": "ACTIVE"}}},
+    {"event_type": "persona.state", "source": "persona_state", "tick": 15, "simulation_time": 15.0, "trace_id": "t7", "payload": {"state": {"current_frustration": 0.35, "current_fatigue": 0.12}}},
+    {"event_type": "working_memory.updated", "source": "working_memory", "tick": 5, "simulation_time": 5.0, "trace_id": "t8", "payload": {"items": []}}
+  ],
+  "world_trace": [
+    {"event_type": "ATTENTION_TRACE", "tick": 2, "payload": {"attended": ["web:activate:0002"], "labels": ["Get Premium Now!", "Continue with Basic"]}},
+    {"event_type": "PERCEPTUAL_SCENE", "tick": 2, "payload": {"scene_id": "scene-1", "percepts": [{"label": "Get Premium Now!", "salience_score": 0.9}, {"label": "Continue with Basic", "salience_score": 0.3}]}},
+    {"event_type": "WEB_OUTCOME", "tick": 2, "payload": {"accepted": true, "error": null}}
+  ],
+  "metadata": {
+    "goal_id": "goal-distractor",
+    "goal_description": "Continue with Basic",
+    "persona_id": "high_distractibility",
+    "action_history": ["web:activate:0002", "web:activate:0002", "web:activate:0002", "web:activate:0002"],
+    "goal_relevance": {"web:activate:0001": 0.75, "web:activate:0002": 0.15},
+    "action_salience": {"web:activate:0001": 0.3, "web:activate:0002": 0.92},
+    "final_progress": {"level": "none", "status": "ACTIVE"}
+  }
+}

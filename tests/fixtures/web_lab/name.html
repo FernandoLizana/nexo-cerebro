@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Nombre — Web Lab</title>
+  <style>
+    body { font-family: sans-serif; max-width: 640px; margin: 2rem auto; }
+    label { display: block; margin-top: 1rem; }
+    input { width: 100%; padding: 0.4rem; font-size: 1rem; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Ingrese su nombre</h1>
+  <label for="name">Nombre:</label>
+  <input id="name" data-testid="name-input" type="text" placeholder="Nombre" />
+  <button data-testid="continue-btn" type="button" onclick="location.href='plan.html?name=' + encodeURIComponent(document.getElementById('name').value || 'Nexo')">Continuar</button>
+</body>
+</html>

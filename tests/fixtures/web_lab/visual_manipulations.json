@@ -1,0 +1,48 @@
+{
+  "scenarios": [
+    {
+      "id": "LOW_SALIENCE_BUTTON",
+      "page": "low_salience.html",
+      "manipulation": "Primary action styled smaller/low contrast; secondary styled prominently",
+      "expected_structural_effect": "primary salience_score < secondary salience_score"
+    },
+    {
+      "id": "DISTRACTOR_BUTTON",
+      "page": "distractor.html",
+      "manipulation": "Large colorful distractor CTA vs small muted target",
+      "expected_structural_effect": "distractor salience_score > target salience_score"
+    },
+    {
+      "id": "BELOW_THE_FOLD",
+      "page": "below_fold.html",
+      "manipulation": "Target button placed below 1200px spacer",
+      "expected_structural_effect": "target not in percepts before scroll; appears after scroll"
+    },
+    {
+      "id": "MODAL_OVERLAY",
+      "page": "modal_overlay.html",
+      "manipulation": "Fixed modal dialog covers background button",
+      "expected_structural_effect": "background button occluded or excluded from eligible actions"
+    },
+    {
+      "id": "DENSE_FORM",
+      "page": "dense_form.html",
+      "manipulation": "Many labeled inputs in compact layout",
+      "expected_structural_effect": "elevated visual_clutter_score vs sparse pages"
+    },
+    {
+      "id": "ERROR_MESSAGE",
+      "page": "error_message.html",
+      "manipulation": "Click submit reveals role=alert error",
+      "expected_structural_effect": "error percept appeared in PerceptualDiff"
+    },
+    {
+      "id": "DUPLICATE_LABELS",
+      "page": "duplicate_labels.html",
+      "manipulation": "Two buttons with identical visible text",
+      "expected_structural_effect": "distinct percept_id and source_element_id per button"
+    }
+  ],
+  "oracle_only": true,
+  "note": "This manifest is for tests/evaluation only — must never reach NEXO runtime"
+}

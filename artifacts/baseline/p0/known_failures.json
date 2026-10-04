@@ -1,0 +1,15 @@
+{
+  "preexisting_failures": [
+    {
+      "id": "PREEXISTING_FAILURE",
+      "test": "tests/test_grounding.py::test_grounding_can_guide_motivated_navigation_without_forcing_choice",
+      "error": "assert after_distance < before_distance (345.48 < 344.72 failed)",
+      "probable_cause": "Grounding utterance biases hunger toward fridge but 12 headless ticks did not reduce Euclidean distance (agent drifted slightly farther). Choice keys still constrained (eat/harvest asserted earlier in the test).",
+      "reproducibility": "Failed in full suite 2026-08-18 P0 baseline; not introduced by P0 (P0 did not edit brain/grounding.py or this test).",
+      "severity": "MEDIUM",
+      "relation_to_cognitive_qa": "Shows language grounding is a bias, not a forced motor script — aligned with PRINCIPLE 1/5. Do not “fix” by forcing navigation.",
+      "recommendation": "Keep as known failure. If later fixed, require a separate commit with behavioral evidence. Do not skip-mark in P0.",
+      "p0_action": "DOCUMENT ONLY — not fixed"
+    }
+  ]
+}

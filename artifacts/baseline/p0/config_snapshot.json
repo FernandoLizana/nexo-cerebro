@@ -1,0 +1,21 @@
+{
+  "file": "configs/nexo/integrated_v90.yaml",
+  "profile": "integrated_v90",
+  "seed": 42,
+  "ticks_yaml": 120,
+  "ticks_p0_golden": 12,
+  "world_mode": "world_demo_facade",
+  "perception_mode": "predictive",
+  "memory_mode": "integrated",
+  "executive_mode": "integrated",
+  "learning_mode": "integrated",
+  "causal_certificate_mode": "integrated",
+  "agency_audit_mode": "integrated",
+  "science_bundle_mode": "integrated",
+  "unified_motor_mode": "integrated",
+  "lesion_profile": "lesion_none",
+  "use_legacy_adapter": true,
+  "battery_manifest": "configs/battery/integrated_v19.yaml",
+  "cognitive_qa_flag_in_yaml": false,
+  "note": "P0 did not modify this YAML"
+}

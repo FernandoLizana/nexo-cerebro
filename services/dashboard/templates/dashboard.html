@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEXO Swarm Lab</title>
+  <style>
+    :root {
+      --bg0: #0f1419;
+      --bg1: #1a2332;
+      --ink: #e8eef6;
+      --muted: #8b9bb0;
+      --accent: #3d9a7a;
+      --line: #2a3a4d;
+      --warn: #c4a35a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1e3a32 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #243044 0%, transparent 50%),
+        linear-gradient(165deg, var(--bg0), var(--bg1));
+    }
+    header {
+      padding: 1.75rem 1.5rem 0.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .brand {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      letter-spacing: 0.04em;
+      margin: 0;
+    }
+    .tag {
+      color: var(--muted);
+      margin: 0.4rem 0 0;
+      max-width: 36rem;
+      line-height: 1.45;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2.5rem;
+      display: grid;
+      gap: 1.25rem;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 900px) {
+      .row { grid-template-columns: 280px 1fr; }
+    }
+    label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.35rem; }
+    input[type="password"] {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,0.25);
+      color: var(--ink);
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 0.65rem;
+      background: var(--accent);
+      color: #04120c;
+      border: 0;
+      padding: 0.55rem 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover { filter: brightness(1.08); }
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(8, 12, 18, 0.45);
+      padding: 0.9rem 1rem;
+      border-radius: 6px;
+    }
+    .panel h2 {
+      margin: 0 0 0.6rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    #stats { font-family: "IBM Plex Mono", Consolas, monospace; font-size: 0.82rem; line-height: 1.55; white-space: pre-wrap; }
+    #graph {
+      width: 100%;
+      height: min(70vh, 560px);
+      background: rgba(0,0,0,0.2);
+      border-radius: 4px;
+    }
+    .note { color: var(--warn); font-size: 0.8rem; margin-top: 0.75rem; }
+    .err { color: #e07070; font-size: 0.85rem; margin-top: 0.5rem; }
+    .demo-banner {
+      margin: 0.85rem 0 0;
+      padding: 0.55rem 0.75rem;
+      border: 1px solid var(--warn);
+      background: rgba(196, 163, 90, 0.12);
+      color: var(--warn);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      max-width: 42rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="brand">NEXO</p>
+    <p class="tag">Local Swarm Lab telemetry — read-only. Not a control plane.</p>
+    <p id="demo-banner" class="demo-banner" hidden role="status">
+      MODO DEMOSTRACIÓN — telemetría del simulador DiscreteEventSimulator, no dispositivos físicos
+    </p>
+  </header>
+  <main>
+    <div class="row">
+      <section class="panel">
+        <h2>Local token</h2>
+        <label for="token">Dashboard token</label>
+        <input id="token" type="password" autocomplete="off" placeholder="paste local token" />
+        <button type="button" id="refresh">Refresh telemetry</button>
+        <p id="err" class="err" hidden></p>
+        <p class="note">Loopback only. Job injection disabled.</p>
+        <h2 style="margin-top:1.2rem">Overview</h2>
+        <div id="stats">Waiting for token…</div>
+      </section>
+      <section class="panel">
+        <h2>Network graph</h2>
+        <svg id="graph" viewBox="0 0 800 560" role="img" aria-label="Swarm network graph"></svg>
+      </section>
+    </div>
+  </main>
+  <script>
+    const statsEl = document.getElementById("stats");
+    const errEl = document.getElementById("err");
+    const svg = document.getElementById("graph");
+
+    function token() {
+      return document.getElementById("token").value.trim();
+    }
+
+    async function fetchJson(path) {
+      const res = await fetch(path, {
+        headers: { "X-Nexo-Dashboard-Token": token() },
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || res.statusText);
+      return data;
+    }
+
+    function drawGraph(payload) {
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      const nodes = payload.nodes || [];
+      const links = payload.links || [];
+      const W = 800, H = 560;
+      const cx = W / 2, cy = H / 2;
+      const R = Math.min(W, H) * 0.38;
+      const pos = {};
+      nodes.forEach((n, i) => {
+        const a = (2 * Math.PI * i) / Math.max(nodes.length, 1);
+        pos[n.id] = {
+          x: cx + R * Math.cos(a),
+          y: cy + R * Math.sin(a),
+          kind: n.kind,
+        };
+      });
+      links.forEach((l) => {
+        const a = pos[l.source], b = pos[l.target];
+        if (!a || !b) return;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", a.x);
+        line.setAttribute("y1", a.y);
+        line.setAttribute("x2", b.x);
+        line.setAttribute("y2", b.y);
+        line.setAttribute("stroke", l.relation === "INTERACTED_WITH" ? "#3d9a7a" : "#2a3a4d");
+        line.setAttribute("stroke-width", l.relation === "INTERACTED_WITH" ? "2" : "1");
+        svg.appendChild(line);
+      });
+      nodes.forEach((n) => {
+        const p = pos[n.id];
+        const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c.setAttribute("cx", p.x);
+        c.setAttribute("cy", p.y);
+        c.setAttribute("r", n.kind === "BEING" ? 5 : 8);
+        c.setAttribute("fill", n.kind === "BEING" ? "#c4a35a" : "#8ec5ff");
+        svg.appendChild(c);
+      });
+    }
+
+    async function refresh() {
+      errEl.hidden = true;
+      try {
+        const overview = await fetchJson("/api/overview");
+        const graph = await fetchJson("/api/graph");
+        statsEl.textContent = JSON.stringify(overview, null, 2);
+        drawGraph(graph);
+        const demoBanner = document.getElementById("demo-banner");
+        const isSimulator =
+          (overview && overview.simulator) ||
+          (graph && graph.source === "simulator");
+        if (demoBanner) {
+          demoBanner.hidden = !isSimulator;
+        }
+      } catch (e) {
+        errEl.hidden = false;
+        errEl.textContent = String(e.message || e);
+      }
+    }
+
+    document.getElementById("refresh").addEventListener("click", refresh);
+  </script>
+</body>
+</html>

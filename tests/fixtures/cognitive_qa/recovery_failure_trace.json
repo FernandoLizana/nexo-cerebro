@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run_id": "run-fixture-recovery-fail",
+  "seed": 7,
+  "ticks": 30,
+  "events": [
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 5, "simulation_time": 5.0, "trace_id": "f1", "payload": {"progress": {"level": "none", "status": "ACTIVE"}}},
+    {"event_type": "goal.drift", "source": "task_goal", "tick": 12, "simulation_time": 12.0, "trace_id": "f2", "payload": {}},
+    {"event_type": "goal.behavior_loop", "source": "task_goal", "tick": 20, "simulation_time": 20.0, "trace_id": "f3", "payload": {}},
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 30, "simulation_time": 30.0, "trace_id": "f4", "payload": {"progress": {"level": "none", "status": "ACTIVE"}}}
+  ],
+  "world_trace": [
+    {"event_type": "WEB_OUTCOME", "tick": 8, "payload": {"error": "ACTION_NO_LONGER_AVAILABLE", "accepted": false}}
+  ],
+  "metadata": {
+    "goal_id": "goal-fail",
+    "goal_description": "Complete form",
+    "persona_id": "impatient",
+    "action_history": ["web:activate:0001", "web:activate:0001", "web:activate:0002"],
+    "final_progress": {"level": "none", "status": "ACTIVE"}
+  }
+}

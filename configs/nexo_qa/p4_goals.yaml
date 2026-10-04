@@ -1,0 +1,19 @@
+task:
+  locale: es
+
+task_context:
+  user_name: "Nexo Test"
+  email: "nexo@example.test"
+  desired_plan: "Pro"
+
+goals:
+  default: "Completa el registro y selecciona el plan Pro."
+
+perception:
+  mode: hybrid
+
+browser:
+  headless: true
+  test_data:
+    name: "Nexo Test"
+    email: "nexo@example.test"

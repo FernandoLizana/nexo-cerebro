@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "logical_neurons": 86000000000,
+  "synapse_density_global": 1.4e-4,
+  "regions": [
+    {"id": "lobe_occipital", "volume_fraction": 0.18, "module": "sensory"},
+    {"id": "lobe_temporal", "volume_fraction": 0.22, "module": "limbic"},
+    {"id": "lobe_parietal", "volume_fraction": 0.12, "module": "parietal"},
+    {"id": "lobe_frontal", "volume_fraction": 0.28, "module": "prefrontal"},
+    {"id": "hippocampus", "volume_fraction": 0.025, "module": "hippocampus"},
+    {"id": "amygdala", "volume_fraction": 0.008, "module": "limbic"},
+    {"id": "thalamus", "volume_fraction": 0.015, "module": "sensory"},
+    {"id": "basal_ganglia", "volume_fraction": 0.012, "module": "motor"},
+    {"id": "cerebellum", "volume_fraction": 0.10, "module": "cerebellum"},
+    {"id": "brainstem", "volume_fraction": 0.04, "module": "brainstem"},
+    {"id": "corpus_callosum", "volume_fraction": 0.02, "module": "associative"}
+  ],
+  "choice_key_region": {
+    "eat": "lobe_frontal",
+    "drink": "lobe_frontal",
+    "rest": "lobe_frontal",
+    "sleep": "lobe_frontal",
+    "tv": "lobe_temporal",
+    "research": "lobe_frontal",
+    "study": "lobe_frontal",
+    "companion": "lobe_temporal",
+    "hygiene": "lobe_parietal",
+    "bathroom": "lobe_parietal",
+    "relief": "lobe_parietal",
+    "warmth": "lobe_parietal",
+    "wander": "lobe_parietal"
+  }
+}

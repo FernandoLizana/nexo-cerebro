@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: low_wm
+description: Low working memory capacity profile (engineering default).
+traits:
+  working_memory_capacity: 2
+  attention_persistence: 0.45
+  distractibility: 0.55
+  visual_search_efficiency: 0.4
+  risk_aversion: 0.5
+  patience: 0.45
+  frustration_tolerance: 0.4
+  exploration_tendency: 0.45
+  digital_literacy: 0.5
+  semantic_confidence: 0.45
+  initial_fatigue: 0.0
+  impulsivity: 0.55
+  learning_rate_modifier: 0.9
+  metacognitive_sensitivity: 0.45
+  fatigue_rate_modifier: 1.0

@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexo-cerebro"
+version = "0.3.0"
+description = "NEXO — experimental distributed cognitive-agent laboratory (Core + Collective Swarm)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "NEXO Project" }]
+dependencies = [
+    "flask>=3.0,<4",
+    "numpy>=1.26,<3",
+    "scipy>=1.11,<2",
+    "pillow>=10.0,<13",
+    "pypdf>=4.0,<7",
+    "pyyaml>=6.0,<7",
+    "cryptography>=42",
+]
+
+[project.optional-dependencies]
+# Test suite imports: only pytest (+ pytest-cov for coverage runs).
+# Measured (P1-3): no test file uses pytest-asyncio, anyio, hypothesis,
+# pytest-mock, or pytest-flask. Do not add those as silent deps — ambient
+# installs of pytest-asyncio/anyio contribute to the P1-1 Playwright loop
+# conflict.
+dev = [
+    "pytest>=8.0,<9",
+    "pytest-cov>=5.0,<7",
+    "pytest-timeout>=2.3,<3",
+]
+browser = [
+    "playwright>=1.40,<2",
+]
+gpu = [
+    "cupy-cuda12x>=13.0",
+]
+
+[project.scripts]
+nexo-verify = "scripts.verify_artifact:main"
+nexo-run = "nexo.run:main"
+nexo-node = "services.node.cli:main"
+nexo-being = "services.being.cli:main"
+nexo-creature = "services.creature.cli:main"
+nexo-textworld = "services.worlds.textworld.cli:main"
+nexo-coordinator = "services.coordinator.cli:main"
+nexo-memory = "services.memory.local.cli:main"
+nexo-experience = "services.experience.cli:main"
+nexo-knowledge = "services.knowledge.cli:main"
+nexo-simulator = "services.simulator.cli:main"
+nexo-dashboard = "services.dashboard.cli:main"
+nexo-winpack = "services.packaging.windows.cli:main"
+nexo-debpack = "services.packaging.debian.cli:main"
+nexo-lab = "services.lab.cli:main"
+nexo-learn = "services.learning.cli:main"
+nexo-fl = "services.learning.federated.cli:main"
+nexo-ctl = "services.ctl.cli:main"
+nexo-lab-gateway = "services.lab_gateway.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["brain*", "nexo*", "nexo_qa*", "experiments*", "scripts*", "services*", "protocols*"]
+
+[tool.setuptools.package-data]
+"services.dashboard" = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+norecursedirs = [
+    ".venv",
+    "artifacts",
+    "publication_finalization",
+    "pack_gpt_adaptive_behavior",
+    "publication_evidence",
+    "dist",
+    "data",
+    "__pycache__",
+]
+addopts = "-ra --strict-markers -p no:asyncio -p no:anyio -p no:hypothesis -p no:flask -p no:mock"
+timeout = 600
+timeout_method = "thread"
+# Ambient global installs of pytest-asyncio/anyio can leave an event loop that
+# breaks Playwright's sync API (P1-1). The suite does not use those plugins.
+# Disabling them also clears the asyncio_default_fixture_loop_scope warning (P1-7).
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: integration tests",
+    "browser: optional Playwright/BrowserWorld tests (may require .[browser] extras)",
+]
+
+[tool.coverage.run]
+source = ["brain", "nexo", "experiments"]
+omit = ["*/tests/*", "*/.venv/*"]

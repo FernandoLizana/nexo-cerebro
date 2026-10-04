@@ -1,0 +1,11 @@
+seed,condition,ablate_vision,dist_before,dist_after,dist_min,dist_delta,thalamic_world_gain,thalamic_occipital_gain,vision_gain_reported,foodish_choices,ticks,choice_key_forced
+0,full_sense,False,111.8,111.8,111.8,0.0,1.0,1.0925,0.55,7,20,False
+0,no_vision,True,111.8,111.8,111.8,0.0,0.2,0.2,0.083,7,20,False
+1,full_sense,False,111.8,111.8,111.8,0.0,1.0,1.0925,0.55,7,20,False
+1,no_vision,True,111.8,111.8,111.8,0.0,0.2,0.2,0.083,7,20,False
+2,full_sense,False,111.8,111.8,111.8,0.0,1.0,1.0925,0.55,7,20,False
+2,no_vision,True,111.8,111.8,111.8,0.0,0.2,0.2,0.083,7,20,False
+3,full_sense,False,111.8,111.8,111.8,0.0,1.0,1.0925,0.55,7,20,False
+3,no_vision,True,111.8,111.8,111.8,0.0,0.2,0.2,0.083,7,20,False
+4,full_sense,False,111.8,111.8,111.8,0.0,1.0,1.0925,0.55,7,20,False
+4,no_vision,True,111.8,111.8,111.8,0.0,0.2,0.2,0.083,7,20,False

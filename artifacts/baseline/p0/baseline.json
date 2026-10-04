@@ -1,0 +1,25 @@
+{
+  "project": "NEXO",
+  "baseline": "integrated_v90",
+  "phase": "P0",
+  "python": "3.11.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "3a0233c3c4fe504bcad5b545d7bbc43d0e6c2608",
+  "config": "configs/nexo/integrated_v90.yaml",
+  "tests_collected": 605,
+  "tests_passed": 604,
+  "tests_failed": 1,
+  "tests_skipped": 0,
+  "tests_xfailed": 0,
+  "tests_errors": 0,
+  "nexo_qa_import_smoke": "passed (1 test; collection after P0 is 606)",
+  "baseline_valid": true,
+  "baseline_valid_note": "Valid freeze of v90. One preexisting failure recorded, not introduced by P0.",
+  "captured_at": "2026-08-18T22:41:02.478552+00:00",
+  "pytest_duration_sec": 1666.24,
+  "golden_trajectory_hash": "77b06e9fd77e5ca681663791fb0321e37fb63ff4d6407e68e92cf2275cce1d9c",
+  "tools": {
+    "pytest": "8.3.4",
+    "nexo": "0.2.0"
+  }
+}

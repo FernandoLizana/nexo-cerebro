@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: expert_digital
+description: High digital literacy and semantic confidence profile.
+traits:
+  working_memory_capacity: 5
+  attention_persistence: 0.65
+  distractibility: 0.3
+  visual_search_efficiency: 0.75
+  risk_aversion: 0.45
+  patience: 0.6
+  frustration_tolerance: 0.6
+  exploration_tendency: 0.55
+  digital_literacy: 0.9
+  semantic_confidence: 0.85
+  initial_fatigue: 0.0
+  impulsivity: 0.4
+  learning_rate_modifier: 1.05
+  metacognitive_sensitivity: 0.7
+  fatigue_rate_modifier: 0.9

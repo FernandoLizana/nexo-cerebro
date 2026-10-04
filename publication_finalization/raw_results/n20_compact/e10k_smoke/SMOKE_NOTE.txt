@@ -1,0 +1,2 @@
+Optional SCALE_10K smoke only (2 seeds × full/nopfc, short ticks).
+NOT a substitute for E1–E3 10k×20 replication. Primary A/B/C remain compact n=20.

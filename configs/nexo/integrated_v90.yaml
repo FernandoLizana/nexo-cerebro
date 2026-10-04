@@ -1,0 +1,207 @@
+# Perfil integrado v90 — Fase 15 (agency audit + science bundle)
+
+profile: integrated_v90
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: integrated
+replication_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+eventlog_mode: integrated
+meta_analysis_mode: integrated
+replication_batch_mode: integrated
+cross_battery_mode: integrated
+phenomenology_mode: integrated
+legacy_bridge_mode: integrated
+legacy_adapter_mode: integrated
+legacy_adapter_early_mode: integrated
+world_mode: world_demo_facade
+world2d_headless_mode: integrated
+world2d_legacy_actions_mode: integrated
+world2d_full_actions_mode: integrated
+world2d_legacy_env_mode: integrated
+roadmap100_bridge_mode: integrated
+flask_demo_bridge_mode: integrated
+world3d_sync_mode: integrated
+autonomy_guard_mode: integrated
+hypothalamus_multimodal_mode: integrated
+companion_integrated_mode: integrated
+flask_unified_mode: integrated
+unified_motor_mode: integrated
+agent_loop_sync_mode: integrated
+memory_bridge_mode: integrated
+flask_study_proxy_mode: integrated
+roadmap100_e_block_mode: integrated
+memory_unification_mode: integrated
+causal_certificate_mode: integrated
+day_in_the_life_mode: integrated
+agency_audit_mode: integrated
+science_bundle_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+orchestration_mode: integrated
+scale_mode: integrated
+deliberation_bridge_mode: integrated
+deliberation_fusion_mode: integrated
+deliberation_unified_mode: legacy
+deliberation_weight_mode: integrated
+legacy_advisory_weight: 0.6
+lif_scale_mode: integrated
+gpu_bench_mode: integrated
+publication_mode: integrated
+paper_pack_mode: integrated
+battery_paper_mode: integrated
+paper_figures_mode: integrated
+pipeline_paper_mode: integrated
+latex_master_mode: integrated
+battery_full_mode: integrated
+release_bundle_mode: integrated
+full_publication_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: true
+disable_processes: []
+
+tracing:
+  export_path: results/traces/integrated_v90_trace.json
+
+replication:
+  export_dir: results/replication/integrated_v90
+
+correction:
+  method: benjamini_hochberg
+  alpha: 0.05
+
+meta_analysis:
+  replication_root: results/replication
+  export_path: results/meta_analysis/integrated_v90_summary.json
+
+cross_battery:
+  reports:
+    v18: results/integrated_battery/report_v18.json
+    v19: results/integrated_battery/report_v19.json
+  export_path: results/cross_battery/v18_v19_comparison.json
+
+deliberation_weight:
+  export_path: results/deliberation_weight/integrated_v90_audit.json
+
+scale:
+  export_path: results/scale/integrated_v90_profile.json
+
+lif_scale:
+  export_path: results/lif_scale/integrated_v90_probe.json
+  profile_key: compact
+  ticks: 2
+  run_bench: false
+
+gpu_bench:
+  export_path: results/gpu_bench/integrated_v90_ci.json
+  profile_key: compact
+  ticks: 1
+  ci_safe: true
+
+publication:
+  export_dir: results/publication/integrated_v90
+
+paper_pack:
+  export_dir: results/paper_pack/integrated_v90
+
+battery_paper:
+  export_dir: results/battery_paper/integrated_v90
+  reports:
+    v19_mini: results/integrated_battery/report_v19_mini.json
+
+paper_figures:
+  export_dir: results/figures/integrated_v90
+  report_path: results/integrated_battery/report_v19_mini.json
+
+latex_master:
+  export_dir: results/latex_master/integrated_v90
+
+full_publication:
+  export_dir: results/full_publication/integrated_v90
+
+battery_full:
+  export_dir: results/battery_full/integrated_v90
+  manifest: configs/battery/integrated_v19_mini.yaml
+
+release_bundle:
+  export_dir: results/release/integrated_v90
+
+pipeline:
+  auto_run: false
+  manifest: configs/battery/integrated_v19_mini.yaml
+  export_path: results/pipeline/integrated_v90_pipeline.json
+
+pipeline_paper:
+  auto_run: true
+  manifest: configs/battery/integrated_v19_mini.yaml
+  output_dir: results/pipeline_paper/integrated_v90
+
+legacy_adapter_early:
+  export_path: results/legacy_adapter_early/integrated_v90_timing.json
+
+roadmap100_bridge:
+  export_path: results/roadmap100_bridge/integrated_v90_bridge.json
+
+flask_demo_bridge:
+  export_path: results/flask_bridge/integrated_v90_bridge.json
+
+world3d_sync:
+  export_path: results/world3d_sync/integrated_v90_fidelity.json
+
+autonomy_guard:
+  export_path: results/autonomy_audit/integrated_v90_audit.json
+
+hypothalamus_multimodal:
+  export_path: results/hypothalamus_multimodal/integrated_v90_probe.json
+
+companion_integrated:
+  export_path: results/companion_integrated/integrated_v90_dyad.json
+
+unified_motor:
+  export_path: results/unified_motor/integrated_v90_motor.json
+
+agent_loop_sync:
+  export_path: results/agent_loop_sync/integrated_v90_sync.json
+
+memory_bridge:
+  export_path: results/memory_bridge/integrated_v90_bridge.json
+
+roadmap100_e_block:
+  export_path: results/roadmap100_e_block/integrated_v90_eblock.json
+
+memory_unification:
+  export_path: results/memory_unification/integrated_v90_unification.json
+
+causal_certificate:
+  export_path: results/causal_certificate/integrated_v90_certificates.json
+
+day_in_the_life:
+  export_path: results/day_in_the_life/integrated_v90_timeline.json
+  seconds_per_tick: 300.0
+  ticks: 288
+
+agency_audit:
+  export_path: results/agency_audit/integrated_v90_audit.json
+
+science_bundle:
+  export_path: results/science_bundle/integrated_v90_bundle.json
+
+battery:
+  manifest: configs/battery/integrated_v19.yaml

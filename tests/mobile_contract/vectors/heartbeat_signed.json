@@ -1,0 +1,14 @@
+{
+  "protocol_version": "mobile-v1",
+  "message_id": "m1",
+  "message_type": "heartbeat",
+  "node_id": "node-test",
+  "experiment_id": "",
+  "timestamp": 1700000000000,
+  "nonce": "n1",
+  "payload": {
+    "seq": 1
+  },
+  "public_key_hex": "8a88e3dd7409f195fd52db2d3cba5d72ca6709bf1d94121bf3748801b40f6f5c",
+  "signature": "f0c9e7fe182ee21654da2d19851c74a8ada0def4b986108283eda60cbca5a5715c61c459fdfaa4b7cfea665a0b84dacf001356808de29f84828ee6158c06410c"
+}

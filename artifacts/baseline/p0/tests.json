@@ -1,0 +1,19 @@
+{
+  "collected_before_nexo_qa": 605,
+  "junit_testcases": 605,
+  "passed": 604,
+  "failed": 1,
+  "skipped": 0,
+  "errors": 0,
+  "xfailed": 0,
+  "duration_sec": 1666.24,
+  "failures": [
+    {
+      "node": "tests.test_grounding::test_grounding_can_guide_motivated_navigation_without_forcing_choice",
+      "message": "assert 345.48267120259277 < 344.7190885344181",
+      "file": null,
+      "time": "0.768"
+    }
+  ],
+  "slowest_note": "see full_pytest_stdout.txt durations; HEAVY: test_smoke_results ~267s"
+}

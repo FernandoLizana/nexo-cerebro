@@ -1,0 +1,25 @@
+{
+  "label": "SYNTHETIC_PIPELINE_TEST",
+  "events": [
+    {
+      "participant_id": "raw-p001",
+      "human_run_id": "hr-001",
+      "task_id": "web_form_task",
+      "event_id": "e1",
+      "timestamp_ms": 1000,
+      "event_type": "click",
+      "semantic_target": "submit_button",
+      "metadata": {}
+    },
+    {
+      "participant_id": "raw-p001",
+      "human_run_id": "hr-001",
+      "task_id": "web_form_task",
+      "event_id": "e2",
+      "timestamp_ms": 2000,
+      "event_type": "type",
+      "semantic_target": "name_field",
+      "metadata": {"password": "secret123"}
+    }
+  ]
+}

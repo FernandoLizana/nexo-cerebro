@@ -1,0 +1,6 @@
+# Opcional: aceleración CUDA (solo si tienes GPU NVIDIA)
+# Instalar SOLO si quieres GPU: pip install -r requirements-gpu.txt
+# Luego: set CEREBRO_USE_GPU=1  (Windows) antes de python app.py
+#
+# Elige la variante que coincida con tu CUDA (ej. 12.x):
+cupy-cuda12x>=13.0,<14

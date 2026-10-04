@@ -1,0 +1,6 @@
+# Local voluntary node defaults
+data_dir: "data/nexo_node"
+name: "lab-node-1"
+cpu_max: 40
+ram_max_mb: 1024
+gpu: false

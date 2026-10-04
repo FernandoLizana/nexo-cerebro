@@ -1,0 +1,23 @@
+{
+  "copied": [
+    "e1_full_summary.csv",
+    "e1_nopfc_summary.csv",
+    "e1_nobind_summary.csv",
+    "e1_nohippo_summary.csv",
+    "e1_noaffect_summary.csv",
+    "e2_llm_invariance.csv",
+    "e3_sleep_recall.csv",
+    "e4_sleep_selective.csv",
+    "e5_grounding.csv",
+    "e7_multimodal.csv",
+    "arena_discrimination.json",
+    "arena_thirst_unknown_water.csv",
+    "bench_tick_gpu.csv",
+    "bench_hw_notes.md"
+  ],
+  "source": "<REPO_ROOT>\\experiments\\results",
+  "note": "Historical evidence as-is. E1\u2013E3 are SCALE_10K_PROFILE, n=5 seeds. NOT re-run at 10k\u00d720.",
+  "e1e3_10k_x20_replication": "NOT RUN / deferred (see COMPUTE_ESTIMATE.md)",
+  "timestamp_utc": "2026-07-22T21:43:18Z",
+  "git_commit": "NO_GIT_REPOSITORY"
+}

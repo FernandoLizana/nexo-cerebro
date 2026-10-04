@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "NB-001",
+      "name": "cognitive_state_store",
+      "hypothesis": "Estado central tipado mejora trazabilidad causal",
+      "files": ["nexo/core/cognitive_state.py", "nexo/core/state_store.py"],
+      "symbols": ["CognitiveState", "StateStore", "reduce_state"],
+      "tests": ["tests/test_integrated_core.py::test_state_store_reducer_energy"],
+      "experiments": [],
+      "primary_metrics": [],
+      "secondary_metrics": [],
+      "implementation_status": "integrated",
+      "evidence_level": "unit_tested",
+      "limitations": ["Solo reducers Sprint 1"]
+    },
+    {
+      "id": "NB-002",
+      "name": "cognitive_scheduler",
+      "hypothesis": "Orquestación multiescala permite recurrencia medible",
+      "files": ["nexo/core/scheduler.py", "nexo/core/process.py"],
+      "symbols": ["CognitiveScheduler", "BasalGangliaSelectorProcess"],
+      "tests": ["tests/test_integrated_core.py::test_scheduler_runs_processes"],
+      "experiments": ["experiments/integrated_demo/run_recurrent_demo.py"],
+      "primary_metrics": ["trajectory_hash", "actions_taken"],
+      "secondary_metrics": ["event_count"],
+      "implementation_status": "integrated",
+      "evidence_level": "integration_tested",
+      "limitations": ["Procesos demo, no todos los módulos brain"]
+    },
+    {
+      "id": "NB-003",
+      "name": "connectome_v1",
+      "hypothesis": "Grafo explícito permite ablaciones de conectividad",
+      "files": ["nexo/connectome/graph.py", "configs/connectome/connectome_v1.yaml"],
+      "symbols": ["ConnectomeGraph", "ConnectomeRouter"],
+      "tests": ["tests/test_integrated_core.py::test_connectome_validates"],
+      "experiments": [],
+      "primary_metrics": [],
+      "secondary_metrics": [],
+      "implementation_status": "implemented",
+      "evidence_level": "unit_tested",
+      "limitations": ["Sin lesiones virtuales aún"]
+    }
+  ]
+}

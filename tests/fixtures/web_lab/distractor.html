@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Distractor — Web Lab P3</title>
+  <style>
+    body { font-family: sans-serif; max-width: 640px; margin: 2rem auto; text-align: center; }
+    .target {
+      font-size: 0.85rem; padding: 0.35rem 0.75rem;
+      background: #f0f0f0; color: #666; border: 1px solid #ccc;
+    }
+    .distractor {
+      font-size: 1.4rem; padding: 1rem 2.5rem; margin: 2rem;
+      background: #ff5722; color: #fff; border: none; font-weight: 700;
+      box-shadow: 0 4px 12px rgba(255,87,34,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose a plan</h1>
+  <p>Select the option that fits your needs.</p>
+  <button class="distractor" type="button">Get Premium Now!</button>
+  <button class="target" type="button" data-testid="real-target">Continue with Basic</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+browser:
+  driver: playwright
+  browser: chromium
+  headless: true
+  viewport_width: 1280
+  viewport_height: 720
+  allowed_origins:
+    - "http://127.0.0.1:*"
+    - "http://localhost:*"
+
+perception:
+  mode: hybrid
+  max_percepts: 24
+  max_attended_percepts: 8
+  max_focal_percepts: 4
+  compute_salience: true
+  compute_clutter: true
+  compute_occlusion: true
+  screenshot_policy: keyframes
+  min_visibility_for_action: 0.35
+  occlusion_threshold: 0.55
+  salience:
+    size_weight: 0.25
+    centrality_weight: 0.15
+    contrast_weight: 0.15
+    role_weight: 0.15
+    focus_weight: 0.2
+    modal_weight: 0.25

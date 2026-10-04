@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://nexo.local/schemas/experiment_result.schema.json",
+  "title": "NEXO ExperimentResult",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment",
+    "condition",
+    "seed",
+    "config_hash",
+    "flags",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "experiment": { "type": "string" },
+    "condition": { "type": "string" },
+    "seed": { "type": "integer" },
+    "commit": { "type": "string" },
+    "dirty_repository": { "type": "boolean" },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "python_version": { "type": "string" },
+    "platform": { "type": "string" },
+    "config_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "flags": { "type": "object" },
+    "parameters": { "type": "object" },
+    "metrics": { "type": "object" },
+    "trajectory_hash": { "type": "string" },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "errors": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

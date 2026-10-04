@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Error message — Web Lab P3</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 2rem auto; }
+    .error { color: #c62828; background: #ffebee; padding: 0.75rem; border-radius: 4px; display: none; }
+    .error.visible { display: block; }
+    input.invalid { border: 2px solid #c62828; }
+  </style>
+</head>
+<body>
+  <h1>Login</h1>
+  <label>Email<input id="email" type="email" placeholder="Email" /></label>
+  <div id="err" class="error" role="alert">Invalid email format</div>
+  <button id="submit" type="button">Sign in</button>
+  <script>
+    document.getElementById('submit').addEventListener('click', () => {
+      const el = document.getElementById('email');
+      const err = document.getElementById('err');
+      el.classList.add('invalid');
+      err.classList.add('visible');
+    });
+  </script>
+</body>
+</html>

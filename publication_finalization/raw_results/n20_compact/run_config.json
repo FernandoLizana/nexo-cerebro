@@ -1,0 +1,11 @@
+{
+  "phase": "E10k_smoke",
+  "seeds": 2,
+  "steps": 40,
+  "profile": "10k",
+  "out_root": "n20_compact",
+  "git_commit": "NO_GIT_REPOSITORY",
+  "timestamp_utc": "2026-07-22T23:00:12Z",
+  "compute_policy": "COMPACT primary; see COMPUTE_ESTIMATE.md / EVIDENCE_GAP_FILL.md",
+  "metrics_note": "action_entropy_bits + critical_state_tick_* from tick logs; survival_time remains MISSING_not_formalized"
+}

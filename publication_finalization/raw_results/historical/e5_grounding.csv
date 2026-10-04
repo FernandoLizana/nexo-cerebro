@@ -1,0 +1,11 @@
+seed,condition,grounding,dist_before,dist_after,dist_min,dist_delta,near_ticks,foodish_choices,seek_food_after_speak,choice_key_forced_by_grounding,choice_after_speak,ticks
+0,ground_off,False,344.72,344.57,344.57,0.15,0,0,0.0,False,wander,12
+0,ground_on,True,344.72,344.45,344.45,0.27,0,0,0.2367,False,wander,12
+1,ground_off,False,344.72,344.57,344.57,0.15,0,0,0.0,False,wander,12
+1,ground_on,True,344.72,344.45,344.45,0.27,0,0,0.2367,False,wander,12
+2,ground_off,False,344.72,344.57,344.57,0.15,0,0,0.0,False,wander,12
+2,ground_on,True,344.72,344.45,344.45,0.27,0,0,0.2367,False,wander,12
+3,ground_off,False,344.72,344.57,344.57,0.15,0,0,0.0,False,wander,12
+3,ground_on,True,344.72,344.45,344.45,0.27,0,0,0.2367,False,wander,12
+4,ground_off,False,344.72,344.57,344.57,0.15,0,0,0.0,False,wander,12
+4,ground_on,True,344.72,344.45,344.45,0.27,0,0,0.2367,False,wander,12

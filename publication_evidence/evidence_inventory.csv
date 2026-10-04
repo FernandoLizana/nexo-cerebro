@@ -1,0 +1,37 @@
+claim_id,scientific_claim,evidence_type,file_path,symbol,evidence_strength,status,notes
+C01,NEXO is InfantApeBrain embodied agent in 2D home,code,brain/mind.py,InfantApeBrain,strong,VERIFIED,Main agent class
+C02,World apply_motor executes actions,code,brain/world.py,HomeWorld.apply_motor,strong,VERIFIED,Physical execution layer
+C03,Body homeostasis drives exist,code,brain/body.py,Body,strong,VERIFIED,Hunger thirst fatigue pain etc
+C04,LIF populations integrate spikes,code,brain/neuron.py,LIFPopulation.integrate,strong,VERIFIED,Active LIF dynamics
+C05,PrefrontalDeliberation sole choice_key writer,code,brain/deliberation.py,PrefrontalDeliberation.run,strong,VERIFIED,choice_key=winner.key
+C06,AblationFlags control paper features,code,brain/experiment_flags.py,AblationFlags,strong,VERIFIED,Defaults OFF for paper batch extras
+C07,agency_guard is declarative HUD dict,code,brain/causal_hud.py,build_causal_hud,medium,VERIFIED,Not a formal proof system
+C08,TD biases Go only,code+test,brain/td_reward.py;tests/test_td_reward.py,TDReward.go_biases,strong,VERIFIED,Header + tests
+C09,Grounding never sets choice_key,code+test,brain/grounding.py;tests/test_grounding.py,apply_utterance_grounding,strong,VERIFIED,E5 also logs choice_key_forced_by_grounding=False
+C10,AffordanceMap bounded Go bias,code+test,brain/affordance_map.py;tests/test_affordance_map.py,AffordanceMap.biases_for,strong,VERIFIED,Level2/E8
+C11,Counterfactual biases only,code,brain/counterfactual_simulator.py,CounterfactualSimulator,strong,VERIFIED,Flag enable_counterfactual
+C12,Sleep consolidates memory not waking choice,code,brain/sleep_architecture.py,SleepArchitecture,strong,VERIFIED,E3/E4 protocols
+C13,LLM language cortex optional,code,brain/language_cortex.py,LanguageCortex,strong,VERIFIED,E2 invariance CSV
+C14,COMPACT active LIF=624,code+runtime,brain/profile.py,profile_neuron_count,strong,VERIFIED,Not marketing ~500
+C15,VIRTUAL_LARGE active LIF=1522,code+runtime,brain/profile.py,profile_neuron_count,strong,VERIFIED,Demo default
+C16,SCALE_10K active LIF=10290,code+csv,brain/profile.py;experiments/results/e1_full_summary.csv,profile_neuron_count,strong,VERIFIED,E1 rows n_neurons=10290
+C17,Virtual assemblies != active LIF,code,brain/virtual_assembly.py,VirtualAssemblyStore,strong,VERIFIED,Disk indexed
+C18,E1 full mean_agency~0.132 spike_aligned~0.995,csv,experiments/results/e1_full_summary.csv,,strong,VERIFIED,5 seeds identical
+C19,E1 nopfc agency=0 veto=0,csv,experiments/results/e1_nopfc_summary.csv,,strong,VERIFIED,force_limbic_winner
+C20,E1 nobind spike_aligned=0,csv,experiments/results/e1_nobind_summary.csv,,strong,VERIFIED,bind_deliberation=False
+C21,E1 nohippo remembered_rate=0,csv,experiments/results/e1_nohippo_summary.csv,,strong,VERIFIED,
+C22,E2 trajectories identical LLM on/off,csv,experiments/results/e2_llm_invariance.csv,,strong,VERIFIED,5/5 True
+C23,E3 sleep recall > control,csv,experiments/results/e3_sleep_recall.csv,,strong,VERIFIED,Small absolute deltas; metric implementation-defined
+C24,E4 selective sleep CSV exists,csv,experiments/results/e4_sleep_selective.csv,,medium,PARTIALLY VERIFIED,Compact; emotional advantage inconsistent
+C25,E5 grounding raises seek_food,csv,experiments/results/e5_grounding.csv,,medium,PARTIALLY VERIFIED,ON 0.2367 OFF 0.0; seeds identical
+C26,E7 vision ablation changes thalamic gain,csv,experiments/results/e7_multimodal.csv,,medium,PARTIALLY VERIFIED,Behavior distances unchanged in CSV
+C27,Arena thirst aff_on returns after exposure,json,experiments/results/arena_thirst_unknown_water.json,,medium,PARTIALLY VERIFIED,Compact; naming E8 in CLEI docs
+C28,Figures fig1-fig9 PNG present,filesystem,experiments/figures/,,weak,EVIDENCE MISSING,plot_figures.py exists; PNGs absent at audit
+C29,Reflexes do not write choice_key,code,brain/reflexes.py,BrainstemReflexes.step,strong,VERIFIED,Modulate arousal/attention
+C30,Continuous motor prior only,code,brain/motor_policy.py,ContinuousMotorPolicy,strong,VERIFIED,Can still bias locomotion
+C31,Agent loop reads choice_key then apply_motor,code,brain/agent_loop.py,NeuralAgentLoop,strong,VERIFIED,Commit/act phases
+C32,Metrics drive_coherence defined,code,experiments/metrics.py,drive_coherence,strong,VERIFIED,Internal metric
+C33,Secondary paper docs exist,docs,docs/paper/paper_completo.md;docs/paper/ARTEFACTO_MAESTRO_CLEI_NEXO.md,,medium,VERIFIED,Secondary not primary evidence
+C34,External baselines vs NEXO,none,,,none,EVIDENCE MISSING,Required for Adaptive Behavior
+C35,Inferential statistics tables,none,,,none,EVIDENCE MISSING,
+C36,Author bio credentials beyond name/affiliation,none,,,none,EVIDENCE MISSING,Use only provided: Fernando Andrés Lizana Núñez / Digital Rider SpA / Chile

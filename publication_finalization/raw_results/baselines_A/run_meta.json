@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    "full",
+    "reactive",
+    "nohippo",
+    "no_homeostasis",
+    "nopfc",
+    "td_direct"
+  ],
+  "seeds": 10,
+  "steps": 100,
+  "profile_env": "compact",
+  "git_commit": "NO_GIT_REPOSITORY",
+  "timestamp_utc": "2026-07-22T21:23:36Z",
+  "elapsed_sec": 1073.8,
+  "write_jsonl": false,
+  "note": "Study wrappers for reactive/no_homeostasis/td_direct/agency_break; not core defaults."
+}

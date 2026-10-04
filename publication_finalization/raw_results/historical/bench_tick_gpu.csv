@@ -1,0 +1,4 @@
+profile,profile_key,active_lif,gpu_label,skipped,skip_reason,construct_ms,ms_per_tick,ticks,rss_mb_peak,gpu_mem_mb,ok
+neuro-biológico,compact,624,"GPU solicitada (no disponible, usando CPU)",False,,2049.1,16.36,3,56.9,-1.0,True
+neuro-10k,10k,10290,"GPU solicitada (no disponible, usando CPU)",False,,2638.5,23.69,3,68.1,-1.0,True
+neuro-50k,50k,50010,"GPU solicitada (no disponible, usando CPU)",True,50k requires GPU (set CEREBRO_USE_GPU=1) or --force-heavy,,,3,,,False

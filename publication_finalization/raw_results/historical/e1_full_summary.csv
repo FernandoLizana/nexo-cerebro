@@ -1,0 +1,6 @@
+n_ticks,mean_agency,mean_spike_aligned,pfc_veto_rate,inhibited_rate,remembered_rate,mean_surprise,mean_drive_coherent,seed,condition,steps,compute,gpu_steps_last_episode,profile,n_neurons
+200,0.1319999999999997,0.995,0.66,0.66,0.995,1.0,0.2925,0,full,200,GPU (NVIDIA GeForce RTX 3050 6GB Laptop GPU),48,neuro-10k,10290
+200,0.1319999999999997,0.995,0.66,0.66,0.995,1.0,0.2925,1,full,200,GPU (NVIDIA GeForce RTX 3050 6GB Laptop GPU),48,neuro-10k,10290
+200,0.1319999999999997,0.995,0.66,0.66,0.995,1.0,0.2925,2,full,200,GPU (NVIDIA GeForce RTX 3050 6GB Laptop GPU),48,neuro-10k,10290
+200,0.1319999999999997,0.995,0.66,0.66,0.995,1.0,0.2925,3,full,200,GPU (NVIDIA GeForce RTX 3050 6GB Laptop GPU),48,neuro-10k,10290
+200,0.1319999999999997,0.995,0.66,0.66,0.995,1.0,0.2925,4,full,200,GPU (NVIDIA GeForce RTX 3050 6GB Laptop GPU),48,neuro-10k,10290

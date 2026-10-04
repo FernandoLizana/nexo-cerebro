@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: high_distractibility
+description: Elevated distractibility — salience-without-goal sensitivity.
+traits:
+  working_memory_capacity: 4
+  attention_persistence: 0.35
+  distractibility: 0.88
+  visual_search_efficiency: 0.45
+  risk_aversion: 0.45
+  patience: 0.4
+  frustration_tolerance: 0.45
+  exploration_tendency: 0.55
+  digital_literacy: 0.5
+  semantic_confidence: 0.5
+  initial_fatigue: 0.0
+  impulsivity: 0.65
+  learning_rate_modifier: 1.0
+  metacognitive_sensitivity: 0.5
+  fatigue_rate_modifier: 1.0

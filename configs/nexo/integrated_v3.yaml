@@ -1,0 +1,16 @@
+# Perfil integrado v3 — percepción predictiva + tálamo (Sprint 3)
+
+profile: integrated_v3
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+use_legacy_adapter: false
+disable_processes: []
+
+perception:
+  hierarchy_levels: 3
+  precision_base: 0.5
+  reticular_inhibition: 0.6

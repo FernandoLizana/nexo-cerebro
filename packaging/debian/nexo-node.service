@@ -1,0 +1,15 @@
+[Unit]
+Description=NEXO Node (voluntary scientific lab)
+# Optional user unit — package does NOT enable this by default.
+# Start:  systemctl --user start nexo-node.service
+# Stop:   nexo-node stop   OR   systemctl --user stop nexo-node.service
+# Disable: systemctl --user disable --now nexo-node.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/nexo-node start --data-dir %h/.local/share/nexo/node
+ExecStop=%h/.local/bin/nexo-node stop
+Restart=no
+
+[Install]
+WantedBy=default.target

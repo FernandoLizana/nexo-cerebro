@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "condition": "aff_off",
+      "affordances": false,
+      "records": {},
+      "drank_success": false,
+      "ticks": 110,
+      "thirst_delta": -0.08,
+      "dist_good": 172.2,
+      "dist_dry": 23.09,
+      "preferred_good": false,
+      "goal_is_good": false,
+      "agency_note": "Discrimination; PFC alone writes choice_key"
+    },
+    {
+      "seed": 0,
+      "condition": "aff_on",
+      "affordances": true,
+      "records": {
+        "fountain-dry": {
+          "gain": 0.0,
+          "fail": 3,
+          "ok": 0,
+          "conf": 0.0
+        },
+        "fountain-good": {
+          "gain": 0.3,
+          "fail": 0,
+          "ok": 3,
+          "conf": 0.4978
+        }
+      },
+      "drank_success": true,
+      "ticks": 22,
+      "thirst_delta": 0.34,
+      "dist_good": 31.73,
+      "dist_dry": 134.83,
+      "preferred_good": true,
+      "goal_is_good": true,
+      "agency_note": "Discrimination; PFC alone writes choice_key"
+    },
+    {
+      "seed": 1,
+      "condition": "aff_off",
+      "affordances": false,
+      "records": {},
+      "drank_success": false,
+      "ticks": 110,
+      "thirst_delta": -0.08,
+      "dist_good": 172.2,
+      "dist_dry": 23.09,
+      "preferred_good": false,
+      "goal_is_good": false,
+      "agency_note": "Discrimination; PFC alone writes choice_key"
+    },
+    {
+      "seed": 1,
+      "condition": "aff_on",
+      "affordances": true,
+      "records": {
+        "fountain-dry": {
+          "gain": 0.0,
+          "fail": 3,
+          "ok": 0,
+          "conf": 0.0
+        },
+        "fountain-good": {
+          "gain": 0.3,
+          "fail": 0,
+          "ok": 3,
+          "conf": 0.4978
+        }
+      },
+      "drank_success": true,
+      "ticks": 22,
+      "thirst_delta": 0.34,
+      "dist_good": 31.73,
+      "dist_dry": 134.83,
+      "preferred_good": true,
+      "goal_is_good": true,
+      "agency_note": "Discrimination; PFC alone writes choice_key"
+    }
+  ]
+}

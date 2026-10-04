@@ -1,0 +1,21 @@
+name: integrated_battery_v6_mini
+version: 6
+description: Mini batería para pipeline CI (1 seed, 2 tareas)
+profile: integrated_v26
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - foraging
+export:
+  json: results/integrated_battery/report_v6_mini.json
+  statistics: results/integrated_battery/statistics_v6_mini.json

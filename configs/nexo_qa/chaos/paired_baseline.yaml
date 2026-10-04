@@ -1,0 +1,72 @@
+chaos:
+  chaos_id: paired_chaos_ci
+  schema_version: 1
+  paired: true
+  master_seed: 42
+  task_id: default_task
+  persona_preset: baseline
+  cohort_id: baseline
+  metrics_version: metrics-v1
+  failure_taxonomy_version: failures-v1
+  code_version: local
+  perturbations:
+    - perturbation_id: interruption_mid
+      type: INTERRUPTION
+      trigger:
+        kind: AFTER_ACTION
+        after_action_count: 2
+      duration_ticks: 3
+      intensity: 1.0
+      target_scope: environment
+      parameters:
+        allowed_actions: [wait]
+    - perturbation_id: latency_activate
+      type: LATENCY
+      trigger:
+        kind: AFTER_ACTION
+        after_action_count: 1
+      duration_ticks: 2
+      parameters:
+        delay_ticks: 2
+    - perturbation_id: transient_collect
+      type: TRANSIENT_ERROR
+      trigger:
+        kind: AFTER_ACTION
+        after_action_count: 3
+      duration_ticks: 4
+      parameters:
+        fail_attempts: 1
+    - perturbation_id: session_mid
+      type: SESSION_EXPIRY
+      trigger:
+        kind: AFTER_ACTION
+        after_action_count: 2
+      duration_ticks: 5
+    - perturbation_id: visual_swap
+      type: VISUAL_CHANGE
+      trigger:
+        kind: AT_TICK
+        at_tick: 1
+      duration_ticks: 6
+    - perturbation_id: modal_promo
+      type: MODAL_DISTRACTION
+      trigger:
+        kind: AT_TICK
+        at_tick: 0
+      duration_ticks: 4
+    - perturbation_id: feedback_late
+      type: FEEDBACK_DELAY
+      trigger:
+        kind: AFTER_ACTION
+        after_action_count: 2
+      duration_ticks: 2
+      parameters:
+        delay_ticks: 1
+    - perturbation_id: disable_switch
+      type: CONTROL_DISABLE
+      trigger:
+        kind: AT_TICK
+        at_tick: 0
+      duration_ticks: 2
+      parameters:
+        disabled_actions: [activate_switch]

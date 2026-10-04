@@ -1,0 +1,6 @@
+# Local loopback dashboard defaults (override with CLI / env / --params)
+host: "127.0.0.1"
+port: 8765
+demo_nodes: 8
+seed: 42
+token_file: "data/nexo_dashboard/token.txt"

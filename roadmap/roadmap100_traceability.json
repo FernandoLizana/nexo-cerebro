@@ -1,0 +1,1850 @@
+{
+  "version": 2,
+  "items": [
+    {
+      "id": "R100-001",
+      "block": "J",
+      "name": "lifecycle_dynamics",
+      "description": "Módulo dinámico bloque J (lifecycle_dynamics.py)",
+      "module": "brain/lifecycle_dynamics.py",
+      "symbols": [
+        "LifecycleDynamicsStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_lifecycle_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-002",
+      "block": "K",
+      "name": "validation_dynamics",
+      "description": "Módulo dinámico bloque K (validation_dynamics.py)",
+      "module": "brain/validation_dynamics.py",
+      "symbols": [
+        "ValidationDynamicsStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_validation_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-003",
+      "block": "E",
+      "name": "memory_dynamics",
+      "description": "Módulo dinámico bloque E (memory_dynamics.py)",
+      "module": "brain/memory_dynamics.py",
+      "symbols": [
+        "MemoryDynamicsStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_memory_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-004",
+      "block": "D",
+      "name": "executive_cognition",
+      "description": "Módulo dinámico bloque D (executive_cognition.py)",
+      "module": "brain/executive_cognition.py",
+      "symbols": [
+        "ExecutiveCognitionStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_executive_cognition.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-005",
+      "block": "G",
+      "name": "affect_dynamics",
+      "description": "Módulo dinámico bloque G (affect_dynamics.py)",
+      "module": "brain/affect_dynamics.py",
+      "symbols": [
+        "AffectDynamicsStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_affect_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-006",
+      "block": "I",
+      "name": "motor_dynamics",
+      "description": "Módulo dinámico bloque I (motor_dynamics.py)",
+      "module": "brain/motor_dynamics.py",
+      "symbols": [
+        "EmbodiedMotorStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_motor_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-007",
+      "block": "H",
+      "name": "language_dynamics",
+      "description": "Módulo dinámico bloque H (language_dynamics.py)",
+      "module": "brain/language_dynamics.py",
+      "symbols": [
+        "LanguageDynamicsStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_language_dynamics.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-008",
+      "block": "F",
+      "name": "reward_learning",
+      "description": "Módulo dinámico bloque F (reward_learning.py)",
+      "module": "brain/reward_learning.py",
+      "symbols": [
+        "RewardLearningStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_reward_learning.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-009",
+      "block": "C",
+      "name": "sensory_perception",
+      "description": "Módulo dinámico bloque C (sensory_perception.py)",
+      "module": "brain/sensory_perception.py",
+      "symbols": [
+        "SensoryPerceptionStack"
+      ],
+      "implementation_status": "unit_tested",
+      "integration_status": "integration_tested",
+      "tests": [
+        "tests/test_sensory_perception.py"
+      ],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "unit_tested",
+      "limitations": [
+        "Trazabilidad parcial; no todas las 100 mejoras mapeadas individualmente"
+      ]
+    },
+    {
+      "id": "R100-010",
+      "name": "unmapped_item_10",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-011",
+      "name": "unmapped_item_11",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-012",
+      "name": "unmapped_item_12",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-013",
+      "name": "unmapped_item_13",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-014",
+      "name": "unmapped_item_14",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-015",
+      "name": "unmapped_item_15",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-016",
+      "name": "unmapped_item_16",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-017",
+      "name": "unmapped_item_17",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-018",
+      "name": "unmapped_item_18",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-019",
+      "name": "unmapped_item_19",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-020",
+      "name": "unmapped_item_20",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-021",
+      "name": "unmapped_item_21",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-022",
+      "name": "unmapped_item_22",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-023",
+      "name": "unmapped_item_23",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-024",
+      "name": "unmapped_item_24",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-025",
+      "name": "unmapped_item_25",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-026",
+      "name": "unmapped_item_26",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-027",
+      "name": "unmapped_item_27",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-028",
+      "name": "unmapped_item_28",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-029",
+      "name": "unmapped_item_29",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-030",
+      "name": "unmapped_item_30",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-031",
+      "name": "unmapped_item_31",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-032",
+      "name": "unmapped_item_32",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-033",
+      "name": "unmapped_item_33",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-034",
+      "name": "unmapped_item_34",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-035",
+      "name": "unmapped_item_35",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-036",
+      "name": "unmapped_item_36",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-037",
+      "name": "unmapped_item_37",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-038",
+      "name": "unmapped_item_38",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-039",
+      "name": "unmapped_item_39",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-040",
+      "name": "unmapped_item_40",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-041",
+      "name": "unmapped_item_41",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-042",
+      "name": "unmapped_item_42",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-043",
+      "name": "unmapped_item_43",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-044",
+      "name": "unmapped_item_44",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-045",
+      "name": "unmapped_item_45",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-046",
+      "name": "unmapped_item_46",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-047",
+      "name": "unmapped_item_47",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-048",
+      "name": "unmapped_item_48",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-049",
+      "name": "unmapped_item_49",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-050",
+      "name": "unmapped_item_50",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-051",
+      "name": "unmapped_item_51",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-052",
+      "name": "unmapped_item_52",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-053",
+      "name": "unmapped_item_53",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-054",
+      "name": "unmapped_item_54",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-055",
+      "name": "unmapped_item_55",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-056",
+      "name": "unmapped_item_56",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-057",
+      "name": "unmapped_item_57",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-058",
+      "name": "unmapped_item_58",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-059",
+      "name": "unmapped_item_59",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-060",
+      "name": "unmapped_item_60",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-061",
+      "name": "unmapped_item_61",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-062",
+      "name": "unmapped_item_62",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-063",
+      "name": "unmapped_item_63",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-064",
+      "name": "unmapped_item_64",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-065",
+      "name": "unmapped_item_65",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-066",
+      "name": "unmapped_item_66",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-067",
+      "name": "unmapped_item_67",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-068",
+      "name": "unmapped_item_68",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-069",
+      "name": "unmapped_item_69",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-070",
+      "name": "unmapped_item_70",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-071",
+      "name": "unmapped_item_71",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-072",
+      "name": "unmapped_item_72",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-073",
+      "name": "unmapped_item_73",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-074",
+      "name": "unmapped_item_74",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-075",
+      "name": "unmapped_item_75",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-076",
+      "name": "unmapped_item_76",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-077",
+      "name": "unmapped_item_77",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-078",
+      "name": "unmapped_item_78",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-079",
+      "name": "unmapped_item_79",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-080",
+      "name": "unmapped_item_80",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-081",
+      "name": "unmapped_item_81",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-082",
+      "name": "unmapped_item_82",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-083",
+      "name": "unmapped_item_83",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-084",
+      "name": "unmapped_item_84",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-085",
+      "name": "unmapped_item_85",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-086",
+      "name": "unmapped_item_86",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-087",
+      "name": "unmapped_item_87",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-088",
+      "name": "unmapped_item_88",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-089",
+      "name": "unmapped_item_89",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-090",
+      "name": "unmapped_item_90",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-091",
+      "name": "unmapped_item_91",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-092",
+      "name": "unmapped_item_92",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-093",
+      "name": "unmapped_item_93",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-094",
+      "name": "unmapped_item_94",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-095",
+      "name": "unmapped_item_95",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-096",
+      "name": "unmapped_item_96",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-097",
+      "name": "unmapped_item_97",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-098",
+      "name": "unmapped_item_98",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-099",
+      "name": "unmapped_item_99",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    },
+    {
+      "id": "R100-100",
+      "name": "unmapped_item_100",
+      "description": "Mejora no mapeada con evidencia individual en este inventario",
+      "module": null,
+      "symbols": [],
+      "implementation_status": "unable_to_verify",
+      "integration_status": "unable_to_verify",
+      "tests": [],
+      "experiment": null,
+      "primary_metric": null,
+      "secondary_metrics": [],
+      "result_available": false,
+      "evidence_level": "none",
+      "limitations": [
+        "Requiere documentación fuente individual por ítem"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Resumen — Web Lab</title>
+  <style>
+    body { font-family: sans-serif; max-width: 640px; margin: 2rem auto; }
+    button { margin-top: 1.5rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Resumen</h1>
+  <p id="summary"></p>
+  <button data-testid="confirm-btn" type="button">Confirmar</button>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const name = params.get('name') || 'Nexo';
+    const plan = params.get('plan') || 'basic';
+    document.getElementById('summary').textContent = name + ' — plan ' + plan.toUpperCase();
+    document.querySelector('[data-testid="confirm-btn"]').onclick = () => {
+      location.href = 'success.html?plan=' + plan;
+    };
+  </script>
+</body>
+</html>

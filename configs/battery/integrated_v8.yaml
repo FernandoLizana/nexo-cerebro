@@ -1,0 +1,35 @@
+name: integrated_battery_v8
+version: 8
+description: Batería Fase 4 — legacy_navigation + publicación reproducible
+profile: integrated_v34
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+  - abl_no_social
+  - abl_no_memory
+lesions:
+  - lesion_none
+  - lesion_sever_pfc_bg
+tasks:
+  - survival
+  - distractor_control
+  - reproducibility
+  - safety_escape
+  - curiosity_explore
+  - social_approach
+  - foraging
+  - navigation_2d
+  - legacy_navigation
+export:
+  json: results/integrated_battery/report_v8.json
+  benchmark: results/integrated_battery/benchmark_v8.json
+  comparison: results/integrated_battery/comparison_v8.json
+  statistics: results/integrated_battery/statistics_v8.json

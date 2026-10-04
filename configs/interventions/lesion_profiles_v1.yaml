@@ -1,0 +1,12 @@
+# Manifiesto de lesiones connectome v1 — Sprint 11
+
+version: "1"
+profiles:
+  - lesion_none
+  - lesion_sever_hippo_pfc
+  - lesion_sever_pfc_bg
+  - lesion_sever_thal_visual
+  - lesion_weaken_pfc_bg
+  - lesion_delay_pfc_bg
+
+default: lesion_none

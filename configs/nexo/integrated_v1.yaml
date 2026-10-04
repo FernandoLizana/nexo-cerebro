@@ -1,0 +1,16 @@
+# Perfil integrado v1 — demo recurrente Sprint 1
+
+profile: integrated_v1
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+use_legacy_adapter: false
+disable_processes: []
+
+scheduler:
+  seconds_per_tick: 0.1
+
+neural_detail:
+  mode: functional

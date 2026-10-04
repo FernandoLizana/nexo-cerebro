@@ -1,0 +1,11 @@
+{
+  "scenario": "integrated_v90 runtime_from_config run(ticks=12)",
+  "seed": 42,
+  "startup_and_runtime_sec_A": 3.6876926000695676,
+  "startup_and_runtime_sec_B": 3.441626099986024,
+  "ticks_per_sec_A": 3.25406732648313,
+  "ticks_per_sec_B": 3.486723906483836,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.0",
+  "note": "startup included in elapsed; RAM/CPU not sampled (psutil not a direct dependency)"
+}

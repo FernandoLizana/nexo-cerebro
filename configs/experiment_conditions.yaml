@@ -1,0 +1,63 @@
+baseline:
+  version: 1
+  description: Baseline histórico paper E1–E3 (dinámicas roadmap OFF)
+  flags: {}
+
+roadmap100_full:
+  version: 1
+  description: Todas las dinámicas Roadmap 100 activadas explícitamente
+  flags:
+    enable_memory_dynamics: true
+    enable_executive_cognition: true
+    enable_reward_learning: true
+    enable_affect_dynamics: true
+    enable_language_dynamics: true
+    enable_motor_dynamics: true
+    enable_lifecycle_dynamics: true
+    enable_validation_dynamics: true
+    enable_observatory_hud: true
+    enable_advanced_sensory: true
+    enable_rhythm_pac: true
+    enable_limited_wm: true
+    enable_attention_budget: true
+
+roadmap100_safe:
+  version: 1
+  description: Subconjunto estable para CI
+  flags:
+    enable_memory_dynamics: true
+    enable_executive_cognition: true
+    enable_validation_dynamics: true
+    enable_observatory_hud: true
+    enable_limited_wm: true
+    enable_attention_budget: true
+
+no_binding:
+  version: 1
+  description: Ablación bind deliberación PFC↔límbico
+  flags:
+    bind_deliberation: false
+
+no_pfc:
+  version: 1
+  description: Ablación PFC (force_limbic_winner)
+  flags:
+    force_limbic_winner: true
+
+no_hippocampus:
+  version: 1
+  description: Hipocampo desactivado
+  flags:
+    disable_hippocampus: true
+
+no_affect:
+  version: 1
+  description: Afecto desactivado
+  flags:
+    disable_affect: true
+
+no_consciousness:
+  version: 1
+  description: Workspace consciente OFF
+  flags:
+    enable_consciousness: false

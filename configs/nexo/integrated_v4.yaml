@@ -1,0 +1,17 @@
+# Perfil integrado v4 — memoria WM + hipocampo (Sprint 4)
+
+profile: integrated_v4
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+use_legacy_adapter: false
+disable_processes: []
+
+memory:
+  wm_capacity: 4
+  hippocampal_capacity: 64
+  min_reward_to_encode: 0.08

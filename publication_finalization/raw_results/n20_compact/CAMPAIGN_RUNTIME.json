@@ -1,0 +1,14 @@
+﻿{
+  "campaign": "n20_compact",
+  "profile": "compact",
+  "steps_AB": 100,
+  "A_elapsed_sec": 2162.48,
+  "B_elapsed_sec": 857.27,
+  "C_elapsed_sec": 580.59,
+  "E10k_smoke_elapsed_sec": 60.48,
+  "A_seeds": 20,
+  "B_seeds": 20,
+  "C_seeds": 20,
+  "total_ABC_sec": 3600.34,
+  "note": "A/B from run_meta.json; C from shell running_for_ms at completion (~580589 ms)."
+}

@@ -1,0 +1,17 @@
+block,metric,condition_a,condition_b,n_a,n_b,mean_a,mean_b,cliffs_delta_a_minus_b,p_mannwhitney_approx,note
+A_baselines,mean_agency,full,reactive,20,20,0.1979999999999996,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+A_baselines,mean_agency,full,nohippo,20,20,0.1979999999999996,0.1979999999999996,0.0,1.0,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+A_baselines,mean_agency,full,no_homeostasis,20,20,0.1979999999999996,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+A_baselines,mean_agency,full,nopfc,20,20,0.1979999999999996,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+A_baselines,mean_agency,full,td_direct,20,20,0.1979999999999996,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+B_agency_break,mean_agency,full,agency_break,20,20,0.1979999999999996,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n; zero_variance_possible
+D_historical_E1_10k,mean_agency,full,nopfc,5,5,0.1319999999999997,0.0,1.0,0.008692474638689829,approx_normal_MW; interpret cautiously at small n; n<10; zero_variance_possible
+D_historical_E1_10k,mean_spike_aligned,full,nobind,5,5,0.9949999999999999,0.0,1.0,0.008692474638689829,approx_normal_MW; interpret cautiously at small n; n<10
+D_historical_E1_10k,remembered_rate,full,nohippo,5,5,0.9949999999999999,0.0,1.0,0.008692474638689829,approx_normal_MW; interpret cautiously at small n; n<10
+D_historical_E1_10k,mean_agency,full,noaffect,5,5,0.1319999999999997,0.11839999999999973,1.0,0.008824114861238463,approx_normal_MW; interpret cautiously at small n; n<10
+D_historical_E3_10k,mean_recall,control,sleep,5,5,0.5174486802890896,0.5594486802890897,-1.0,0.00881585817790187,approx_normal_MW; interpret cautiously at small n; n<10
+A_baselines,mean_homeostatic_abs_dev,full,reactive,20,20,0.8931481539130507,0.8931481539130507,0.0,1.0,approx_normal_MW; interpret cautiously at small n
+A_baselines,mean_homeostatic_abs_dev,full,nohippo,20,20,0.8931481539130507,0.8931481539130507,0.0,1.0,approx_normal_MW; interpret cautiously at small n
+A_baselines,mean_homeostatic_abs_dev,full,no_homeostasis,20,20,0.8931481539130507,0.0,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n
+A_baselines,mean_homeostatic_abs_dev,full,nopfc,20,20,0.8931481539130507,0.894386798441279,-1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n
+A_baselines,mean_homeostatic_abs_dev,full,td_direct,20,20,0.8931481539130507,0.7953161471796129,1.0,6.242710393067341e-08,approx_normal_MW; interpret cautiously at small n

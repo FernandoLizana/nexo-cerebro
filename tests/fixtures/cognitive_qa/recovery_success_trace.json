@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "run-fixture-recovery",
+  "seed": 7,
+  "ticks": 24,
+  "events": [
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 3, "simulation_time": 3.0, "trace_id": "r1", "payload": {"progress": {"level": "none", "status": "ACTIVE"}}},
+    {"event_type": "goal.drift", "source": "task_goal", "tick": 6, "simulation_time": 6.0, "trace_id": "r2", "payload": {}},
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 18, "simulation_time": 18.0, "trace_id": "r3", "payload": {"progress": {"level": "high", "status": "PARTIALLY_SATISFIED"}}},
+    {"event_type": "goal.progress", "source": "task_goal", "tick": 24, "simulation_time": 24.0, "trace_id": "r4", "payload": {"progress": {"level": "complete", "status": "SATISFIED"}}}
+  ],
+  "world_trace": [],
+  "metadata": {
+    "goal_id": "goal-recovery",
+    "goal_description": "Complete registration",
+    "persona_id": "baseline",
+    "action_history": ["web:activate:0001", "web:activate:0003", "web:activate:0005"],
+    "final_progress": {"level": "complete", "status": "SATISFIED"}
+  }
+}

@@ -1,0 +1,33 @@
+population_id: baseline_population
+schema_version: 1
+master_seed: 42
+tasks:
+  - default_task
+persona_source: preset
+runs_per_cell: 1
+execution_policy: sequential
+execution_budget:
+  max_parallel_runs: 1
+  max_runs: 100
+  max_runtime_seconds: 3600
+  max_retries_infra: 1
+  artifact_retention: SUMMARY_PLUS_CERTIFICATES
+metrics_version: metrics-v1
+failure_taxonomy_version: failures-v1
+persona_schema_version: 1
+code_version: local
+cohorts:
+  - cohort_id: baseline
+    label: Baseline cohort
+    persona_presets: [baseline]
+    seed_count: 5
+    task_ids: [default_task]
+    weight: 1.0
+    conditions: [BASELINE]
+  - cohort_id: high_distractibility
+    label: High distractibility
+    persona_presets: [high_distractibility]
+    seed_count: 5
+    task_ids: [default_task]
+    weight: 1.0
+    conditions: [BASELINE]

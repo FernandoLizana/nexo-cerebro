@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: risk_averse
+description: High risk aversion under deliberation and BG scoring.
+traits:
+  working_memory_capacity: 4
+  attention_persistence: 0.55
+  distractibility: 0.4
+  visual_search_efficiency: 0.5
+  risk_aversion: 0.9
+  patience: 0.6
+  frustration_tolerance: 0.55
+  exploration_tendency: 0.35
+  digital_literacy: 0.55
+  semantic_confidence: 0.55
+  initial_fatigue: 0.0
+  impulsivity: 0.35
+  learning_rate_modifier: 1.0
+  metacognitive_sensitivity: 0.6
+  fatigue_rate_modifier: 1.0

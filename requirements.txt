@@ -1,0 +1,13 @@
+flask>=3.0,<4
+numpy>=1.26,<3
+scipy>=1.11,<2
+pillow>=10.0,<12
+pypdf>=4.0,<7
+pyyaml>=6.0,<7
+# Dev / reproducibilidad:
+# pip install -e ".[dev]"
+# pytest>=8.0
+# OCR opcional para PDFs escaneados (Mi primer libro del cerebro, etc.)
+# pip install pytesseract easyocr
+# Tesseract del sistema (opcional): winget install UB-Mannheim.TesseractOCR
+# Env: CEREBRO_PDF_OCR=1

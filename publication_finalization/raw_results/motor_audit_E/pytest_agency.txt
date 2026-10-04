@@ -1,0 +1,10 @@
+cmd=.\.venv\Scripts\python.exe -m pytest tests/test_grounding.py tests/test_td_reward.py tests/test_affordance_map.py tests/test_demo_hud.py tests/test_s7_scale_motor_multi.py -q --tb=line
+exit=0
+
+STDOUT:
+............................                                             [100%]
+28 passed in 24.04s
+
+
+STDERR:
+

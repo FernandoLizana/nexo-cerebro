@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-08-18T22:07:48.791530+00:00",
+  "python_version": "3.11.0",
+  "git_commit": "3a0233c3c4fe504bcad5b545d7bbc43d0e6c2608",
+  "git_dirty": true,
+  "pytest_collected": 605,
+  "directories": {
+    "brain": {
+      "exists": true,
+      "path": "brain",
+      "file_count": 128,
+      "python_file_count": 128,
+      "personal_path_files_sample": []
+    },
+    "nexo": {
+      "exists": true,
+      "path": "nexo",
+      "file_count": 194,
+      "python_file_count": 194,
+      "personal_path_files_sample": []
+    },
+    "experiments": {
+      "exists": true,
+      "path": "experiments",
+      "file_count": 246,
+      "python_file_count": 42,
+      "personal_path_files_sample": [
+        "experiments/results/_battery_smoke_e12/battery_smoke_report.json"
+      ]
+    },
+    "scripts": {
+      "exists": true,
+      "path": "scripts",
+      "file_count": 16,
+      "python_file_count": 13,
+      "personal_path_files_sample": [
+        "scripts/build_release_artifact.py",
+        "scripts/generate_repository_inventory.py",
+        "scripts/verify_packaged_artifact.py"
+      ]
+    },
+    "tests": {
+      "exists": true,
+      "path": "tests",
+      "file_count": 93,
+      "python_file_count": 93,
+      "personal_path_files_sample": []
+    },
+    "configs": {
+      "exists": true,
+      "path": "configs",
+      "file_count": 79,
+      "python_file_count": 0,
+      "personal_path_files_sample": []
+    },
+    "schemas": {
+      "exists": true,
+      "path": "schemas",
+      "file_count": 1,
+      "python_file_count": 0,
+      "personal_path_files_sample": []
+    },
+    "reports": {
+      "exists": true,
+      "path": "reports",
+      "file_count": 67,
+      "python_file_count": 0,
+      "personal_path_files_sample": [
+        "reports/artifact_verification.json",
+        "reports/FINAL_IMPLEMENTATION_SUMMARY.md",
+        "reports/INITIAL_REPOSITORY_AUDIT.md",
+        "reports/packaged_artifact_verification.json",
+        "reports/SNAPSHOT_PRE_REFACTOR.json"
+      ]
+    },
+    "docs": {
+      "exists": true,
+      "path": "docs",
+      "file_count": 17,
+      "python_file_count": 0,
+      "personal_path_files_sample": []
+    },
+    "roadmap": {
+      "exists": true,
+      "path": "roadmap",
+      "file_count": 2,
+      "python_file_count": 0,
+      "personal_path_files_sample": []
+    },
+    ".github": {
+      "exists": true,
+      "path": ".github",
+      "file_count": 1,
+      "python_file_count": 0,
+      "personal_path_files_sample": []
+    }
+  },
+  "required_for_artifact": [
+    "brain/",
+    "nexo/",
+    "experiments/",
+    "scripts/",
+    "tests/",
+    "configs/",
+    "schemas/",
+    "docs/",
+    "roadmap/",
+    "reports/"
+  ]
+}

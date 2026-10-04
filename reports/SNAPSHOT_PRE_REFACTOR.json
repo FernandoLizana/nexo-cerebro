@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-08-04T15:00:00+00:00",
+  "phase": "0_pre_refactor",
+  "python_version": "3.11.0",
+  "platform": "Windows",
+  "git_commit": "NO_GIT_REPOSITORY",
+  "dirty": null,
+  "pytest_collect_pre_fix": {"collected": 292, "collection_errors": 17},
+  "pytest_collect_post_fix": {"collected": 308, "collection_errors": 0},
+  "notes": [
+    "Duplicados tests en artifacts/ causaban import file mismatch",
+    "Sin repositorio git en workspace OneDrive"
+  ]
+}

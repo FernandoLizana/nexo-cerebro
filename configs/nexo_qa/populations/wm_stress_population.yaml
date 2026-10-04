@@ -1,0 +1,45 @@
+population_id: wm_stress_population
+schema_version: 1
+master_seed: 42
+tasks:
+  - memory_task
+persona_source: preset
+runs_per_cell: 1
+execution_policy: sequential
+execution_budget:
+  max_parallel_runs: 2
+  max_runs: 50
+  max_runtime_seconds: 1800
+  max_retries_infra: 1
+  artifact_retention: SUMMARY_PLUS_CERTIFICATES
+metrics_version: metrics-v1
+failure_taxonomy_version: failures-v1
+persona_schema_version: 1
+code_version: local
+metadata:
+  stress_test_id: wm_stress
+cohorts:
+  - cohort_id: working_memory_capacity_3
+    label: WM capacity 3
+    persona_presets: [baseline]
+    seed_count: 3
+    task_ids: [memory_task]
+    weight: 1.0
+    conditions: [BASELINE]
+    metadata: {stress_trait: working_memory_capacity, stress_level: 3}
+  - cohort_id: working_memory_capacity_5
+    label: WM capacity 5
+    persona_presets: [baseline]
+    seed_count: 3
+    task_ids: [memory_task]
+    weight: 1.0
+    conditions: [BASELINE]
+    metadata: {stress_trait: working_memory_capacity, stress_level: 5}
+  - cohort_id: working_memory_capacity_7
+    label: WM capacity 7
+    persona_presets: [baseline]
+    seed_count: 3
+    task_ids: [memory_task]
+    weight: 1.0
+    conditions: [BASELINE]
+    metadata: {stress_trait: working_memory_capacity, stress_level: 7}

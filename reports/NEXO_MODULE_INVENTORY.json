@@ -1,0 +1,7578 @@
+{
+  "generated_at": "2026-08-04T19:16:24.217962+00:00",
+  "python_version": "3.11.0",
+  "module_count": 267,
+  "modules": [
+    {
+      "module": "brain.__init__",
+      "files": [
+        "brain/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "cortex",
+        "mind",
+        "persist",
+        "profile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.affect",
+      "files": [
+        "brain/affect.py"
+      ],
+      "classes": [
+        "SynapticPool",
+        "AffectChemistry"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [
+        "tests.test_affect_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.affect_dynamics",
+      "files": [
+        "brain/affect_dynamics.py"
+      ],
+      "classes": [
+        "HPAAxis",
+        "AffectDynamicsStack"
+      ],
+      "functions": [
+        "receptor_panel"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_affect_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.affordance_map",
+      "files": [
+        "brain/affordance_map.py"
+      ],
+      "classes": [
+        "AffordanceEvidence",
+        "AffordanceRecord",
+        "AffordanceMap"
+      ],
+      "functions": [
+        "body_snapshot",
+        "observed_outcomes",
+        "homeostasis_gain",
+        "event_identity"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "math",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_affordance_map",
+        "tests.test_level23",
+        "tests.test_reward_learning"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.agency_audit",
+      "files": [
+        "brain/agency_audit.py"
+      ],
+      "classes": [
+        "AgencyViolation"
+      ],
+      "functions": [
+        "scan_brain_agency",
+        "audit_summary"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.run_battery_10k",
+        "tests.test_validation_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.agent_loop",
+      "files": [
+        "brain/agent_loop.py"
+      ],
+      "classes": [
+        "AgentLoopState",
+        "NeuralAgentLoop"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "affordance_map",
+        "backend",
+        "behavior_integration",
+        "caregiver_dialogue",
+        "causal_hud",
+        "dataclasses",
+        "deliberation",
+        "environment",
+        "experiment_flags",
+        "goal_stack",
+        "grounding",
+        "learned_schemas",
+        "mind",
+        "navigation",
+        "numpy",
+        "os",
+        "social_exchange",
+        "somatic_affordances",
+        "typing",
+        "verbalize"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.anatomy_curriculum",
+      "files": [
+        "brain/anatomy_curriculum.py"
+      ],
+      "classes": [
+        "AnatomySection",
+        "AnatomyCorpus"
+      ],
+      "functions": [
+        "load_sections",
+        "apply_section_effects",
+        "study_anatomy_section",
+        "get_section"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "learning_hub",
+        "mind",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.attention",
+      "files": [
+        "brain/attention.py"
+      ],
+      "classes": [
+        "AttentionBudget"
+      ],
+      "functions": [
+        "competitive_filter"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_executive_cognition",
+        "tests.test_wm_attention"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.audition",
+      "files": [
+        "brain/audition.py"
+      ],
+      "classes": [
+        "AuditoryPathway"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.backend",
+      "files": [
+        "brain/backend.py"
+      ],
+      "classes": [
+        "ComputeBackend"
+      ],
+      "functions": [
+        "get_backend",
+        "reset_backend"
+      ],
+      "imports": [
+        "__future__",
+        "cupy",
+        "cupyx.scipy",
+        "dataclasses",
+        "numpy",
+        "os",
+        "time"
+      ],
+      "imported_by": [
+        "experiments.bench_tick_gpu",
+        "experiments.gpu_env",
+        "experiments.run_batch",
+        "tests.test_bench_e7"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.behavior_integration",
+      "files": [
+        "brain/behavior_integration.py"
+      ],
+      "classes": [],
+      "functions": [
+        "pick_desk_study_event",
+        "choice_allows_event",
+        "pre_cognize_interocept",
+        "deliberation_track_boost",
+        "sleep_study_weights",
+        "tick_study_focus"
+      ],
+      "imports": [
+        "__future__",
+        "library",
+        "mind",
+        "numpy",
+        "typing",
+        "world"
+      ],
+      "imported_by": [
+        "tests.test_behavior_integration"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.biomechanics",
+      "files": [
+        "brain/biomechanics.py"
+      ],
+      "classes": [
+        "BiomechanicalBody"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "ragdoll_skeleton",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_biomechanics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.biopsych_curriculum",
+      "files": [
+        "brain/biopsych_curriculum.py"
+      ],
+      "classes": [],
+      "functions": [
+        "default_state",
+        "study_biopsych_section",
+        "get_biopsych_section"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib",
+        "study_track"
+      ],
+      "imported_by": [
+        "tests.test_study_tracks"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.body",
+      "files": [
+        "brain/body.py"
+      ],
+      "classes": [
+        "BodyState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [
+        "tests.test_biomechanics",
+        "tests.test_nociception",
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.brain_facts",
+      "files": [
+        "brain/brain_facts.py"
+      ],
+      "classes": [
+        "BrainFactsChapter",
+        "BrainFactsCorpus"
+      ],
+      "functions": [
+        "load_chapters",
+        "apply_chapter_effects",
+        "study_chapter",
+        "get_chapter"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "learning_hub",
+        "mind",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_brain_facts"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.brain_states",
+      "files": [
+        "brain/brain_states.py"
+      ],
+      "classes": [
+        "BrainStateController"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.caregiver_dialogue",
+      "files": [
+        "brain/caregiver_dialogue.py"
+      ],
+      "classes": [],
+      "functions": [
+        "is_fragmentary_speech",
+        "reply_engages_caregiver",
+        "caregiver_reply_fallback"
+      ],
+      "imports": [
+        "__future__",
+        "re",
+        "typing",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_caregiver_dialogue",
+        "tests.test_language_network"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.causal_hud",
+      "files": [
+        "brain/causal_hud.py"
+      ],
+      "classes": [],
+      "functions": [
+        "build_causal_hud"
+      ],
+      "imports": [
+        "__future__",
+        "mind",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_demo_hud",
+        "tests.test_level23"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.character",
+      "files": [
+        "brain/character.py"
+      ],
+      "classes": [
+        "Persona"
+      ],
+      "functions": [
+        "classify_intent"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "re"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.chemistry",
+      "files": [
+        "brain/chemistry.py"
+      ],
+      "classes": [
+        "PeerBond"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.cingulate_module",
+      "files": [
+        "brain/cingulate_module.py"
+      ],
+      "classes": [
+        "CingulateMonitor"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.circuit_hub",
+      "files": [
+        "brain/circuit_hub.py"
+      ],
+      "classes": [
+        "CircuitHub"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "mind",
+        "numpy",
+        "regional_latency",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_brain_facts"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.clinical_neurology",
+      "files": [
+        "brain/clinical_neurology.py"
+      ],
+      "classes": [],
+      "functions": [
+        "default_state",
+        "study_clinical_section",
+        "get_clinical_section"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib",
+        "study_track"
+      ],
+      "imported_by": [
+        "tests.test_study_tracks"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.cognition",
+      "files": [
+        "brain/cognition.py"
+      ],
+      "classes": [
+        "ShortTermBuffer",
+        "HabitStore",
+        "PredictiveModel",
+        "CognitiveCycle"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "attention",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "time",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.companion",
+      "files": [
+        "brain/companion.py"
+      ],
+      "classes": [
+        "CompanionAgent"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "body",
+        "character",
+        "chemistry",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.connectome_blueprint",
+      "files": [
+        "brain/connectome_blueprint.py"
+      ],
+      "classes": [
+        "RegionSpec",
+        "ConnectomeBlueprint"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_agent_loop"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.consciousness",
+      "files": [
+        "brain/consciousness.py"
+      ],
+      "classes": [
+        "ConsciousCandidate",
+        "SelfModel",
+        "ConsciousnessIntegrator"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_consciousness",
+        "tests.test_executive_cognition"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.consolidation",
+      "files": [
+        "brain/consolidation.py"
+      ],
+      "classes": [],
+      "functions": [
+        "consolidate_to_cortex",
+        "forgetting_retention"
+      ],
+      "imports": [
+        "__future__",
+        "cortex",
+        "numpy"
+      ],
+      "imported_by": [
+        "tests.test_memory_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.cortex",
+      "files": [
+        "brain/cortex.py"
+      ],
+      "classes": [
+        "CorticalNetwork"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "backend",
+        "cortical_layers",
+        "dataclasses",
+        "inhibition",
+        "json",
+        "neuron",
+        "neurotransmitters",
+        "numpy",
+        "oscillations",
+        "profile",
+        "synapse",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.cortical_chunks",
+      "files": [
+        "brain/cortical_chunks.py"
+      ],
+      "classes": [
+        "CorticalChunk",
+        "CorticalChunkStore"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "connectome_blueprint",
+        "dataclasses",
+        "engram_codec",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_agent_loop"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.cortical_layers",
+      "files": [
+        "brain/cortical_layers.py"
+      ],
+      "classes": [
+        "LaminarAssociativeStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "neuron",
+        "numpy",
+        "synapse",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.counterfactual_simulator",
+      "files": [
+        "brain/counterfactual_simulator.py"
+      ],
+      "classes": [
+        "CounterfactualPrediction",
+        "CounterfactualSimulator"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "affordance_map",
+        "dataclasses",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_level23"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.curiosity",
+      "files": [
+        "brain/curiosity.py"
+      ],
+      "classes": [],
+      "functions": [
+        "compute_curiosity",
+        "curiosity_drives"
+      ],
+      "imports": [
+        "__future__",
+        "body",
+        "neurotransmitters",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.curriculum",
+      "files": [
+        "brain/curriculum.py"
+      ],
+      "classes": [
+        "CurriculumSection",
+        "CurriculumState"
+      ],
+      "functions": [
+        "apply_study_effects",
+        "anatomy_focus_boost",
+        "study_section",
+        "get_section"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "learning_hub",
+        "mind",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_curriculum"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.daytime_replay",
+      "files": [
+        "brain/daytime_replay.py"
+      ],
+      "classes": [
+        "DaytimeReplay"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "types",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_lobe_columns_replay"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.decompression_governor",
+      "files": [
+        "brain/decompression_governor.py"
+      ],
+      "classes": [
+        "DecompressionGovernor"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_decompression_governor",
+        "tests.test_decompression_prefetch",
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.decompression_prefetch",
+      "files": [
+        "brain/decompression_prefetch.py"
+      ],
+      "classes": [
+        "DecompressionPrefetcher"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "episodic_context",
+        "experiment_flags",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_decompression_prefetch"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.deliberation",
+      "files": [
+        "brain/deliberation.py"
+      ],
+      "classes": [
+        "ActionContestant",
+        "DeliberationResult",
+        "PrefrontalDeliberation"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "behavior_integration",
+        "dataclasses",
+        "encode",
+        "experiment_flags",
+        "learned_schemas",
+        "mind",
+        "nexo.agency_metrics",
+        "nexo.decision_port",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.metrics",
+        "tests.test_consciousness",
+        "tests.test_executive_cognition",
+        "tests.test_intention_circuit",
+        "tests.test_lifecycle_dynamics",
+        "tests.test_motor_dynamics",
+        "tests.test_reproducibility",
+        "tests.test_reward_learning"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.dialogue_engine",
+      "files": [
+        "brain/dialogue_engine.py"
+      ],
+      "classes": [],
+      "functions": [
+        "humanized_feelings_block",
+        "dyad_sounds_broken",
+        "is_meta_assistant_speech",
+        "dyad_passes_quality",
+        "caregiver_passes_quality",
+        "dyad_reply_fallback"
+      ],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "character",
+        "language_cortex",
+        "re",
+        "typing",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_dialogue_engine",
+        "tests.test_level23"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.embeddings",
+      "files": [
+        "brain/embeddings.py"
+      ],
+      "classes": [
+        "SemanticEmbedder"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sqlite3",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.encode",
+      "files": [
+        "brain/encode.py"
+      ],
+      "classes": [],
+      "functions": [
+        "encode_text",
+        "encode_bytes",
+        "encode_image",
+        "encode_pdf",
+        "encode_audio",
+        "encode_epub",
+        "encode_file",
+        "stimulus_id"
+      ],
+      "imports": [
+        "PIL",
+        "__future__",
+        "hashlib",
+        "io",
+        "numpy",
+        "pypdf",
+        "re",
+        "struct",
+        "typing",
+        "wave",
+        "zipfile"
+      ],
+      "imported_by": [
+        "experiments.run_e4_sleep_selective",
+        "experiments.run_sleep"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.engram_codec",
+      "files": [
+        "brain/engram_codec.py"
+      ],
+      "classes": [],
+      "functions": [
+        "encode_sparse",
+        "decode_sparse",
+        "encode_summary",
+        "decode_summary",
+        "expand_summary_to_dim",
+        "encode_chunk_pattern",
+        "decode_chunk_pattern",
+        "estimate_sparse_bytes",
+        "codec_stats"
+      ],
+      "imports": [
+        "__future__",
+        "numpy",
+        "struct",
+        "typing",
+        "zlib"
+      ],
+      "imported_by": [
+        "tests.test_engram_codec"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.environment",
+      "files": [
+        "brain/environment.py"
+      ],
+      "classes": [
+        "WorldClock"
+      ],
+      "functions": [
+        "phase_from_hour",
+        "light_level_from_hour",
+        "circadian_profile",
+        "apply_circadian_drives",
+        "hero_zone_for_room",
+        "ambient_temperature"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "math",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_circadian"
+      ],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.episodic_context",
+      "files": [
+        "brain/episodic_context.py"
+      ],
+      "classes": [],
+      "functions": [
+        "encode_body_vector",
+        "encode_motor_vector",
+        "build_rich_extras",
+        "build_context_vector",
+        "fuse_episodic_pattern",
+        "multimodal_similarity"
+      ],
+      "imports": [
+        "__future__",
+        "encode",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_memory_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.executive_cognition",
+      "files": [
+        "brain/executive_cognition.py"
+      ],
+      "classes": [
+        "DualTaskMonitor",
+        "StroopController",
+        "SetShiftingController",
+        "DefaultModeNetwork",
+        "ExecutiveCognitionStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_executive_cognition"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.experience_journal",
+      "files": [
+        "brain/experience_journal.py"
+      ],
+      "classes": [
+        "JournalEntry"
+      ],
+      "functions": [
+        "build_journal"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "time",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.experiment_flags",
+      "files": [
+        "brain/experiment_flags.py"
+      ],
+      "classes": [
+        "AblationFlags"
+      ],
+      "functions": [
+        "get_flags",
+        "apply_condition",
+        "resolve_demo_flags"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "os",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.ablation_flags",
+        "experiments.arena.task_discrimination",
+        "experiments.arena.task_dry_fountain",
+        "experiments.arena.task_hunger_unknown_bowl",
+        "experiments.arena.task_hygiene_unknown_bath",
+        "experiments.arena.task_physics_locomotion",
+        "experiments.arena.task_thirst_unknown_water",
+        "experiments.arena.task_transfer_fountain",
+        "experiments.bench_tick_gpu",
+        "experiments.run_all",
+        "experiments.run_batch",
+        "experiments.run_e1_parallel",
+        "experiments.run_e5_grounding",
+        "experiments.run_e7_multimodal",
+        "experiments.run_parallel",
+        "nexo.experiment_conditions",
+        "tests.test_affect_dynamics",
+        "tests.test_affordance_map",
+        "tests.test_agent_loop",
+        "tests.test_arena_thirst",
+        "tests.test_behavior_integration",
+        "tests.test_bench_e7",
+        "tests.test_circadian",
+        "tests.test_decompression_prefetch",
+        "tests.test_demo_hud",
+        "tests.test_executive_cognition",
+        "tests.test_grounding",
+        "tests.test_human_brain_features",
+        "tests.test_language_dynamics",
+        "tests.test_learned_schemas"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.food_system",
+      "files": [
+        "brain/food_system.py"
+      ],
+      "classes": [],
+      "functions": [
+        "ensure_garden_crops",
+        "ensure_stove",
+        "nearest_ripe_crop",
+        "has_ripe_crops",
+        "pantry_has_raw",
+        "pantry_has_cooked",
+        "harvest_crop",
+        "tick_crops",
+        "cook_meal",
+        "eat_cooked",
+        "eat_raw",
+        "pantry_dict"
+      ],
+      "imports": [
+        "__future__",
+        "numpy",
+        "typing",
+        "world"
+      ],
+      "imported_by": [
+        "tests.test_food_system"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.goal_stack",
+      "files": [
+        "brain/goal_stack.py"
+      ],
+      "classes": [
+        "GoalFrame",
+        "GoalStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "deliberation",
+        "experiment_flags",
+        "learned_schemas",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_affect_dynamics",
+        "tests.test_agent_loop",
+        "tests.test_executive_cognition"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.gpu_env",
+      "files": [
+        "brain/gpu_env.py"
+      ],
+      "classes": [],
+      "functions": [
+        "configure_cuda_env"
+      ],
+      "imports": [
+        "__future__",
+        "cupy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.grounding",
+      "files": [
+        "brain/grounding.py"
+      ],
+      "classes": [
+        "GroundingHit",
+        "GroundingState"
+      ],
+      "functions": [
+        "parse_grounding",
+        "apply_utterance_grounding",
+        "merge_grounding_drives",
+        "merge_grounding_sensory",
+        "tick_grounding"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_grounding"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.gustation",
+      "files": [
+        "brain/gustation.py"
+      ],
+      "classes": [
+        "GustatoryPathway"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "material_qualities",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.hedonics",
+      "files": [
+        "brain/hedonics.py"
+      ],
+      "classes": [
+        "HedonicState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_hedonics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.hippocampus_core",
+      "files": [
+        "brain/hippocampus_core.py"
+      ],
+      "classes": [
+        "HippocampalFormation"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "neuron",
+        "numpy",
+        "synapse"
+      ],
+      "imported_by": [
+        "tests.test_lobes_circuit",
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.imagination",
+      "files": [
+        "brain/imagination.py"
+      ],
+      "classes": [
+        "ImaginationEngine"
+      ],
+      "functions": [],
+      "imports": [
+        "PIL",
+        "__future__",
+        "base64",
+        "dataclasses",
+        "encode",
+        "hashlib",
+        "io",
+        "math",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.infant_brain_curriculum",
+      "files": [
+        "brain/infant_brain_curriculum.py"
+      ],
+      "classes": [],
+      "functions": [
+        "default_state",
+        "study_infant_section",
+        "get_infant_section"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib",
+        "study_track"
+      ],
+      "imported_by": [
+        "tests.test_study_tracks"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.inhibition",
+      "files": [
+        "brain/inhibition.py"
+      ],
+      "classes": [
+        "InhibitoryMicrocircuit",
+        "SubtypeInhibitoryCircuit"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "neuron",
+        "numpy",
+        "synapse"
+      ],
+      "imported_by": [
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.insula_module",
+      "files": [
+        "brain/insula_module.py"
+      ],
+      "classes": [
+        "InsulaCortex"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.intention",
+      "files": [
+        "brain/intention.py"
+      ],
+      "classes": [
+        "IntentionCircuit"
+      ],
+      "functions": [
+        "merge_intention_into_sensory",
+        "prime_prefrontal_wm",
+        "deliberation_gate_context",
+        "record_spike_alignment",
+        "enforce_pfc_motor_veto",
+        "sync_basal_habits",
+        "hippocampus_stress_factor"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "deliberation",
+        "encode",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_intention_circuit",
+        "tests.test_lobes_circuit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.internal_signal",
+      "files": [
+        "brain/internal_signal.py"
+      ],
+      "classes": [],
+      "functions": [
+        "state_packet"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.journey",
+      "files": [
+        "brain/journey.py"
+      ],
+      "classes": [
+        "HeroJourney"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.language_cortex",
+      "files": [
+        "brain/language_cortex.py"
+      ],
+      "classes": [
+        "LanguageContext",
+        "LanguageCortex"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "dataclasses",
+        "dialogue_engine",
+        "json",
+        "neural_language",
+        "os",
+        "re",
+        "typing",
+        "urllib.error",
+        "urllib.request",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_dialogue_engine",
+        "tests.test_language_dynamics",
+        "tests.test_language_tutor_rag",
+        "tests.test_level23",
+        "tests.test_neural_language",
+        "tests.test_verbalize_feelings"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.language_dynamics",
+      "files": [
+        "brain/language_dynamics.py"
+      ],
+      "classes": [
+        "AphasiaLesion",
+        "LanguageDynamicsStack"
+      ],
+      "functions": [
+        "study_tracks_snapshot"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "library",
+        "numpy",
+        "os",
+        "re",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_language_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.language_network",
+      "files": [
+        "brain/language_network.py"
+      ],
+      "classes": [
+        "ComprehensionPacket",
+        "UtterancePlan",
+        "CaregiverExchangeResult",
+        "LanguageTutor",
+        "WernickeArea",
+        "BrocaArea",
+        "ArcuateBundle",
+        "DyadExchangeResult",
+        "LanguageNetwork"
+      ],
+      "functions": [
+        "tutor_from_env"
+      ],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "character",
+        "dataclasses",
+        "dialogue_engine",
+        "encode",
+        "experiment_flags",
+        "language_cortex",
+        "language_tutor_rag",
+        "mind",
+        "neural_language",
+        "os",
+        "typing",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_language_dynamics",
+        "tests.test_language_tutor_rag"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.language_tutor_rag",
+      "files": [
+        "brain/language_tutor_rag.py"
+      ],
+      "classes": [],
+      "functions": [
+        "tutor_memory_label",
+        "parse_tutor_label",
+        "extract_exemplar",
+        "retrieve_learned_exemplars",
+        "adapt_learned_exemplar"
+      ],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "language_cortex",
+        "mind",
+        "re",
+        "typing",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_language_tutor_rag"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.learned_schemas",
+      "files": [
+        "brain/learned_schemas.py"
+      ],
+      "classes": [
+        "LearnedSchema",
+        "SchemaLearner"
+      ],
+      "functions": [
+        "all_action_schemas"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "deliberation",
+        "experiment_flags",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_learned_schemas",
+        "tests.test_level24",
+        "tests.test_reward_learning"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.learning_hub",
+      "files": [
+        "brain/learning_hub.py"
+      ],
+      "classes": [
+        "LearningEvent",
+        "LearningHub"
+      ],
+      "functions": [
+        "chunk_text"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "library",
+        "mind",
+        "numpy",
+        "text_extract",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.library",
+      "files": [
+        "brain/library.py"
+      ],
+      "classes": [],
+      "functions": [
+        "ensure_library",
+        "list_books",
+        "read_book",
+        "import_file"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib",
+        "shutil"
+      ],
+      "imported_by": [
+        "scripts.import_user_books",
+        "scripts.ocr_infant_book",
+        "tests.test_study_tracks"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.lifecycle",
+      "files": [
+        "brain/lifecycle.py"
+      ],
+      "classes": [
+        "LifecycleState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "random",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_learned_schemas",
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.lifecycle_dynamics",
+      "files": [
+        "brain/lifecycle_dynamics.py"
+      ],
+      "classes": [
+        "LifecycleDynamicsStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "behavior_integration",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_lifecycle_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.lobe_cortex",
+      "files": [
+        "brain/lobe_cortex.py"
+      ],
+      "classes": [
+        "LobeCorticalColumns"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "cortex",
+        "dataclasses",
+        "neuron",
+        "numpy",
+        "synapse",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_lobe_columns_replay"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.lobes",
+      "files": [
+        "brain/lobes.py"
+      ],
+      "classes": [
+        "LobeRouter"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "encode",
+        "mind",
+        "numpy",
+        "typing",
+        "vision"
+      ],
+      "imported_by": [
+        "tests.test_lobes_circuit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.material_qualities",
+      "files": [
+        "brain/material_qualities.py"
+      ],
+      "classes": [],
+      "functions": [
+        "furniture_qualities",
+        "object_qualities"
+      ],
+      "imports": [
+        "__future__",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_material_qualities"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.memory_dynamics",
+      "files": [
+        "brain/memory_dynamics.py"
+      ],
+      "classes": [
+        "MemoryInterferenceTracker",
+        "FlashbulbRegistry",
+        "AutobiographicalTimeline",
+        "MemoryDynamicsStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "consolidation",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "time",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_lifecycle_dynamics",
+        "tests.test_memory_dynamics"
+      ],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.memory_store",
+      "files": [
+        "brain/memory_store.py"
+      ],
+      "classes": [
+        "EpisodicMemoryStore"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "embeddings",
+        "episodic_context",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "sqlite3",
+        "time",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_consciousness",
+        "tests.test_selective_sleep"
+      ],
+      "randomness": [
+        "np.random",
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.memory_systems",
+      "files": [
+        "brain/memory_systems.py"
+      ],
+      "classes": [
+        "SemanticConcept",
+        "ProceduralSkill",
+        "TypedMemorySystems"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "deliberation",
+        "json",
+        "mind",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_human_brain_features"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.mind",
+      "files": [
+        "brain/mind.py"
+      ],
+      "classes": [
+        "InfantApeBrain"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "affect",
+        "affect_dynamics",
+        "affordance_map",
+        "agent_loop",
+        "anatomy_curriculum",
+        "backend",
+        "biomechanics",
+        "biopsych_curriculum",
+        "body",
+        "brain_facts",
+        "brain_states",
+        "caregiver_dialogue",
+        "causal_hud",
+        "character",
+        "chemistry",
+        "cingulate_module",
+        "circuit_hub",
+        "clinical_neurology",
+        "cognition",
+        "companion",
+        "connectome_blueprint",
+        "consciousness",
+        "cortex",
+        "cortical_chunks",
+        "counterfactual_simulator",
+        "curiosity",
+        "curriculum",
+        "dataclasses",
+        "daytime_replay",
+        "decompression_governor",
+        "decompression_prefetch",
+        "deliberation",
+        "embeddings",
+        "encode",
+        "environment",
+        "episodic_context",
+        "executive_cognition",
+        "experiment_flags",
+        "food_system",
+        "grounding",
+        "hedonics",
+        "hippocampus_core",
+        "imagination",
+        "infant_brain_curriculum",
+        "insula_module",
+        "intention",
+        "internal_signal",
+        "journey",
+        "language_cortex",
+        "language_dynamics",
+        "language_network",
+        "learned_schemas",
+        "learning_hub",
+        "library",
+        "lifecycle",
+        "lifecycle_dynamics",
+        "lobe_cortex",
+        "lobes",
+        "memory_dynamics"
+      ],
+      "imported_by": [
+        "experiments.arena.task_discrimination",
+        "experiments.arena.task_dry_fountain",
+        "experiments.arena.task_hunger_unknown_bowl",
+        "experiments.arena.task_hygiene_unknown_bath",
+        "experiments.arena.task_physics_locomotion",
+        "experiments.arena.task_thirst_unknown_water",
+        "experiments.arena.task_transfer_fountain",
+        "experiments.bench_tick_gpu",
+        "experiments.run_batch",
+        "experiments.run_e4_sleep_selective",
+        "experiments.run_e5_grounding",
+        "experiments.run_e7_multimodal",
+        "experiments.run_sleep",
+        "experiments.run_smoke_experiments",
+        "nexo.behavioral_tasks",
+        "nexo.run",
+        "tests.test_affordance_map",
+        "tests.test_agent_loop",
+        "tests.test_arena_thirst",
+        "tests.test_bench_e7",
+        "tests.test_brain_facts",
+        "tests.test_circadian",
+        "tests.test_consciousness",
+        "tests.test_curriculum",
+        "tests.test_decompression_prefetch",
+        "tests.test_demo_hud",
+        "tests.test_grounding",
+        "tests.test_hedonics",
+        "tests.test_human_brain_features",
+        "tests.test_imagination_stream"
+      ],
+      "randomness": [
+        "np.random",
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.motor_dynamics",
+      "files": [
+        "brain/motor_dynamics.py"
+      ],
+      "classes": [
+        "EmbodiedMotorStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "behavior_integration",
+        "dataclasses",
+        "experiment_flags",
+        "food_system",
+        "numpy",
+        "somatic_affordances",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_motor_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.motor_policy",
+      "files": [
+        "brain/motor_policy.py"
+      ],
+      "classes": [
+        "ContinuousMotorCommand",
+        "ContinuousMotorPolicy"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_s7_scale_motor_multi"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.navigation",
+      "files": [
+        "brain/navigation.py"
+      ],
+      "classes": [],
+      "functions": [
+        "decode_cortex_motor",
+        "augment_motor",
+        "resolve_walk_goal"
+      ],
+      "imports": [
+        "__future__",
+        "curiosity",
+        "food_system",
+        "typing",
+        "world"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.neural_language",
+      "files": [
+        "brain/neural_language.py"
+      ],
+      "classes": [
+        "NeuralLanguageEngine"
+      ],
+      "functions": [
+        "resolve_language_backend",
+        "get_neural_language_engine"
+      ],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "character",
+        "dataclasses",
+        "dialogue_engine",
+        "os",
+        "re",
+        "verbalize"
+      ],
+      "imported_by": [
+        "tests.test_language_dynamics",
+        "tests.test_neural_language"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.neural_telemetry",
+      "files": [
+        "brain/neural_telemetry.py"
+      ],
+      "classes": [
+        "NeuralTelemetry"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "collections",
+        "dataclasses",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_arena_thirst"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.neuroanatomy",
+      "files": [
+        "brain/neuroanatomy.py"
+      ],
+      "classes": [
+        "CorpusCallosum",
+        "ParietalIntegrator",
+        "GliaSupport",
+        "VentricleCSF",
+        "BrainstemNuclei",
+        "BrainAtlas"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "curriculum",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_rhythm_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.neuron",
+      "files": [
+        "brain/neuron.py"
+      ],
+      "classes": [
+        "LIFPopulation"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.neurotransmitters",
+      "files": [
+        "brain/neurotransmitters.py"
+      ],
+      "classes": [
+        "NeuromodulatorState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.nociception",
+      "files": [
+        "brain/nociception.py"
+      ],
+      "classes": [
+        "NociceptiveTerminal"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_biomechanics",
+        "tests.test_nociception",
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.nuclei",
+      "files": [
+        "brain/nuclei.py"
+      ],
+      "classes": [
+        "SubcorticalNuclei"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "neurotransmitters",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.observatory_hud",
+      "files": [
+        "brain/observatory_hud.py"
+      ],
+      "classes": [],
+      "functions": [
+        "build_observatory_hud"
+      ],
+      "imports": [
+        "__future__",
+        "causal_hud",
+        "experiment_flags",
+        "language_dynamics",
+        "mind",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_demo_hud",
+        "tests.test_validation_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.oscillations",
+      "files": [
+        "brain/oscillations.py"
+      ],
+      "classes": [
+        "OscillatorSnapshot",
+        "BrainOscillators"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_rhythm_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.persist",
+      "files": [
+        "brain/persist.py"
+      ],
+      "classes": [
+        "BrainPersistence"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "biopsych_curriculum",
+        "brain_facts",
+        "chemistry",
+        "clinical_neurology",
+        "companion",
+        "curriculum",
+        "environment",
+        "food_system",
+        "infant_brain_curriculum",
+        "journey",
+        "json",
+        "learned_schemas",
+        "lifecycle",
+        "mind",
+        "numpy",
+        "pathlib",
+        "sleep_architecture",
+        "study_track",
+        "synapse",
+        "typing",
+        "world"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.profile",
+      "files": [
+        "brain/profile.py"
+      ],
+      "classes": [
+        "NeuroProfile"
+      ],
+      "functions": [
+        "resolve_default_profile",
+        "profile_neuron_count",
+        "resolve_experiment_profile"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "os"
+      ],
+      "imported_by": [
+        "experiments.bench_tick_gpu",
+        "experiments.profile_select",
+        "experiments.run_batch",
+        "experiments.run_smoke_experiments",
+        "nexo.behavioral_tasks",
+        "nexo.run",
+        "tests.test_affect_dynamics",
+        "tests.test_affordance_map",
+        "tests.test_arena_thirst",
+        "tests.test_behavior_integration",
+        "tests.test_bench_e7",
+        "tests.test_circadian",
+        "tests.test_demo_hud",
+        "tests.test_executive_cognition",
+        "tests.test_grounding",
+        "tests.test_human_brain_features",
+        "tests.test_language_dynamics",
+        "tests.test_learned_schemas",
+        "tests.test_level23",
+        "tests.test_level24",
+        "tests.test_level25",
+        "tests.test_lifecycle_dynamics",
+        "tests.test_memory_dynamics",
+        "tests.test_motor_dynamics",
+        "tests.test_reproducibility",
+        "tests.test_reward_learning",
+        "tests.test_rhythm_dynamics",
+        "tests.test_s7_scale_motor_multi",
+        "tests.test_scale_architecture",
+        "tests.test_selective_sleep"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.proprioception",
+      "files": [
+        "brain/proprioception.py"
+      ],
+      "classes": [
+        "ProprioceptivePathway"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.ragdoll_skeleton",
+      "files": [
+        "brain/ragdoll_skeleton.py"
+      ],
+      "classes": [
+        "JointState",
+        "ArticulatedSkeleton"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_biomechanics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.reflexes",
+      "files": [
+        "brain/reflexes.py"
+      ],
+      "classes": [
+        "BrainstemReflexes"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_lobes_circuit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.regional_latency",
+      "files": [
+        "brain/regional_latency.py"
+      ],
+      "classes": [
+        "DelayedSignal",
+        "RegionalSignalBus"
+      ],
+      "functions": [
+        "latency_ms"
+      ],
+      "imports": [
+        "__future__",
+        "collections",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_human_brain_features",
+        "tests.test_rhythm_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.regions",
+      "files": [
+        "brain/regions.py"
+      ],
+      "classes": [
+        "Thalamus",
+        "Amygdala",
+        "Hippocampus",
+        "Hypothalamus"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "memory_store",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.reward_learning",
+      "files": [
+        "brain/reward_learning.py"
+      ],
+      "classes": [
+        "BCMMetaplasticity",
+        "RewardLearningStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "affordance_map",
+        "dataclasses",
+        "experiment_flags",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_reward_learning"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.scenarios.__init__",
+      "files": [
+        "brain/scenarios/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.scenarios.home_demo",
+      "files": [
+        "brain/scenarios/home_demo.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.scn_clock",
+      "files": [
+        "brain/scn_clock.py"
+      ],
+      "classes": [
+        "SCNClock"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "environment",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_rhythm_dynamics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.sensory_hub",
+      "files": [
+        "brain/sensory_hub.py"
+      ],
+      "classes": [
+        "SensoryChannel",
+        "SensoryPathwayHub"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "collections",
+        "dataclasses",
+        "mind",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_s7_scale_motor_multi"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.sensory_perception",
+      "files": [
+        "brain/sensory_perception.py"
+      ],
+      "classes": [
+        "SensoryPerceptionStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "audition",
+        "dataclasses",
+        "experiment_flags",
+        "gustation",
+        "numpy",
+        "proprioception",
+        "superior_colliculus",
+        "typing",
+        "vestibular"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.sleep_architecture",
+      "files": [
+        "brain/sleep_architecture.py"
+      ],
+      "classes": [
+        "SleepCycleStats",
+        "SleepArchitecture"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "consolidation",
+        "dataclasses",
+        "experiment_flags",
+        "mind",
+        "numpy",
+        "types",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_human_brain_features"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.sleep_background",
+      "files": [
+        "brain/sleep_background.py"
+      ],
+      "classes": [
+        "SleepBackgroundWorker"
+      ],
+      "functions": [
+        "maybe_start_sleep_background"
+      ],
+      "imports": [
+        "__future__",
+        "mind",
+        "os",
+        "sleep_study",
+        "threading",
+        "time",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.sleep_study",
+      "files": [
+        "brain/sleep_study.py"
+      ],
+      "classes": [
+        "SleepStudyEntry",
+        "SleepStudyLog",
+        "SleepStudyEngine"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "anatomy_curriculum",
+        "behavior_integration",
+        "biopsych_curriculum",
+        "brain_facts",
+        "clinical_neurology",
+        "curriculum",
+        "dataclasses",
+        "experiment_flags",
+        "infant_brain_curriculum",
+        "json",
+        "learning_hub",
+        "library",
+        "mind",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "text_extract",
+        "typing",
+        "urllib.error",
+        "web_fetch",
+        "web_search"
+      ],
+      "imported_by": [
+        "tests.test_sleep_study"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.social_exchange",
+      "files": [
+        "brain/social_exchange.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_social_exchange"
+      ],
+      "imports": [
+        "__future__",
+        "experiment_flags",
+        "learning_hub",
+        "mind",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.somatic_affordances",
+      "files": [
+        "brain/somatic_affordances.py"
+      ],
+      "classes": [],
+      "functions": [
+        "furniture_contact",
+        "apply_somatic_contact"
+      ],
+      "imports": [
+        "__future__",
+        "body",
+        "numpy",
+        "typing",
+        "world"
+      ],
+      "imported_by": [
+        "tests.test_motor_dynamics",
+        "tests.test_nociception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.study_track",
+      "files": [
+        "brain/study_track.py"
+      ],
+      "classes": [
+        "TrackSection",
+        "TrackState"
+      ],
+      "functions": [
+        "load_track",
+        "apply_track_effects",
+        "study_section",
+        "get_section"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "learning_hub",
+        "library",
+        "mind",
+        "numpy",
+        "pathlib",
+        "text_extract",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_study_tracks"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.subcortex",
+      "files": [
+        "brain/subcortex.py"
+      ],
+      "classes": [
+        "BasalGanglia",
+        "Brainstem",
+        "Cerebellum",
+        "BrocaArea"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "caregiver_dialogue",
+        "dataclasses",
+        "deliberation",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_intention_circuit"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.superior_colliculus",
+      "files": [
+        "brain/superior_colliculus.py"
+      ],
+      "classes": [
+        "SuperiorColliculus"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.synapse",
+      "files": [
+        "brain/synapse.py"
+      ],
+      "classes": [
+        "SparseSynapses"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "backend",
+        "numpy",
+        "scipy"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.archetype_cards",
+      "files": [
+        "brain/archetype_cards.py"
+      ],
+      "classes": [
+        "ArchetypeCard"
+      ],
+      "functions": [
+        "resolve_card_key",
+        "all_cards",
+        "get_card",
+        "draw_card",
+        "object_id_for",
+        "legacy_object_ids",
+        "card_from_object",
+        "is_touch_event",
+        "card_key_from_meta",
+        "is_archetype_card_meta",
+        "normalize_card_meta",
+        "legacy_stats",
+        "experience_text",
+        "apply_drive_bias",
+        "recall_query",
+        "reading_with_memories"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "random",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.td_reward",
+      "files": [
+        "brain/td_reward.py"
+      ],
+      "classes": [
+        "TDRewardSystem"
+      ],
+      "functions": [
+        "state_key"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_reward_learning",
+        "tests.test_td_reward"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.temporal",
+      "files": [
+        "brain/temporal.py"
+      ],
+      "classes": [
+        "TemporalPerception"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "environment",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.temporal_prediction",
+      "files": [
+        "brain/temporal_prediction.py"
+      ],
+      "classes": [
+        "TemporalPredictor"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.text_extract",
+      "files": [
+        "brain/text_extract.py"
+      ],
+      "classes": [],
+      "functions": [
+        "extract_plain_text"
+      ],
+      "imports": [
+        "PIL",
+        "__future__",
+        "easyocr",
+        "fitz",
+        "io",
+        "os",
+        "pypdf",
+        "pytesseract",
+        "re",
+        "zipfile"
+      ],
+      "imported_by": [
+        "scripts.import_user_books",
+        "scripts.ocr_infant_book"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.thoughts",
+      "files": [
+        "brain/thoughts.py"
+      ],
+      "classes": [
+        "ThoughtGenerator"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "numpy",
+        "time",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.validation_dynamics",
+      "files": [
+        "brain/validation_dynamics.py"
+      ],
+      "classes": [
+        "BatteryExperiment",
+        "ValidationDynamicsStack"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "experiment_flags",
+        "experiments.metrics",
+        "experiments.run_batch",
+        "importlib.util",
+        "mind",
+        "numpy",
+        "pathlib",
+        "profile",
+        "shutil",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.run_battery_10k",
+        "tests.test_validation_dynamics"
+      ],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.vascular",
+      "files": [
+        "brain/vascular.py"
+      ],
+      "classes": [
+        "CerebralVascularBed"
+      ],
+      "functions": [
+        "lactate_penalty"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_scale_architecture"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.verbalize",
+      "files": [
+        "brain/verbalize.py"
+      ],
+      "classes": [],
+      "functions": [
+        "humanize_memory_label",
+        "format_episode_label",
+        "humanize_feeling",
+        "humanize_visible"
+      ],
+      "imports": [
+        "__future__",
+        "re"
+      ],
+      "imported_by": [
+        "tests.test_verbalize",
+        "tests.test_verbalize_feelings"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.vestibular",
+      "files": [
+        "brain/vestibular.py"
+      ],
+      "classes": [
+        "VestibularPathway"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.virtual_assembly",
+      "files": [
+        "brain/virtual_assembly.py"
+      ],
+      "classes": [
+        "VirtualAssemblyStore"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "engram_codec",
+        "hashlib",
+        "memory_store",
+        "numpy",
+        "pathlib",
+        "sqlite3",
+        "time",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_virtual_assembly_codec"
+      ],
+      "randomness": [
+        "np.random",
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.vision",
+      "files": [
+        "brain/vision.py"
+      ],
+      "classes": [
+        "VisualPercept",
+        "SaccadeController"
+      ],
+      "functions": [
+        "scan_world",
+        "encode_visual",
+        "enrich_depth_2_5d"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "numpy",
+        "typing",
+        "world"
+      ],
+      "imported_by": [
+        "tests.test_sensory_perception"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.web_fetch",
+      "files": [
+        "brain/web_fetch.py"
+      ],
+      "classes": [],
+      "functions": [
+        "fetch_page_text"
+      ],
+      "imports": [
+        "__future__",
+        "re",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.web_search",
+      "files": [
+        "brain/web_search.py"
+      ],
+      "classes": [],
+      "functions": [
+        "search",
+        "format_for_learning"
+      ],
+      "imports": [
+        "__future__",
+        "html",
+        "json",
+        "os",
+        "re",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "imported_by": [
+        "tests.test_web_search"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.working_memory",
+      "files": [
+        "brain/working_memory.py"
+      ],
+      "classes": [
+        "WorkingMemory"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_wm_attention"
+      ],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.world",
+      "files": [
+        "brain/world.py"
+      ],
+      "classes": [
+        "WorldObject",
+        "Furniture",
+        "World2D"
+      ],
+      "functions": [
+        "kind_from_modality"
+      ],
+      "imports": [
+        "__future__",
+        "behavior_integration",
+        "curiosity",
+        "dataclasses",
+        "environment",
+        "food_system",
+        "material_qualities",
+        "numpy"
+      ],
+      "imported_by": [
+        "tests.test_biomechanics",
+        "tests.test_food_system",
+        "tests.test_nociception",
+        "tests.test_reward_learning"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "brain.youtube_tool",
+      "files": [
+        "brain/youtube_tool.py"
+      ],
+      "classes": [],
+      "functions": [
+        "search"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "re",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.__init__",
+      "files": [
+        "nexo/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.agency_metrics",
+      "files": [
+        "nexo/agency_metrics.py"
+      ],
+      "classes": [
+        "AgencyMetrics"
+      ],
+      "functions": [
+        "sigmoid",
+        "confidence_from_margin",
+        "compute_agency_metrics"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "brain.deliberation"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.behavioral_tasks",
+      "files": [
+        "nexo/behavioral_tasks.py"
+      ],
+      "classes": [
+        "BehavioralTaskResult"
+      ],
+      "functions": [
+        "task_distraction_control",
+        "task_reward_reversal"
+      ],
+      "imports": [
+        "__future__",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "nexo.experiment_conditions",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.connectome.__init__",
+      "files": [
+        "nexo/connectome/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "nexo.connectome.connection",
+        "nexo.connectome.graph",
+        "nexo.connectome.routing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.connectome.connection",
+      "files": [
+        "nexo/connectome/connection.py"
+      ],
+      "classes": [
+        "Connection"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses"
+      ],
+      "imported_by": [
+        "nexo.connectome.__init__",
+        "nexo.connectome.graph",
+        "nexo.connectome.routing"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.connectome.graph",
+      "files": [
+        "nexo/connectome/graph.py"
+      ],
+      "classes": [
+        "ConnectomeGraph"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "nexo.connectome.connection",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "imported_by": [
+        "nexo.connectome.__init__",
+        "nexo.connectome.routing",
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.connectome.plastic_connectivity",
+      "files": [
+        "nexo/connectome/plastic_connectivity.py"
+      ],
+      "classes": [
+        "PlasticityState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses"
+      ],
+      "imported_by": [
+        "nexo.connectome.routing"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.connectome.routing",
+      "files": [
+        "nexo/connectome/routing.py"
+      ],
+      "classes": [
+        "ConnectomeRouter"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "nexo.connectome.connection",
+        "nexo.connectome.graph",
+        "nexo.connectome.plastic_connectivity",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.connectome.__init__",
+        "nexo.core.module_protocol",
+        "nexo.core.scheduler",
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.__init__",
+      "files": [
+        "nexo/core/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "nexo.core.clock",
+        "nexo.core.cognitive_state",
+        "nexo.core.events",
+        "nexo.core.scheduler",
+        "nexo.core.state_store"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.clock",
+      "files": [
+        "nexo/core/clock.py"
+      ],
+      "classes": [
+        "SimulationClock"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses"
+      ],
+      "imported_by": [
+        "nexo.core.__init__",
+        "nexo.core.module_protocol",
+        "nexo.core.scheduler",
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.cognitive_state",
+      "files": [
+        "nexo/core/cognitive_state.py"
+      ],
+      "classes": [
+        "HomeostaticState",
+        "AffectiveState",
+        "CognitiveState"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses"
+      ],
+      "imported_by": [
+        "nexo.core.__init__",
+        "nexo.core.state_store"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.events",
+      "files": [
+        "nexo/core/events.py"
+      ],
+      "classes": [
+        "CognitiveEvent",
+        "HomeostaticEnergyChanged",
+        "PerceptionUpdated",
+        "AttentionFocusChanged",
+        "ActionSelected",
+        "MemoryEncoded"
+      ],
+      "functions": [
+        "new_trace_id"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing",
+        "uuid"
+      ],
+      "imported_by": [
+        "nexo.core.__init__",
+        "nexo.core.module_protocol",
+        "nexo.core.process",
+        "nexo.core.scheduler",
+        "nexo.core.state_store",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.messages",
+      "files": [
+        "nexo/core/messages.py"
+      ],
+      "classes": [
+        "CognitiveMessage",
+        "MessageBus"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.core.module_protocol",
+        "nexo.core.scheduler"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.module_protocol",
+      "files": [
+        "nexo/core/module_protocol.py"
+      ],
+      "classes": [
+        "ProcessContext",
+        "CognitiveProcess"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nexo.connectome.routing",
+        "nexo.core.clock",
+        "nexo.core.events",
+        "nexo.core.messages",
+        "nexo.core.state_store",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.core.process",
+        "nexo.core.scheduler"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.process",
+      "files": [
+        "nexo/core/process.py"
+      ],
+      "classes": [
+        "BaseProcess",
+        "SensoryRelayProcess",
+        "InteroceptionProcess",
+        "AttentionProcess",
+        "WorkingMemoryProcess",
+        "HomeostasisProcess",
+        "BasalGangliaSelectorProcess",
+        "MotorExecutionProcess",
+        "EpisodicMemoryProcess",
+        "LegacyBrainAdapterProcess"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nexo.core.events",
+        "nexo.core.module_protocol",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.scheduler",
+      "files": [
+        "nexo/core/scheduler.py"
+      ],
+      "classes": [
+        "ProcessRegistration",
+        "CognitiveScheduler"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nexo.connectome.routing",
+        "nexo.core.clock",
+        "nexo.core.events",
+        "nexo.core.messages",
+        "nexo.core.module_protocol",
+        "nexo.core.state_store",
+        "nexo.telemetry.recorder",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.core.__init__",
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.state_store",
+      "files": [
+        "nexo/core/state_store.py"
+      ],
+      "classes": [
+        "StateStore"
+      ],
+      "functions": [
+        "reduce_state"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nexo.core.cognitive_state",
+        "nexo.core.events"
+      ],
+      "imported_by": [
+        "nexo.core.__init__",
+        "nexo.core.module_protocol",
+        "nexo.core.scheduler",
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.core.timescale",
+      "files": [
+        "nexo/core/timescale.py"
+      ],
+      "classes": [
+        "Timescale"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "enum"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.decision_audit",
+      "files": [
+        "nexo/decision_audit.py"
+      ],
+      "classes": [
+        "AgencyViolation",
+        "_ChoiceKeyAssignVisitor"
+      ],
+      "functions": [
+        "scan_brain_tree"
+      ],
+      "imports": [
+        "__future__",
+        "ast",
+        "dataclasses",
+        "nexo.paths",
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_decision_audit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.decision_port",
+      "files": [
+        "nexo/decision_port.py"
+      ],
+      "classes": [
+        "DecisionSource",
+        "Decision",
+        "DecisionPort"
+      ],
+      "functions": [
+        "config_hash_from_brain"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum",
+        "nexo.experiment_conditions",
+        "typing"
+      ],
+      "imported_by": [
+        "brain.deliberation",
+        "tests.test_decision_audit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.demo.room_scenario",
+      "files": [
+        "nexo/demo/room_scenario.py"
+      ],
+      "classes": [
+        "RoomWorld"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "uuid"
+      ],
+      "imported_by": [
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.environment",
+      "files": [
+        "nexo/environment.py"
+      ],
+      "classes": [],
+      "functions": [
+        "git_commit",
+        "git_dirty",
+        "capture_environment",
+        "write_environment_files"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "nexo.paths",
+        "pathlib",
+        "platform",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.run_smoke_experiments"
+      ],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.experiment_conditions",
+      "files": [
+        "nexo/experiment_conditions.py"
+      ],
+      "classes": [
+        "ExperimentCondition"
+      ],
+      "functions": [
+        "find_unclassified_enable_flags",
+        "baseline_legacy_flags",
+        "roadmap100_full_v1_flags",
+        "roadmap100_safe_v1_flags",
+        "roadmap100_no_binding_v1_flags",
+        "roadmap100_no_pfc_v1_flags",
+        "roadmap100_no_hippocampus_v1_flags",
+        "roadmap100_no_affect_v1_flags",
+        "roadmap100_no_consciousness_v1_flags",
+        "legacy_no_binding_flags",
+        "legacy_no_pfc_flags",
+        "legacy_no_hippocampus_flags",
+        "legacy_no_affect_flags",
+        "legacy_no_consciousness_flags",
+        "get_condition"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "dataclasses",
+        "enum",
+        "hashlib",
+        "json",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.run_batch",
+        "experiments.run_smoke_experiments",
+        "nexo.behavioral_tasks",
+        "nexo.decision_port",
+        "tests.test_experiment_conditions",
+        "tests.test_reproducibility"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.integrated_runtime",
+      "files": [
+        "nexo/integrated_runtime.py"
+      ],
+      "classes": [
+        "IntegratedRuntimeConfig",
+        "IntegratedRuntime"
+      ],
+      "functions": [
+        "load_yaml_config",
+        "runtime_from_config"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "json",
+        "nexo.connectome.graph",
+        "nexo.connectome.routing",
+        "nexo.core.clock",
+        "nexo.core.process",
+        "nexo.core.scheduler",
+        "nexo.core.state_store",
+        "nexo.demo.room_scenario",
+        "nexo.random_streams",
+        "nexo.telemetry.recorder",
+        "numpy",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "imported_by": [
+        "experiments.integrated_demo.run_recurrent_demo",
+        "nexo.run",
+        "tests.test_integrated_core"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.paths",
+      "files": [
+        "nexo/paths.py"
+      ],
+      "classes": [],
+      "functions": [
+        "repo_root",
+        "reports_dir",
+        "configs_dir",
+        "results_dir",
+        "schemas_dir"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib"
+      ],
+      "imported_by": [
+        "experiments.run_battery",
+        "experiments.run_sensitivity_analysis",
+        "nexo.decision_audit",
+        "nexo.environment",
+        "tests.test_decision_audit"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.random_streams",
+      "files": [
+        "nexo/random_streams.py"
+      ],
+      "classes": [
+        "RandomStreams"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [
+        "nexo.integrated_runtime",
+        "tests.test_integrated_core",
+        "tests.test_reproducibility"
+      ],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.result_schema",
+      "files": [
+        "nexo/result_schema.py"
+      ],
+      "classes": [
+        "ExperimentResult"
+      ],
+      "functions": [
+        "trajectory_hash"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "platform",
+        "sys",
+        "typing"
+      ],
+      "imported_by": [
+        "experiments.run_smoke_experiments",
+        "tests.test_reproducibility"
+      ],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.run",
+      "files": [
+        "nexo/run.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.mind",
+        "brain.profile",
+        "json",
+        "nexo.integrated_runtime",
+        "pathlib",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.simulation_clock",
+      "files": [
+        "nexo/simulation_clock.py"
+      ],
+      "classes": [
+        "SimulationClock"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.statistics",
+      "files": [
+        "nexo/statistics.py"
+      ],
+      "classes": [
+        "SeedSummary"
+      ],
+      "functions": [
+        "summarize_values"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "numpy",
+        "typing"
+      ],
+      "imported_by": [
+        "tests.test_statistics"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.telemetry.__init__",
+      "files": [
+        "nexo/telemetry/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "nexo.telemetry.recorder"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "nexo.telemetry.recorder",
+      "files": [
+        "nexo/telemetry/recorder.py"
+      ],
+      "classes": [
+        "TelemetryLevel",
+        "TelemetryRecorder"
+      ],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum",
+        "typing"
+      ],
+      "imported_by": [
+        "nexo.core.scheduler",
+        "nexo.integrated_runtime",
+        "nexo.telemetry.__init__"
+      ],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.__init__",
+      "files": [
+        "experiments/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.ablation_flags",
+      "files": [
+        "experiments/ablation_flags.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "brain.experiment_flags"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.__init__",
+      "files": [
+        "experiments/arena/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "__future__",
+        "task_discrimination",
+        "task_dry_fountain",
+        "task_hunger_unknown_bowl",
+        "task_hygiene_unknown_bath",
+        "task_physics_locomotion",
+        "task_thirst_unknown_water",
+        "task_transfer_fountain"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_discrimination",
+      "files": [
+        "experiments/arena/task_discrimination.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_discrimination_good_vs_dry"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_dry_fountain",
+      "files": [
+        "experiments/arena/task_dry_fountain.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_dry_fountain_failure"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_hunger_unknown_bowl",
+      "files": [
+        "experiments/arena/task_hunger_unknown_bowl.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_hunger_unknown_bowl_arm"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_hygiene_unknown_bath",
+      "files": [
+        "experiments/arena/task_hygiene_unknown_bath.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_hygiene_unknown_bath_arm"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_physics_locomotion",
+      "files": [
+        "experiments/arena/task_physics_locomotion.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_physics_locomotion_smoke"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_thirst_unknown_water",
+      "files": [
+        "experiments/arena/task_thirst_unknown_water.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_thirst_unknown_water_arm",
+        "summarize_thirst_rows"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.arena.task_transfer_fountain",
+      "files": [
+        "experiments/arena/task_transfer_fountain.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_transfer_fountain_arm"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "experiments.profile_select",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.bench_tick_gpu",
+      "files": [
+        "experiments/bench_tick_gpu.py"
+      ],
+      "classes": [],
+      "functions": [
+        "bench_profile",
+        "run_bench",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.backend",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "gpu_env",
+        "metrics",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "psutil",
+        "resource",
+        "shutil",
+        "tempfile",
+        "time"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.gpu_env",
+      "files": [
+        "experiments/gpu_env.py"
+      ],
+      "classes": [],
+      "functions": [
+        "enable_experiment_gpu",
+        "release_experiment_gpu",
+        "gpu_label"
+      ],
+      "imports": [
+        "__future__",
+        "brain.backend",
+        "os"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.integrated_demo.run_recurrent_demo",
+      "files": [
+        "experiments/integrated_demo/run_recurrent_demo.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "nexo.integrated_runtime",
+        "pathlib",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.metrics",
+      "files": [
+        "experiments/metrics.py"
+      ],
+      "classes": [
+        "TickMetrics",
+        "MetricsLogger"
+      ],
+      "functions": [
+        "top_drive_name",
+        "drive_coherence",
+        "extract_tick_metrics",
+        "write_summary_csv"
+      ],
+      "imports": [
+        "__future__",
+        "brain.deliberation",
+        "csv",
+        "dataclasses",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.plot_figures",
+      "files": [
+        "experiments/plot_figures.py"
+      ],
+      "classes": [],
+      "functions": [
+        "plot_ablation",
+        "plot_spike_alignment",
+        "plot_llm_invariance",
+        "plot_sleep_recall",
+        "plot_e4_selective_sleep",
+        "plot_e5_grounding",
+        "plot_e7_multimodal",
+        "plot_bench_tick",
+        "plot_e8_causal_arena",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "json",
+        "matplotlib.pyplot",
+        "numpy",
+        "pathlib"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.process_guard",
+      "files": [
+        "experiments/process_guard.py"
+      ],
+      "classes": [],
+      "functions": [
+        "pipeline_root_pid",
+        "find_stale_processes",
+        "kill_stale_processes",
+        "register_pipeline_root",
+        "ensure_clean_pipeline",
+        "ensure_pipeline_hygiene",
+        "pipeline_env",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "os",
+        "re",
+        "signal",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.profile_select",
+      "files": [
+        "experiments/profile_select.py"
+      ],
+      "classes": [],
+      "functions": [
+        "profile_label",
+        "set_profile_env"
+      ],
+      "imports": [
+        "__future__",
+        "brain.profile",
+        "os"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_all",
+      "files": [
+        "experiments/run_all.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.experiment_flags",
+        "gpu_env",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_arena_extra",
+      "files": [
+        "experiments/run_arena_extra.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_all",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.arena.task_dry_fountain",
+        "experiments.arena.task_hunger_unknown_bowl",
+        "experiments.gpu_env",
+        "experiments.metrics",
+        "experiments.process_guard",
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_arena_level24",
+      "files": [
+        "experiments/run_arena_level24.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_all",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.arena.task_hygiene_unknown_bath",
+        "experiments.arena.task_physics_locomotion",
+        "experiments.arena.task_transfer_fountain",
+        "experiments.gpu_env",
+        "experiments.process_guard",
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_arena_level25",
+      "files": [
+        "experiments/run_arena_level25.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_all",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.arena.task_discrimination",
+        "experiments.gpu_env",
+        "experiments.process_guard",
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_arena_thirst",
+      "files": [
+        "experiments/run_arena_thirst.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_all",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.arena",
+        "experiments.gpu_env",
+        "experiments.metrics",
+        "experiments.process_guard",
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_batch",
+      "files": [
+        "experiments/run_batch.py"
+      ],
+      "classes": [],
+      "functions": [
+        "make_brain",
+        "run_simulation",
+        "run_llm_invariance",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.backend",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "concurrent.futures",
+        "gpu_env",
+        "metrics",
+        "nexo.experiment_conditions",
+        "numpy",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "shutil",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_battery",
+      "files": [
+        "experiments/run_battery.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "nexo.paths",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "yaml"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_battery_10k",
+      "files": [
+        "experiments/run_battery_10k.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_battery",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.agency_audit",
+        "brain.validation_dynamics",
+        "datetime",
+        "gpu_env",
+        "json",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "run_e1_parallel",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_e1_parallel",
+      "files": [
+        "experiments/run_e1_parallel.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main",
+        "apply_turbo_gpu_env"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.experiment_flags",
+        "concurrent.futures",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_e4_sleep_selective",
+      "files": [
+        "experiments/run_e4_sleep_selective.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_e4_protocol",
+        "run_all_e4",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.encode",
+        "brain.mind",
+        "gpu_env",
+        "metrics",
+        "numpy",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "shutil",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_e5_grounding",
+      "files": [
+        "experiments/run_e5_grounding.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_e5_arm",
+        "run_all_e5",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "gpu_env",
+        "metrics",
+        "numpy",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "shutil",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_e7_multimodal",
+      "files": [
+        "experiments/run_e7_multimodal.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_e7_arm",
+        "run_all_e7",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses",
+        "gpu_env",
+        "metrics",
+        "numpy",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "shutil",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_parallel",
+      "files": [
+        "experiments/run_parallel.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.experiment_flags",
+        "concurrent.futures",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_sensitivity_analysis",
+      "files": [
+        "experiments/run_sensitivity_analysis.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "json",
+        "nexo.paths",
+        "pathlib",
+        "yaml"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_sleep",
+      "files": [
+        "experiments/run_sleep.py"
+      ],
+      "classes": [],
+      "functions": [
+        "run_sleep_protocol",
+        "run_all_e3",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.encode",
+        "brain.mind",
+        "gpu_env",
+        "metrics",
+        "numpy",
+        "os",
+        "pathlib",
+        "process_guard",
+        "profile_select",
+        "shutil",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "experiments.run_smoke_experiments",
+      "files": [
+        "experiments/run_smoke_experiments.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "brain.mind",
+        "brain.profile",
+        "json",
+        "nexo.environment",
+        "nexo.experiment_conditions",
+        "nexo.result_schema",
+        "pathlib",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_affect_dynamics",
+      "files": [
+        "tests/test_affect_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_receptor_panel_alpha_beta",
+        "test_hpa_axis_cascade",
+        "test_pfc_amygdala_fear_inhibition",
+        "test_empathy_contagion_near_companion",
+        "test_bowlby_attachment_styles",
+        "test_social_shame_on_failure",
+        "test_liking_vs_wanting_split",
+        "test_goal_frustration_and_stall",
+        "test_persistent_mood_inertia",
+        "test_social_turn_state"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.affect",
+        "brain.affect_dynamics",
+        "brain.experiment_flags",
+        "brain.goal_stack",
+        "brain.profile",
+        "dataclasses",
+        "numpy",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_affordance_map",
+      "files": [
+        "tests/test_affordance_map.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_affordance_learns_observed_consequence_and_confidence",
+        "test_failed_prediction_reduces_confidence",
+        "test_object_instances_remain_distinct",
+        "test_affordance_evidence_is_bounded_and_does_not_choose",
+        "test_affordance_persistence_round_trip",
+        "test_corrupt_persistence_fails_closed",
+        "test_real_drink_event_observes_before_after_without_forcing_choice",
+        "test_pfc_consumes_affordance_evidence_but_selects_the_winner",
+        "test_paper_default_affordances_off"
+      ],
+      "imports": [
+        "__future__",
+        "brain.affordance_map",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_agent_loop",
+      "files": [
+        "tests/test_agent_loop.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_connectome_blueprint_seed_stable",
+        "test_cortical_chunk_same_seed_same_pattern",
+        "test_goal_stack_navigate_then_interact",
+        "test_deliberation_rechoice_penalty",
+        "test_world_tick_headless_agent_loop",
+        "test_scaffold_connectome_metrics_always_present"
+      ],
+      "imports": [
+        "__future__",
+        "brain.connectome_blueprint",
+        "brain.cortical_chunks",
+        "brain.experiment_flags",
+        "brain.goal_stack",
+        "brain.mind",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_arena_thirst",
+      "files": [
+        "tests/test_arena_thirst.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_novel_fountain_drink_event_and_affordance",
+        "test_headless_applies_drink_consequences",
+        "test_telemetry_records_without_selecting_actions",
+        "test_arena_arm_smoke_aff_on_learns"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.neural_telemetry",
+        "brain.profile",
+        "dataclasses",
+        "experiments.arena.task_thirst_unknown_water",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_behavior_integration",
+      "files": [
+        "tests/test_behavior_integration.py"
+      ],
+      "classes": [],
+      "functions": [
+        "brain",
+        "test_choice_allows_event",
+        "test_pick_desk_research_is_web",
+        "test_pick_desk_study_uses_track_progress",
+        "test_deliberation_boost_for_clinical_track",
+        "test_sleep_weights_reflect_progress"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.behavior_integration",
+        "brain.experiment_flags",
+        "brain.profile",
+        "dataclasses",
+        "pathlib",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_bench_e7",
+      "files": [
+        "tests/test_bench_e7.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_bench_compact_ok",
+        "test_bench_50k_skips_without_forcing_on_cpu_path",
+        "test_e7_vision_ablation_drops_thalamic_gain"
+      ],
+      "imports": [
+        "__future__",
+        "brain.backend",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "experiments.bench_tick_gpu",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_biomechanics",
+      "files": [
+        "tests/test_biomechanics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_physics_movement_and_friction",
+        "test_collision_impulse_and_ragdoll",
+        "test_biomech_feeds_body_and_nociception",
+        "test_world_physics_motor",
+        "test_spinal_shock_propagation",
+        "test_water_buoyancy"
+      ],
+      "imports": [
+        "__future__",
+        "brain.biomechanics",
+        "brain.body",
+        "brain.nociception",
+        "brain.ragdoll_skeleton",
+        "brain.world"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_brain_facts",
+      "files": [
+        "tests/test_brain_facts.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_manifest_has_chapters",
+        "test_circuit_edges_cover_core_paths",
+        "test_study_chapter_updates_progress",
+        "test_circuit_hub_tick"
+      ],
+      "imports": [
+        "brain.brain_facts",
+        "brain.circuit_hub",
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_caregiver_dialogue",
+      "files": [
+        "tests/test_caregiver_dialogue.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_calor_gets_coherent_reply",
+        "test_acknowledges_user_words",
+        "test_fragmentary_detected",
+        "test_no_te_entiendo_reply",
+        "test_internal_dump_not_engaging"
+      ],
+      "imports": [
+        "__future__",
+        "brain.caregiver_dialogue"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_circadian",
+      "files": [
+        "tests/test_circadian.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_circadian_profile_night_has_more_sleep_drive",
+        "test_circadian_tick_biases_sleep_pressure_and_fatigue",
+        "test_time_state_hud_exposes_circadian_when_enabled"
+      ],
+      "imports": [
+        "__future__",
+        "brain.environment",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_consciousness",
+      "files": [
+        "tests/test_consciousness.py"
+      ],
+      "classes": [
+        "FakeRow"
+      ],
+      "functions": [
+        "test_consciousness_selects_winner",
+        "test_consciousness_biases_deliberation",
+        "test_self_model_narrative",
+        "test_conscious_replay_weight",
+        "test_sync_after_deliberation"
+      ],
+      "imports": [
+        "brain.consciousness",
+        "brain.deliberation",
+        "brain.memory_store",
+        "brain.mind",
+        "json",
+        "time"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "time.time"
+      ],
+      "time_dependencies": [
+        "time.time"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_curriculum",
+      "files": [
+        "tests/test_curriculum.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_sections_count",
+        "test_suggest_next_in_order",
+        "test_study_section_marks_progress",
+        "test_anatomy_focus_boost"
+      ],
+      "imports": [
+        "brain.curriculum",
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_decision_audit",
+      "files": [
+        "tests/test_decision_audit.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_agency_audit_pass_on_real_brain",
+        "test_agency_audit_incomplete_without_brain",
+        "test_decision_port_rejects_unknown_source",
+        "test_decision_port_accepts_prefrontal"
+      ],
+      "imports": [
+        "__future__",
+        "nexo.decision_audit",
+        "nexo.decision_port",
+        "nexo.paths",
+        "pathlib",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_decompression_governor",
+      "files": [
+        "tests/test_decompression_governor.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_governor_resets_each_tick",
+        "test_governor_blocks_over_budget",
+        "test_priority_boost_increases_assembly_limit",
+        "test_chunk_limit_respected",
+        "test_prefetch_budget_separate_from_main",
+        "test_to_dict_has_expected_keys"
+      ],
+      "imports": [
+        "__future__",
+        "brain.decompression_governor"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_decompression_prefetch",
+      "files": [
+        "tests/test_decompression_prefetch.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_prefetcher_predicts_deliberation_alternatives",
+        "test_prefetch_tick_respects_governor_budget",
+        "test_governor_cumulative_persist_roundtrip"
+      ],
+      "imports": [
+        "__future__",
+        "brain.decompression_governor",
+        "brain.decompression_prefetch",
+        "brain.experiment_flags",
+        "brain.mind",
+        "dataclasses"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_demo_hud",
+      "files": [
+        "tests/test_demo_hud.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_demo_lite_profile_builds_brain",
+        "test_causal_hud_flask_route_shape",
+        "test_game_template_has_causal_panel",
+        "test_observatory_hud_route_shape"
+      ],
+      "imports": [
+        "__future__",
+        "brain.causal_hud",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.observatory_hud",
+        "brain.profile",
+        "dataclasses",
+        "flask",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_dialogue_engine",
+      "files": [
+        "tests/test_dialogue_engine.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_humanized_feelings_block",
+        "test_dyad_nexo_natural",
+        "test_dyad_nira_responds_to_partner",
+        "test_rejects_meta_assistant_refusal_like_user_report"
+      ],
+      "imports": [
+        "__future__",
+        "brain.dialogue_engine",
+        "brain.language_cortex"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_engram_codec",
+      "files": [
+        "tests/test_engram_codec.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_encode_decode_sparse_roundtrip",
+        "test_encode_decode_summary_roundtrip",
+        "test_legacy_summary_bytes_still_decode",
+        "test_chunk_pattern_codec",
+        "test_estimate_sparse_bytes_reasonable"
+      ],
+      "imports": [
+        "__future__",
+        "brain.engram_codec",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_executive_cognition",
+      "files": [
+        "tests/test_executive_cognition.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_attention_competitive_filter",
+        "test_tower_goal_stack",
+        "test_stroop_inhibits_limbic",
+        "test_set_shifting_cost",
+        "test_dmn_replay_at_rest",
+        "test_cingulate_redeliberate_signal",
+        "test_consciousness_global_workspace_hud",
+        "test_executive_metacognition_calibration"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.attention",
+        "brain.consciousness",
+        "brain.deliberation",
+        "brain.executive_cognition",
+        "brain.experiment_flags",
+        "brain.goal_stack",
+        "brain.profile",
+        "dataclasses",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_experiment_conditions",
+      "files": [
+        "tests/test_experiment_conditions.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_baseline_legacy_roadmap_off",
+        "test_unclassified_enable_flags_empty",
+        "test_roadmap100_no_binding_from_full_not_baseline",
+        "test_config_hash_stable",
+        "test_condition_families_distinct"
+      ],
+      "imports": [
+        "__future__",
+        "nexo.experiment_conditions"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_food_system",
+      "files": [
+        "tests/test_food_system.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_garden_crops_and_harvest",
+        "test_cook_and_eat_flow",
+        "test_crop_regrowth"
+      ],
+      "imports": [
+        "brain.food_system",
+        "brain.world"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_grounding",
+      "files": [
+        "tests/test_grounding.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_parse_grounding_fridge",
+        "test_paper_grounding_flag_off",
+        "test_grounding_boosts_drive_not_choice",
+        "test_grounding_off_no_boost_from_apply_path",
+        "test_grounding_can_guide_motivated_navigation_without_forcing_choice"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.grounding",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_hedonics",
+      "files": [
+        "tests/test_hedonics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_hedonic_reward_eat_cooked",
+        "test_hedonics_tick_syncs_body",
+        "test_merged_drives_include_cook"
+      ],
+      "imports": [
+        "brain.hedonics",
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_human_brain_features",
+      "files": [
+        "tests/test_human_brain_features.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_demo_profile_enables_scaffold",
+        "test_regional_latency",
+        "test_typed_memory_classification",
+        "test_sleep_architecture_phases",
+        "test_sleep_run_headless",
+        "test_procedural_bias_after_skill"
+      ],
+      "imports": [
+        "brain.experiment_flags",
+        "brain.memory_systems",
+        "brain.mind",
+        "brain.profile",
+        "brain.regional_latency",
+        "brain.sleep_architecture",
+        "dataclasses",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_imagination_stream",
+      "files": [
+        "tests/test_imagination_stream.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_imagination_stream_always_active",
+        "test_user_interact_rejects_motor_orders"
+      ],
+      "imports": [
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_integrated_core",
+      "files": [
+        "tests/test_integrated_core.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_simulation_clock_no_wall_time",
+        "test_state_store_reducer_energy",
+        "test_connectome_validates",
+        "test_same_seed_same_trajectory_integrated",
+        "test_different_seed_different_trajectory",
+        "test_substreams_reproducible",
+        "test_scheduler_runs_processes",
+        "test_room_world_no_hardcoded_success",
+        "test_integrated_demo_produces_actions_and_memory",
+        "test_energy_stays_non_negative",
+        "test_result_records_seed"
+      ],
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "nexo.connectome.graph",
+        "nexo.connectome.routing",
+        "nexo.core.clock",
+        "nexo.core.events",
+        "nexo.core.process",
+        "nexo.core.scheduler",
+        "nexo.core.state_store",
+        "nexo.demo.room_scenario",
+        "nexo.integrated_runtime",
+        "nexo.random_streams",
+        "pathlib",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_intention_circuit",
+      "files": [
+        "tests/test_intention_circuit.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_merge_intention_changes_sensory",
+        "test_basal_ganglia_spike_gated_deliberation",
+        "test_world_tick_binds_intention",
+        "test_record_spike_alignment"
+      ],
+      "imports": [
+        "__future__",
+        "brain.deliberation",
+        "brain.intention",
+        "brain.mind",
+        "brain.subcortex",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_language_dynamics",
+      "files": [
+        "tests/test_language_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_neural_backend_default",
+        "test_prosody_high_arousal",
+        "test_inner_vs_outer_speech",
+        "test_broca_aphasia_telegraphic",
+        "test_wernicke_distortion",
+        "test_bilingual_code_switch",
+        "test_seven_track_snapshot",
+        "test_curriculum_verbalization",
+        "test_tutor_rag_enabled",
+        "test_post_articulate_channels"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.experiment_flags",
+        "brain.language_cortex",
+        "brain.language_dynamics",
+        "brain.language_network",
+        "brain.neural_language",
+        "brain.profile",
+        "dataclasses",
+        "os",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_language_network",
+      "files": [
+        "tests/test_language_network.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_needs_question_natural",
+        "test_caregiver_network_no_fragment_dump"
+      ],
+      "imports": [
+        "__future__",
+        "brain.caregiver_dialogue",
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_language_tutor_rag",
+      "files": [
+        "tests/test_language_tutor_rag.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_tutor_label_roundtrip",
+        "test_adapt_learned_exemplar",
+        "test_learn_and_recall_via_rag"
+      ],
+      "imports": [
+        "__future__",
+        "brain.language_cortex",
+        "brain.language_network",
+        "brain.language_tutor_rag",
+        "brain.mind"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_learned_schemas",
+      "files": [
+        "tests/test_learned_schemas.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_paper_learned_schema_flags_off",
+        "test_schema_consolidates_after_n_successes",
+        "test_learned_schemas_enter_menu_not_force_choice",
+        "test_lifecycle_neuro_modulation_by_stage",
+        "test_lifecycle_plasticity_scales_cortex"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.learned_schemas",
+        "brain.lifecycle",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_level23",
+      "files": [
+        "tests/test_level23.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_causal_hud_read_only",
+        "test_counterfactual_bias_bounded_and_agency_safe",
+        "test_affordance_sleep_prunes_chronic_failures",
+        "test_demo_lite_profile_env",
+        "test_meta_filter_and_drive_fallback",
+        "test_novel_bowl_eat_and_affordance",
+        "test_dry_fountain_learns_failure",
+        "test_hunger_arena_smoke_aff_on"
+      ],
+      "imports": [
+        "__future__",
+        "brain.affordance_map",
+        "brain.causal_hud",
+        "brain.counterfactual_simulator",
+        "brain.dialogue_engine",
+        "brain.experiment_flags",
+        "brain.language_cortex",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "experiments.arena.task_dry_fountain",
+        "experiments.arena.task_hunger_unknown_bowl",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_level24",
+      "files": [
+        "tests/test_level24.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_nearest_furniture_and_multiple_fountains",
+        "test_schema_from_affordance_success",
+        "test_transfer_fountain_aff_on",
+        "test_hygiene_arena_smoke",
+        "test_physics_locomotion_smoke"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.learned_schemas",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "experiments.arena.task_hygiene_unknown_bath",
+        "experiments.arena.task_physics_locomotion",
+        "experiments.arena.task_transfer_fountain",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_level25",
+      "files": [
+        "tests/test_level25.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_per_object_dry_flag",
+        "test_discrimination_aff_on_prefers_good",
+        "test_transfer_still_works_after_discrimination_nav_fix"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "dataclasses",
+        "experiments.arena.task_discrimination",
+        "experiments.arena.task_transfer_fountain",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_lifecycle_dynamics",
+      "files": [
+        "tests/test_lifecycle_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_full_sleep_cycle_builds_timeline",
+        "test_maybe_trigger_sleep_requires_rest_and_night",
+        "test_nocturnal_study_weights",
+        "test_lifecycle_stages_plasticity",
+        "test_puberty_hormones_adolescent_only",
+        "test_cognitive_aging_wm_and_recall",
+        "test_deliberation_aging_boost",
+        "test_post_tick_integration",
+        "test_recall_penalty_in_memory_dynamics",
+        "test_to_dict_hud_fields"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.deliberation",
+        "brain.experiment_flags",
+        "brain.lifecycle_dynamics",
+        "brain.memory_dynamics",
+        "brain.profile",
+        "dataclasses",
+        "pytest",
+        "unittest.mock"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_lobe_columns_replay",
+      "files": [
+        "tests/test_lobe_columns_replay.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_lobe_columns_bind_and_step",
+        "test_lobe_columns_increase_neuron_count",
+        "test_daytime_replay_on_surprise",
+        "test_daytime_replay_cooldown"
+      ],
+      "imports": [
+        "__future__",
+        "brain.daytime_replay",
+        "brain.lobe_cortex",
+        "brain.mind",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_lobes_circuit",
+      "files": [
+        "tests/test_lobes_circuit.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_lobe_router_bands",
+        "test_olfaction_bypasses_thalamus",
+        "test_hippocampus_stress_dampens",
+        "test_pfc_veto_blocks_limbic_motor",
+        "test_reflexes_surprise",
+        "test_stress_factor",
+        "test_room_odors_cover_kitchen"
+      ],
+      "imports": [
+        "__future__",
+        "brain.hippocampus_core",
+        "brain.intention",
+        "brain.lobes",
+        "brain.mind",
+        "brain.reflexes",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_material_qualities",
+      "files": [
+        "tests/test_material_qualities.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_fridge_is_cold",
+        "test_stove_hot_when_cooking_context",
+        "test_crop_qualities"
+      ],
+      "imports": [
+        "__future__",
+        "brain.material_qualities"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_memory_dynamics",
+      "files": [
+        "tests/test_memory_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_forgetting_curve_emotional_slower",
+        "test_rich_episodic_context_vector",
+        "test_fuse_episodic_with_rich",
+        "test_flashbulb_mark",
+        "test_interference_penalty",
+        "test_memory_dynamics_on_encode",
+        "test_adjust_recall_score_flashbulb_boost",
+        "test_working_memory_limited_capacity"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.consolidation",
+        "brain.episodic_context",
+        "brain.experiment_flags",
+        "brain.memory_dynamics",
+        "brain.profile",
+        "dataclasses",
+        "numpy",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_motor_dynamics",
+      "files": [
+        "tests/test_motor_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_continuous_motor_bind",
+        "test_cerebellum_adaptation",
+        "test_basal_habituation_boosts_go",
+        "test_muscular_fatigue_coupling",
+        "test_world_depth_sync",
+        "test_somatic_passive_contacts",
+        "test_food_cycle_tick",
+        "test_desk_study_deterministic"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.deliberation",
+        "brain.experiment_flags",
+        "brain.motor_dynamics",
+        "brain.profile",
+        "brain.somatic_affordances",
+        "dataclasses",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_neural_language",
+      "files": [
+        "tests/test_neural_language.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_resolve_backend_defaults_neural",
+        "test_resolve_backend_ollama_legacy",
+        "test_compose_world_from_drives",
+        "test_compose_chat_greeting",
+        "test_comprehend_topics",
+        "test_compose_chat_study_topic",
+        "test_study_voice_does_not_force_action",
+        "test_language_cortex_neural_backend"
+      ],
+      "imports": [
+        "__future__",
+        "brain.language_cortex",
+        "brain.neural_language",
+        "os"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_nociception",
+      "files": [
+        "tests/test_nociception.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_nociceptor_collision_projects_pain",
+        "test_nociceptor_tick_from_hunger",
+        "test_gate_inhibition_reduces_pain",
+        "test_sofa_contact_raises_comfort_without_navigation",
+        "test_no_somatic_contact_when_away_from_furniture"
+      ],
+      "imports": [
+        "__future__",
+        "brain.body",
+        "brain.nociception",
+        "brain.somatic_affordances",
+        "brain.world"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_reproducibility",
+      "files": [
+        "tests/test_reproducibility.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_same_seed_reproduces_full_trajectory",
+        "test_different_seed_changes_stochastic_trajectory",
+        "test_each_stream_reproduces_independently",
+        "test_streams_do_not_share_identical_sequences",
+        "test_brain_integrates_random_streams_without_manual_patch",
+        "test_seed_is_present_in_every_result",
+        "test_rng_is_not_recreated_from_age_ticks",
+        "test_roadmap100_full_v1_activates_memory",
+        "test_roadmap100_no_binding_from_full",
+        "test_baseline_differs_from_roadmap100_v1"
+      ],
+      "imports": [
+        "__future__",
+        "brain.deliberation",
+        "brain.mind",
+        "brain.profile",
+        "inspect",
+        "nexo.experiment_conditions",
+        "nexo.random_streams",
+        "nexo.result_schema",
+        "numpy"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_reward_learning",
+      "files": [
+        "tests/test_reward_learning.py"
+      ],
+      "classes": [
+        "FakeBrain",
+        "world"
+      ],
+      "functions": [
+        "test_td_go_bias_bounded",
+        "test_rpe_surprise_coupling",
+        "test_causal_transfer_between_objects",
+        "test_latent_affordance_probe",
+        "test_schema_extinction",
+        "test_model_based_pfc_boost",
+        "test_bcm_metaplasticity_step",
+        "test_td_hud_top_values"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.affordance_map",
+        "brain.deliberation",
+        "brain.experiment_flags",
+        "brain.learned_schemas",
+        "brain.profile",
+        "brain.reward_learning",
+        "brain.td_reward",
+        "brain.world",
+        "dataclasses",
+        "numpy",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_rhythm_dynamics",
+      "files": [
+        "tests/test_rhythm_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_pac_coupling_modulates_gamma",
+        "test_sleep_spindle_burst",
+        "test_motor_beta_when_pending",
+        "test_scn_jet_lag_recovery",
+        "test_scn_shifts_circadian_hour",
+        "test_lobe_white_matter_latencies",
+        "test_corpus_gamma_sync_with_pac",
+        "test_temporal_prediction_bias"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.experiment_flags",
+        "brain.neuroanatomy",
+        "brain.oscillations",
+        "brain.profile",
+        "brain.regional_latency",
+        "brain.scn_clock",
+        "dataclasses",
+        "numpy",
+        "os",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_s7_scale_motor_multi",
+      "files": [
+        "tests/test_s7_scale_motor_multi.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_scale_50k_active_lif_count",
+        "test_resolve_50k_profile",
+        "test_paper_s7_flags_off",
+        "test_continuous_motor_does_not_set_choice",
+        "test_multimodal_ablation_vision",
+        "test_lobe_virtual_inject_flag_wiring"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.motor_policy",
+        "brain.profile",
+        "brain.sensory_hub",
+        "dataclasses",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_scale_architecture",
+      "files": [
+        "tests/test_scale_architecture.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_scale_100k_profile_count",
+        "test_resolve_100k_profile",
+        "test_dg_sparsity_biological",
+        "test_laminar_stack_produces_boosts",
+        "test_subtype_inhibitory_circuit",
+        "test_governor_lobe_budgets",
+        "test_vascular_modulates_gain",
+        "test_epigenetic_profile_reduces_plasticity_in_adult"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.cortical_layers",
+        "brain.decompression_governor",
+        "brain.hippocampus_core",
+        "brain.inhibition",
+        "brain.lifecycle",
+        "brain.profile",
+        "brain.vascular",
+        "numpy",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_selective_sleep",
+      "files": [
+        "tests/test_selective_sleep.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_paper_selective_sleep_flag_off",
+        "test_replay_modes_change_weights",
+        "test_active_forgetting_reduces_neutral_count",
+        "test_sleep_selective_runs_and_reports_mode"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.memory_store",
+        "brain.mind",
+        "brain.profile",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_sensory_perception",
+      "files": [
+        "tests/test_sensory_perception.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_auditory_bands_from_echo",
+        "test_superior_colliculus_fuses_vision_audio",
+        "test_saccade_promotes_peripheral",
+        "test_depth_2_5d_map",
+        "test_referred_pain_from_viscera",
+        "test_baroreceptors_track_heart_rate",
+        "test_vestibular_vertigo_on_ragdoll",
+        "test_sensory_stack_integration"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.audition",
+        "brain.body",
+        "brain.experiment_flags",
+        "brain.nociception",
+        "brain.profile",
+        "brain.superior_colliculus",
+        "brain.vestibular",
+        "brain.vision",
+        "dataclasses",
+        "numpy",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_sleep_study",
+      "files": [
+        "tests/test_sleep_study.py"
+      ],
+      "classes": [],
+      "functions": [
+        "brain",
+        "test_sleep_study_disabled_by_default",
+        "test_sleep_study_repaso_writes_history",
+        "test_sleep_study_does_not_write_choice_key",
+        "test_sleep_study_log_persistence",
+        "test_sleep_architecture_rem_hook"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.experiment_flags",
+        "brain.profile",
+        "brain.sleep_study",
+        "dataclasses",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_smoke_results",
+      "files": [
+        "tests/test_smoke_results.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_smoke_results_exist",
+        "test_smoke_results_record_all_flags",
+        "test_smoke_results_record_config_hash",
+        "test_same_seed_smoke_result_is_reproducible",
+        "test_different_seed_smoke_changes_trajectory",
+        "test_smoke_results_validate_required_fields"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "pytest",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_statistics",
+      "files": [
+        "tests/test_statistics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_empty_sample",
+        "test_single_observation",
+        "test_zero_variance",
+        "test_nan_filtered",
+        "test_mean_difference_not_cohens_d"
+      ],
+      "imports": [
+        "__future__",
+        "math",
+        "nexo.statistics"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_study_tracks",
+      "files": [
+        "tests/test_study_tracks.py"
+      ],
+      "classes": [],
+      "functions": [
+        "brain",
+        "test_clinical_sections_loaded",
+        "test_biopsych_has_phases",
+        "test_infant_sections_loaded",
+        "test_clinical_study_marks_progress",
+        "test_sleep_study_library_kind",
+        "test_track_state_roundtrip"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.biopsych_curriculum",
+        "brain.clinical_neurology",
+        "brain.experiment_flags",
+        "brain.infant_brain_curriculum",
+        "brain.library",
+        "brain.profile",
+        "brain.study_track",
+        "dataclasses",
+        "pytest"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_td_reward",
+      "files": [
+        "tests/test_td_reward.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_td_observe_updates_value_and_delta",
+        "test_go_biases_capped_and_attenuated_by_conflict",
+        "test_td_does_not_force_winner_when_pfc_inhibits",
+        "test_paper_default_td_off",
+        "test_td_on_headless_learns"
+      ],
+      "imports": [
+        "__future__",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "brain.td_reward",
+        "dataclasses",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.seed"
+      ],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_validation_dynamics",
+      "files": [
+        "tests/test_validation_dynamics.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_battery_manifest_10k",
+        "test_smoke_battery_compact",
+        "test_observatory_hud_fields",
+        "test_agency_audit_no_violations",
+        "test_agency_audit_summary_ok",
+        "test_validation_to_dict",
+        "test_run_battery_manifest_only"
+      ],
+      "imports": [
+        "__future__",
+        "brain",
+        "brain.agency_audit",
+        "brain.experiment_flags",
+        "brain.observatory_hud",
+        "brain.profile",
+        "brain.validation_dynamics",
+        "dataclasses",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_verbalize",
+      "files": [
+        "tests/test_verbalize.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_humanize_technical_label",
+        "test_format_episode_label",
+        "test_imagination_compound"
+      ],
+      "imports": [
+        "brain.verbalize"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_verbalize_feelings",
+      "files": [
+        "tests/test_verbalize_feelings.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_pain_phrase",
+        "test_basic_feelings",
+        "test_visible_article",
+        "test_dyad_fallback_natural",
+        "test_broken_dyad_detected"
+      ],
+      "imports": [
+        "__future__",
+        "brain.language_cortex",
+        "brain.verbalize"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_virtual_assembly_codec",
+      "files": [
+        "tests/test_virtual_assembly_codec.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_virtual_assembly_egm_save_load",
+        "test_virtual_assembly_summary_codec"
+      ],
+      "imports": [
+        "__future__",
+        "brain.virtual_assembly",
+        "numpy",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_web_search",
+      "files": [
+        "tests/test_web_search.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_parse_ddg_lite_extracts_results",
+        "test_parse_google_html_extracts_h3_links",
+        "test_format_for_learning"
+      ],
+      "imports": [
+        "brain.web_search"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_wm_attention",
+      "files": [
+        "tests/test_wm_attention.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_wm_capacity_evicts_and_raises_load",
+        "test_wm_unlimited_when_flag_off",
+        "test_attention_pain_wins_bottom_up",
+        "test_attention_top_down_boosts_goal",
+        "test_paper_defaults_wm_attention_off",
+        "test_demo_flags_enable_s3"
+      ],
+      "imports": [
+        "__future__",
+        "brain.attention",
+        "brain.experiment_flags",
+        "brain.mind",
+        "brain.profile",
+        "brain.working_memory",
+        "dataclasses",
+        "pathlib",
+        "tempfile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "tests.test_world_movement",
+      "files": [
+        "tests/test_world_movement.py"
+      ],
+      "classes": [],
+      "functions": [
+        "test_agent_unstuck_from_furniture",
+        "test_agent_moves_after_unstuck",
+        "test_biomechanics_keeps_subpixel_motion_without_false_collision"
+      ],
+      "imports": [
+        "brain.mind",
+        "brain.profile"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.__init__",
+      "files": [
+        "scripts/__init__.py"
+      ],
+      "classes": [],
+      "functions": [],
+      "imports": [],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.build_release_artifact",
+      "files": [
+        "scripts/build_release_artifact.py"
+      ],
+      "classes": [],
+      "functions": [
+        "repo_root",
+        "validate_required_paths",
+        "collect_files",
+        "validate_zip_contents",
+        "build"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "typing",
+        "zipfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.check_dependency_consistency",
+      "files": [
+        "scripts/check_dependency_consistency.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "pathlib",
+        "re",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.force_sleep_now",
+      "files": [
+        "scripts/force_sleep_now.py"
+      ],
+      "classes": [],
+      "functions": [
+        "post",
+        "get",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "sys",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.generate_nexo_brain_audit",
+      "files": [
+        "scripts/generate_nexo_brain_audit.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "datetime",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "np.random",
+        "random.random",
+        "random.seed",
+        "time.time",
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "time.time",
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.generate_repository_inventory",
+      "files": [
+        "scripts/generate_repository_inventory.py"
+      ],
+      "classes": [],
+      "functions": [
+        "repo_root",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.import_user_books",
+      "files": [
+        "scripts/import_user_books.py"
+      ],
+      "classes": [],
+      "functions": [
+        "import_paths",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "brain.library",
+        "brain.text_extract",
+        "pathlib",
+        "shutil",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.ingest_anatomy_ucadiz",
+      "files": [
+        "scripts/ingest_anatomy_ucadiz.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "pypdf",
+        "re",
+        "shutil",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.ingest_brain_facts",
+      "files": [
+        "scripts/ingest_brain_facts.py"
+      ],
+      "classes": [],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "pypdf",
+        "re",
+        "shutil",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.ocr_infant_book",
+      "files": [
+        "scripts/ocr_infant_book.py"
+      ],
+      "classes": [],
+      "functions": [
+        "ocr_pdf_tesseract",
+        "ocr_pdf_easyocr",
+        "extract_infant_text",
+        "update_sections",
+        "main"
+      ],
+      "imports": [
+        "PIL",
+        "__future__",
+        "brain.library",
+        "brain.text_extract",
+        "easyocr",
+        "fitz",
+        "io",
+        "json",
+        "os",
+        "pathlib",
+        "pytesseract",
+        "re",
+        "sys"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.validate_roadmap_traceability",
+      "files": [
+        "scripts/validate_roadmap_traceability.py"
+      ],
+      "classes": [],
+      "functions": [
+        "build_traceability",
+        "validate",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "imported_by": [],
+      "randomness": [],
+      "time_dependencies": [],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.verify_artifact",
+      "files": [
+        "scripts/verify_artifact.py"
+      ],
+      "classes": [],
+      "functions": [
+        "safe_import",
+        "build_report",
+        "write_report",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "importlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "traceback",
+        "typing",
+        "xml.etree.ElementTree"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    },
+    {
+      "module": "scripts.verify_packaged_artifact",
+      "files": [
+        "scripts/verify_packaged_artifact.py"
+      ],
+      "classes": [],
+      "functions": [
+        "build_or_use_artifact",
+        "verify_packaged",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "scripts.build_release_artifact",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing",
+        "zipfile"
+      ],
+      "imported_by": [],
+      "randomness": [
+        "datetime.now"
+      ],
+      "time_dependencies": [
+        "datetime.now"
+      ],
+      "integration_status": "nexo_infra",
+      "risks": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+# prerm — stop user unit if present; never force root service
+if command -v systemctl >/dev/null 2>&1; then
+  systemctl --user stop nexo-node.service >/dev/null 2>&1 || true
+fi
+if command -v nexo-node >/dev/null 2>&1; then
+  nexo-node stop >/dev/null 2>&1 || true
+fi
+exit 0

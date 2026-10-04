@@ -1,0 +1,80 @@
+[
+  {
+    "n": 1,
+    "key": "cerebro_cuerpo",
+    "title": "Tu cerebro manda en tu cuerpo",
+    "teaching": "Este es el sistema nervioso de Clementina. Está formado por su cerebro, los nervios que recorren todo su cuerpo y unos pequeños elementos llamados neuronas. Cuando todos trabajan, Clementina puede saltar, correr, pensar y muchas otras cosas más.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "clementina", "sistema_nervioso"]
+  },
+  {
+    "n": 2,
+    "key": "neuronas_mensajeras",
+    "title": "Neuronas mensajeras",
+    "teaching": "Hay neuronas de distintos tipos y formas: piramidales, de pelo, motoneuronas. Aprendemos y memorizamos gracias a la comunicación entre neuronas en el cerebro. A este proceso se le llama sinapsis.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "neuronas", "sinapsis"]
+  },
+  {
+    "n": 3,
+    "key": "cinco_sentidos",
+    "title": "Los cinco sentidos",
+    "teaching": "Los sentidos, como la audición y la visión, nos permiten conocer nuestro mundo exterior. La información que recibimos viaja desde los ojos y oídos hasta el cerebro: corteza visual y corteza auditiva.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "sentidos", "corteza"]
+  },
+  {
+    "n": 4,
+    "key": "emociones",
+    "title": "Emociones",
+    "teaching": "Clementina tuvo un día repleto de emociones: alegría al jugar con amigos, un poco de rabia cuando Pedro no quiso acompañarla, y pena cuando Rosita no podía jugar porque le dolía el estómago.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "emociones", "amigdala"]
+  },
+  {
+    "n": 5,
+    "key": "dormir_aprender",
+    "title": "Dormir para aprender",
+    "teaching": "Dormir, jugar, comer y estudiar están controlados por tu cerebro. Aprendemos y memorizamos cosas gracias a la comunicación entre las neuronas; los estímulos sensoriales ayudan a recordar lo aprendido.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "memoria", "aprendizaje"]
+  },
+  {
+    "n": 6,
+    "key": "proteger_cerebro",
+    "title": "Protege tu cerebro",
+    "teaching": "Los alimentos saludables dan energía a las neuronas desde el vientre de mamá hasta la vida adulta. La glucosa es la principal fuente de energía del organismo y cerebro; el ejercicio físico también ejercita tu cerebro.",
+    "phase": "infantil",
+    "phase_n": 0,
+    "valence": 0.25,
+    "arousal": 0.35,
+    "novelty": 0.7,
+    "library_path": "Mi-primer-libro-del-cerebro.pdf",
+    "tags": ["infant", "nutricion", "ejercicio"]
+  }
+]

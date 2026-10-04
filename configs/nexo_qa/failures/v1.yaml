@@ -1,0 +1,16 @@
+classification_version: failures-v1
+episode_merge_window_ticks: 5
+rules:
+  goal_drift:
+    event_type: goal.drift
+    failure_type: GOAL_DRIFT
+  navigation_loop:
+    event_type: goal.behavior_loop
+    failure_type: NAVIGATION_LOOP
+  distractor_capture:
+    condition: high_salience_low_relevance
+    failure_type: DISTRACTOR_CAPTURE
+  policy_blocked:
+    error: POLICY_BLOCKED
+    failure_type: ACTION_POLICY_BLOCKED
+  no_golden_path: true

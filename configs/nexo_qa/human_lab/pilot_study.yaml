@@ -1,0 +1,24 @@
+study:
+  study_id: pilot_study_v1
+  schema_version: 1
+  title: NEXO Cognitive QA Pilot Study (instrumentation only)
+  participant_target: 15
+  consent_version: consent_v1
+  retention_policy: pseudonymous_90d
+  assignment_strategy: randomized
+  conditions:
+    - BASELINE
+  tasks:
+    - task_id: web_form_task
+      task_version: "1"
+      environment_version: web_lab_v1
+      goal_text: Complete the multi-step web form
+      condition: BASELINE
+      time_limit_seconds: 600
+      success_predicate_ref: goal_progress_complete
+  calibration_plan:
+    metrics_version: metrics-v1
+    holdout_fraction: 0.2
+  validation_plan:
+    min_participants: 10
+    inter_rater: optional

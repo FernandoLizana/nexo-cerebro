@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "verification_scope": "packaged_artifact_verification",
+  "report_generated_at": "2026-08-04T17:08:18.337011+00:00",
+  "artifact_path": "<REPO_ROOT>\\dist\\NEXO_REPRODUCIBLE_0.3.0.zip",
+  "artifact_sha256": "768ced4743918a227e572d547764f639937faefba7bfcbcb98de0b83a55aa6f2",
+  "temporary_directory": "<TEMP>/<anon>",
+  "installation_success": false,
+  "tests_collected": 0,
+  "tests_passed": 0,
+  "tests_failed": 0,
+  "smoke_runs_completed": 5,
+  "verify_artifact_status": "pass",
+  "missing_required_paths": [],
+  "personal_paths_detected": [],
+  "errors": [],
+  "warnings": []
+}

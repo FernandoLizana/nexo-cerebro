@@ -1,0 +1,2 @@
+Compact smoke only (2 seeds, short ticks). Historical 10k E1–E3 remain primary for those claims.
+Multi-seed 10k replication: NOT RUN / deferred.

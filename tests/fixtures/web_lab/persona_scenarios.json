@@ -1,0 +1,21 @@
+{
+  "phase": "P5",
+  "scenarios": [
+    "MEMORY_DEMAND",
+    "DISTRACTOR",
+    "RISKY_CONFIRMATION",
+    "LONG_FLOW",
+    "REPEATED_FAILURE",
+    "NOVICE_NAVIGATION",
+    "AMBIGUOUS_UI"
+  ],
+  "fixtures": {
+    "MEMORY_DEMAND": ["memory_demand_start.html", "memory_demand_entry.html"],
+    "DISTRACTOR": ["distractor.html"],
+    "RISKY_CONFIRMATION": ["risky_confirmation.html"],
+    "LONG_FLOW": ["long_flow_1.html", "long_flow_2.html", "long_flow_3.html", "long_flow_4.html"],
+    "REPEATED_FAILURE": ["repeated_failure.html"],
+    "NOVICE_NAVIGATION": ["novice_navigation.html"],
+    "AMBIGUOUS_UI": ["ambiguous_ui.html"]
+  }
+}

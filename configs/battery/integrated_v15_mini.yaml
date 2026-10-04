@@ -1,0 +1,24 @@
+name: integrated_battery_v15_mini
+version: 15
+description: Mini batería Fase 11 — CI smoke Flask unificado
+profile: integrated_v62
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - flask_unified_e2e
+  - flask_demo_smoke
+  - autonomy_contract_audit
+export:
+  json: results/integrated_battery/report_v15_mini.json
+  statistics: results/integrated_battery/statistics_v15_mini.json

@@ -1,0 +1,127 @@
+{
+  "version": "1",
+  "modules": [
+    "attention_selector",
+    "auditory_cortex",
+    "basal_ganglia",
+    "cerebellum",
+    "global_workspace",
+    "hippocampus",
+    "interoceptive_cortex",
+    "motor_cortex",
+    "neuromodulation",
+    "posterior_parietal",
+    "prefrontal",
+    "sensory_hub",
+    "thalamus_relay",
+    "visual_cortex",
+    "working_memory"
+  ],
+  "connections": [
+    {
+      "source": "sensory_hub",
+      "target": "thalamus_relay",
+      "signal_type": "raw_sensory",
+      "weight": 1.0,
+      "latency_ticks": 1
+    },
+    {
+      "source": "thalamus_relay",
+      "target": "visual_cortex",
+      "signal_type": "visual_features",
+      "weight": 0.85,
+      "latency_ticks": 2
+    },
+    {
+      "source": "thalamus_relay",
+      "target": "auditory_cortex",
+      "signal_type": "auditory_features",
+      "weight": 0.7,
+      "latency_ticks": 2
+    },
+    {
+      "source": "interoceptive_cortex",
+      "target": "thalamus_relay",
+      "signal_type": "interoceptive",
+      "weight": 0.6,
+      "latency_ticks": 1
+    },
+    {
+      "source": "visual_cortex",
+      "target": "posterior_parietal",
+      "signal_type": "perceptual_representation",
+      "weight": 0.8,
+      "latency_ticks": 2
+    },
+    {
+      "source": "posterior_parietal",
+      "target": "attention_selector",
+      "signal_type": "salience_map",
+      "weight": 0.9,
+      "latency_ticks": 1
+    },
+    {
+      "source": "attention_selector",
+      "target": "working_memory",
+      "signal_type": "attended_content",
+      "weight": 0.75,
+      "latency_ticks": 1
+    },
+    {
+      "source": "working_memory",
+      "target": "prefrontal",
+      "signal_type": "maintained_context",
+      "weight": 0.8,
+      "latency_ticks": 2
+    },
+    {
+      "source": "prefrontal",
+      "target": "basal_ganglia",
+      "signal_type": "action_bias",
+      "weight": 0.85,
+      "latency_ticks": 3
+    },
+    {
+      "source": "hippocampus",
+      "target": "prefrontal",
+      "signal_type": "episodic_context",
+      "weight": 0.7,
+      "latency_ticks": 4
+    },
+    {
+      "source": "basal_ganglia",
+      "target": "motor_cortex",
+      "signal_type": "selected_action",
+      "weight": 1.0,
+      "latency_ticks": 1
+    },
+    {
+      "source": "cerebellum",
+      "target": "motor_cortex",
+      "signal_type": "error_correction",
+      "weight": 0.5,
+      "latency_ticks": 1
+    },
+    {
+      "source": "motor_cortex",
+      "target": "sensory_hub",
+      "signal_type": "efference_copy",
+      "weight": 0.4,
+      "latency_ticks": 2
+    },
+    {
+      "source": "neuromodulation",
+      "target": "hippocampus",
+      "signal_type": "dopamine_modulation",
+      "weight": 0.6,
+      "latency_ticks": 1
+    },
+    {
+      "source": "global_workspace",
+      "target": "prefrontal",
+      "signal_type": "broadcast_content",
+      "weight": 0.65,
+      "latency_ticks": 2
+    }
+  ]
+}

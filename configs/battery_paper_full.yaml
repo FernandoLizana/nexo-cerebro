@@ -1,0 +1,59 @@
+name: battery_paper_full
+version: 1
+description: Batería científica completa (manual; no ejecutar en CI)
+note: >
+  E4–E8 usan perfil compact; E1–E3 usan 10k. No nombrar como homogéneo @10k.
+experiments:
+  - id: E1
+    title: Ablaciones PFC/bind/hippo
+    runner: experiments.run_batch
+    profile: neuro-10k
+    seeds: 20
+    steps: 200
+    conditions: [baseline, no_binding, no_pfc, no_hippocampus, no_affect, no_consciousness]
+    primary_metrics: [legacy_agency_score, impulse_inhibition_rate]
+    secondary_metrics: [spike_aligned, remembered_rate]
+    status: incomplete
+  - id: E2
+    title: Invarianza LLM headless
+    runner: experiments.run_batch
+    profile: neuro-10k
+    seeds: 20
+    steps: 100
+    status: pending
+  - id: E3
+    title: Sueño vs recall
+    runner: experiments.run_sleep
+    profile: neuro-10k
+    seeds: 20
+    status: pending
+  - id: E4
+    title: Sueño selectivo
+    runner: experiments.run_e4_sleep_selective
+    profile: compact
+    seeds: 20
+    status: pending
+  - id: E5
+    title: Grounding chat
+    runner: experiments.run_e5_grounding
+    profile: compact
+    seeds: 20
+    status: pending
+  - id: E6
+    title: Bench tick GPU
+    runner: experiments.bench_tick_gpu
+    profile: neuro-10k
+    seeds: 5
+    status: pending
+  - id: E7
+    title: Multimodal gain
+    runner: experiments.run_e7_multimodal
+    profile: compact
+    seeds: 20
+    status: pending
+  - id: E8
+    title: Arena affordances L2
+    runner: experiments.run_arena_level24
+    profile: compact
+    seeds: 10
+    status: pending

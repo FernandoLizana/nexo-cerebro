@@ -1,0 +1,9 @@
+﻿# Lock directo — compatible con pyproject.toml (generado manualmente 2026-08-04)
+flask==3.0.3
+numpy==2.4.3
+scipy==1.17.1
+pillow==12.1.1
+pypdf==6.10.2
+PyYAML==6.0.3
+pytest==8.3.4
+pytest-cov==6.2.1

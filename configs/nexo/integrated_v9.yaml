@@ -1,0 +1,25 @@
+# Perfil integrado v9 — sueño, consolidación y desarrollo (Sprint 9)
+
+profile: integrated_v9
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+use_legacy_adapter: false
+disable_processes: []
+
+sleep:
+  sleep_onset_threshold: 0.38
+  replay_period_ticks: 3
+  consolidation_period_ticks: 5
+
+development:
+  maturation_rate: 0.0005

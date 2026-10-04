@@ -1,0 +1,127 @@
+# Perfil integrado v42 — Fase 6 completa (Sprints 39–42)
+
+profile: integrated_v42
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: integrated
+replication_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+eventlog_mode: integrated
+meta_analysis_mode: integrated
+replication_batch_mode: integrated
+cross_battery_mode: integrated
+phenomenology_mode: integrated
+legacy_bridge_mode: integrated
+legacy_adapter_mode: integrated
+world_mode: world2d_legacy_env
+world2d_legacy_actions_mode: integrated
+world2d_full_actions_mode: integrated
+world2d_legacy_env_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+orchestration_mode: integrated
+scale_mode: integrated
+deliberation_bridge_mode: integrated
+deliberation_fusion_mode: integrated
+deliberation_unified_mode: integrated
+lif_scale_mode: integrated
+gpu_bench_mode: integrated
+publication_mode: integrated
+paper_pack_mode: integrated
+battery_paper_mode: integrated
+full_publication_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: true
+disable_processes: []
+
+tracing:
+  export_path: results/traces/integrated_v42_trace.json
+
+replication:
+  export_dir: results/replication/integrated_v42
+
+correction:
+  method: benjamini_hochberg
+  alpha: 0.05
+
+meta_analysis:
+  replication_root: results/replication
+  export_path: results/meta_analysis/integrated_v42_summary.json
+
+cross_battery:
+  reports:
+    v9: results/integrated_battery/report_v9.json
+    v10: results/integrated_battery/report_v10.json
+  export_path: results/cross_battery/v9_v10_comparison.json
+
+legacy_bridge:
+  auto_export: false
+  export_path: results/legacy_bridge/integrated_v42_vs_legacy.json
+
+legacy_adapter:
+  auto_export: false
+  export_path: results/legacy_adapter/integrated_v42_report.json
+
+deliberation_bridge:
+  export_path: results/deliberation_bridge/integrated_v42_audit.json
+
+deliberation_fusion:
+  export_path: results/deliberation_fusion/integrated_v42_summary.json
+
+deliberation_unified:
+  export_path: results/deliberation_unified/integrated_v42_motor.json
+
+scale:
+  export_path: results/scale/integrated_v42_profile.json
+
+lif_scale:
+  export_path: results/lif_scale/integrated_v42_probe.json
+  profile_key: compact
+  ticks: 2
+  run_bench: false
+
+gpu_bench:
+  export_path: results/gpu_bench/integrated_v42_ci.json
+  profile_key: compact
+  ticks: 1
+  ci_safe: true
+
+publication:
+  export_dir: results/publication/integrated_v42
+
+paper_pack:
+  export_dir: results/paper_pack/integrated_v42
+
+battery_paper:
+  export_dir: results/battery_paper/integrated_v42
+  reports:
+    v9: results/integrated_battery/report_v9.json
+    v10: results/integrated_battery/report_v10.json
+
+full_publication:
+  export_dir: results/full_publication/integrated_v42
+
+pipeline:
+  auto_run: false
+  manifest: configs/battery/integrated_v10_mini.yaml
+  export_path: results/pipeline/integrated_v42_pipeline.json
+
+battery:
+  manifest: configs/battery/integrated_v10.yaml

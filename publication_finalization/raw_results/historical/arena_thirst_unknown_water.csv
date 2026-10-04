@@ -1,0 +1,7 @@
+seed,condition,affordances,exp1_ticks,exp1_success,exp2_ticks,exp2_success,exp2_thirst_delta,affordance_records,agency_violations
+0,aff_off,False,1,True,90,False,-0.12,0,0
+0,aff_on,True,1,True,16,True,0.3381,1,0
+1,aff_off,False,1,True,90,False,-0.12,0,0
+1,aff_on,True,1,True,16,True,0.3381,1,0
+2,aff_off,False,1,True,90,False,-0.12,0,0
+2,aff_on,True,1,True,16,True,0.3381,1,0

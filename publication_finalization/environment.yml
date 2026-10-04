@@ -1,0 +1,9 @@
+# Best-effort Conda environment sketch — prefer requirements-lock.txt
+name: nexo-pub
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - -r requirements-lock.txt

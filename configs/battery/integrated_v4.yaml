@@ -1,0 +1,27 @@
+name: integrated_battery_v4
+version: 4
+description: Batería integrada con curiosity_explore, meta-análisis y 5 tareas
+profile: integrated_v18
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+lesions:
+  - lesion_none
+  - lesion_sever_pfc_bg
+tasks:
+  - survival
+  - distractor_control
+  - reproducibility
+  - safety_escape
+  - curiosity_explore
+export:
+  json: results/integrated_battery/report_v4.json
+  benchmark: results/integrated_battery/benchmark_v4.json
+  comparison: results/integrated_battery/comparison_v4.json
+  statistics: results/integrated_battery/statistics_v4.json

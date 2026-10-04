@@ -1,0 +1,37 @@
+{
+  "seed": 42,
+  "config": "configs/nexo/integrated_v90.yaml",
+  "ticks": 12,
+  "method": "runtime_from_config + IntegratedRuntime.run(ticks=12); NEXO_SKIP_GPU_BENCH=1",
+  "strict": {
+    "trajectory_hash_equal": true,
+    "hash_A": "77b06e9fd77e5ca681663791fb0321e37fb63ff4d6407e68e92cf2275cce1d9c",
+    "hash_B": "77b06e9fd77e5ca681663791fb0321e37fb63ff4d6407e68e92cf2275cce1d9c",
+    "actions_equal": true,
+    "ticks_equal": true,
+    "no_crash": true
+  },
+  "statistical": {
+    "mean_reward_A": 0.12000000000000004,
+    "mean_reward_B": 0.12000000000000004,
+    "mean_reward_equal": true,
+    "final_energy_A": 0.3526710863756767,
+    "final_energy_B": 0.3526710863756767,
+    "eat_ratio_A": 0.0,
+    "eat_ratio_B": 0.0,
+    "action_entropy_A": -1.000088900581841e-12,
+    "action_entropy_B": -1.000088900581841e-12,
+    "agency_score_A": 1.0,
+    "agency_score_B": 1.0,
+    "valid_certificates_A": 12,
+    "valid_certificates_B": 12
+  },
+  "informational": {
+    "event_count_A": 421,
+    "event_count_B": 421,
+    "event_count_equal": true,
+    "elapsed_A": 3.6876926000695676,
+    "elapsed_B": 3.441626099986024,
+    "note": "RoomWorld.apply_action uses uuid4 for encoded_memory; episode ids are informational."
+  }
+}

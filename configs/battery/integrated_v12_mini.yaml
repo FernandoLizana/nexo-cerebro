@@ -1,0 +1,22 @@
+name: integrated_battery_v12_mini
+version: 12
+description: Mini batería Fase 8 — pipeline paper auto CI
+profile: integrated_v50
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - deliberation_weight_sweep
+export:
+  json: results/integrated_battery/report_v12.json
+  statistics: results/integrated_battery/statistics_v12.json

@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: impatient
+description: Low patience and high impulsivity — reduced PFC inhibition.
+traits:
+  working_memory_capacity: 4
+  attention_persistence: 0.4
+  distractibility: 0.6
+  visual_search_efficiency: 0.55
+  risk_aversion: 0.35
+  patience: 0.2
+  frustration_tolerance: 0.35
+  exploration_tendency: 0.65
+  digital_literacy: 0.5
+  semantic_confidence: 0.45
+  initial_fatigue: 0.0
+  impulsivity: 0.85
+  learning_rate_modifier: 1.1
+  metacognitive_sensitivity: 0.4
+  fatigue_rate_modifier: 1.1

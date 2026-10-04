@@ -1,0 +1,13 @@
+claim_id,claim,evidence,status,limitation
+C1,PrefrontalDeliberation is sole choice_key writer under default flags,brain/deliberation.py + unit tests + motor audit,VERIFIED,Study wrappers intentionally break this for controls
+C2,agency_guard is declarative HUD metadata,brain/causal_hud.py; tests/test_demo_hud.py,VERIFIED,Not a formal safety proof
+C3,Affordance/TD/grounding are bias-only by default,module caps + tests,VERIFIED,td_direct study wrapper forces choice
+C4,E1 ablations selectively affect agency/spike_aligned/remembered,"historical e1_*_summary.csv (10k, n=5)",PARTIALLY VERIFIED,Small n; strong determinism; custom metrics
+C5,E2 LLM on/off trajectory invariance (headless),e2_llm_invariance.csv,VERIFIED under protocol,Headless may not invoke live LLM
+C6,E3 sleep improves recall score vs control,e3_sleep_recall.csv,PARTIALLY VERIFIED,Custom metric; small absolute delta
+C7,Compact baselines A comparative table exists,raw_results/baselines_A/seed_summaries.csv,NEW_DATA,Compact short horizon; not 10k×20
+C8,Agency-break raises override rate vs full,raw_results/agency_break_B/,NEW_DATA,Control condition; compact
+C9,Env-shift Arena transfer/discrimination multi-seed,raw_results/env_shift_C/,NEW_DATA / PARTIAL,Compact; ecological validity limited
+C10,Human brain / consciousness / free will / AGI,—,NOT CLAIMED,Avoid overclaim language
+C11,10k×20 multi-seed replication of E1–E3,—,NOT RUN / deferred,Compute policy
+C12,External public benchmark comparison,—,EVIDENCE MISSING,Required for stronger AB Article

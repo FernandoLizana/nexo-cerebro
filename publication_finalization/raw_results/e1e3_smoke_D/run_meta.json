@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    "full",
+    "nopfc",
+    "nohippo"
+  ],
+  "seeds": 2,
+  "steps": 40,
+  "profile_env": "compact",
+  "git_commit": "NO_GIT_REPOSITORY",
+  "timestamp_utc": "2026-07-22T21:43:58Z",
+  "elapsed_sec": 38.83,
+  "write_jsonl": false,
+  "note": "Study wrappers for reactive/no_homeostasis/td_direct/agency_break; not core defaults."
+}

@@ -1,0 +1,37 @@
+# Perfil integrado v14 — enrutamiento ampliado + estadística de batería (Sprint 14)
+
+profile: integrated_v14
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: false
+disable_processes: []
+
+routing:
+  extended_edges:
+    - hippocampus:prefrontal
+    - global_workspace:prefrontal
+    - working_memory:prefrontal
+
+statistics:
+  bootstrap_samples: 256
+  alpha: 0.05
+
+battery:
+  manifest: configs/battery/integrated_v2.yaml

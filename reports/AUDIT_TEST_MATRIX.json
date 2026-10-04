@@ -1,0 +1,1350 @@
+{
+  "totals": {
+    "passed": 984
+  },
+  "by_status": {
+    "pass": 134
+  },
+  "files": [
+    {
+      "file": "test_affect_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_affordance_map.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.6,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_agent_loop.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.9,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_analysis_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.5,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_arena_thirst.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 53.3,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_behavior_integration.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_behavioral_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.7,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_bench_e7.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 22.3,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_biomechanics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_body_homeostasis.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_brain_facts.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.6,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_branch_collective.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_caregiver_dialogue.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_circadian.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 7.0,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_consciousness.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_consciousness_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_curriculum.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.7,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_decision_audit.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_decompression_governor.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_decompression_prefetch.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_demo_hud.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.7,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_dialogue_engine.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_embeddings_compat.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.4,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_engram_codec.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_executive_cognition.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_executive_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_experiment_conditions.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_flask_unified_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.7,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_fly_bridge.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_food_system.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_grounding.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 7.3,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_hedonics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_human_brain_features.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_imagination_stream.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_integrated_core.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 11
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_intention_circuit.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.2,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_interaction_modes.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.7,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_intervention_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_language_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_language_network.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_language_tutor_rag.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_latency_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.8,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_learned_schemas.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.9,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_learning_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_level23.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 48.0,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_level24.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 194.1,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_level25.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 74.4,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_lifecycle_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.1,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_lobe_columns_replay.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.6,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_lobes_circuit.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_material_qualities.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_memory_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_memory_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_meta_analysis_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_motor_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_neural_language.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_nexo_hardening.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.1,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_nociception.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_node_stop.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.1,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_observatory_api.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p0_nexo_qa_import.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.8,
+      "counts": {
+        "passed": 1
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p1_action_schema.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 12
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p1_environment_contract.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 11
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p1_two_worlds_one_brain.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p2_browser.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 26.4,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p2_three_worlds_one_brain.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.2,
+      "counts": {
+        "passed": 1
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p3_perception.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 24.1,
+      "counts": {
+        "passed": 20
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p4_goals.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 16.4,
+      "counts": {
+        "passed": 22
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p5_personas.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 121.2,
+      "counts": {
+        "passed": 32
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p6_cognitive_qa.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.1,
+      "counts": {
+        "passed": 29
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p7_population.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 30
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p8_chaos.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.0,
+      "counts": {
+        "passed": 32
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_p9_human_lab.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 31
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_predictive_perception.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_presence_four.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.9,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_relationship_model.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_replication_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.6,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_reproducibility.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 13.4,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_reward_learning.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_rhythm_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_routing_statistics_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.3,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s10_knowledge_graph.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s11_swarm_simulator.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s12_dashboard.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s13_windows_packaging.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s14_debian_packaging.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s15_multi_device_lab.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s16_collective_learning.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.1,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s17_federated_learning.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s2_node_runtime.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s3_being_model.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s4_creature_engine.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s5_textworld.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s6_interaction_protocol.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s7_coordinator.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s7_scale_motor_multi.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s8_local_memory.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.5,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_s9_experience_store.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.1,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_scale_architecture.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_selective_sleep.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.1,
+      "counts": {
+        "passed": 4
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sensory_perception.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_shelf_phrase.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sleep_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sleep_study.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.8,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_smoke_results.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 65.8,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_social_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_19_22_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_23_26_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.7,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_27_30_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.2,
+      "counts": {
+        "passed": 11
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_31_34_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.0,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_35_38_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.7,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_39_42_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 11.4,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_43_46_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 9.2,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_47_50_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.6,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_51_54_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 23.4,
+      "counts": {
+        "passed": 11
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_55_58_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 38.8,
+      "counts": {
+        "passed": 13
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_63_66_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.1,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_67_70_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.5,
+      "counts": {
+        "passed": 11
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_71_74_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 9.2,
+      "counts": {
+        "passed": 10
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_sprints_75_78_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.4,
+      "counts": {
+        "passed": 8
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_state_dir_isolation.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_statistics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_study_tracks.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.6,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_swarm_core_fortress.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_tasks_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 9
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_td_reward.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.4,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_tracing_integrated.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_validation_dynamics.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 10.0,
+      "counts": {
+        "passed": 7
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_verbalize.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_verbalize_feelings.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 5
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_virtual_assembly_codec.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 2
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_web_search.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_wm_attention.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.9,
+      "counts": {
+        "passed": 6
+      },
+      "failed_nodeids": []
+    },
+    {
+      "file": "test_world_movement.py",
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5,
+      "counts": {
+        "passed": 3
+      },
+      "failed_nodeids": []
+    }
+  ]
+}

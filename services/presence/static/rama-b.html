@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>NEXO — rama B</title>
+  <style>
+    body { margin:0; font-family: Georgia, serif; background:#f4efe6; color:#1c1915; }
+    main { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+    canvas { width:100%; image-rendering:pixelated; image-rendering:crisp-edges; border:1px solid #d9d0c3; }
+    button { font: inherit; margin: 6px 6px 0 0; padding: 8px 12px; background:#1c1915; color:#f4efe6; border:0; cursor:pointer; }
+    input { width:100%; padding:8px; margin-top:8px; border:1px solid #d9d0c3; }
+    #speech { font-size:20px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Segunda ramificación. La central 3D no vive aquí: <a href="http://127.0.0.1:5000/">abrirla</a>. La otra rama está en <a href="/rama">/rama</a>.</p>
+    <canvas id="world" width="160" height="120" aria-label="casa de NEXO"></canvas>
+    <p id="speech">…</p>
+    <p id="capacity"></p>
+    <p id="peers"></p>
+    <p id="lif"></p>
+    <input id="text" placeholder="una observación, una enseñanza, o una nota del archivo" />
+    <input id="file" type="file" accept=".txt,.md,.csv,.pdf,.png,.jpg,.jpeg,.webp,.gif" />
+    <div>
+      <button onclick="send('GREET')">Saludar</button>
+      <button onclick="send('OBSERVE')">Observar</button>
+      <button onclick="send('TEACH')">Enseñar</button>
+      <button onclick="send('ASK')">Preguntar</button>
+      <button onclick="leaveMaterial()">Dejar material</button>
+    </div>
+    <p id="shelf"></p>
+    <ul id="ideas"></ul>
+  </main>
+  <script src="/house.js"></script>
+  <script>
+    const sendTo = mountHouse(document.getElementById("world"), "rama-b");
+    function send(kind) { sendTo(kind, document.getElementById("text").value); }
+    async function leaveMaterial() {
+      const file = document.getElementById("file").files[0];
+      const note = document.getElementById("text").value;
+      const body = { source: "rama-b", note, name: file ? file.name : "nota.txt" };
+      if (file) {
+        const bytes = new Uint8Array(await file.arrayBuffer());
+        let bin = "";
+        for (const b of bytes) bin += String.fromCharCode(b);
+        body.data_b64 = btoa(bin);
+      }
+      const res = await fetch("/v1/material", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Nexo-Presence-Token": window.NEXO_PRESENCE_TOKEN || "",
+        },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json();
+      document.getElementById("shelf").textContent = data.ok
+        ? "Quedó en el nodo. La central lo toma si quiere, o al dormir."
+        : (data.error || "no se guardó");
+    }
+  </script>
+</body>
+</html>

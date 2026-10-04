@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: novice_digital
+description: Low digital literacy and semantic confidence profile.
+traits:
+  working_memory_capacity: 4
+  attention_persistence: 0.45
+  distractibility: 0.55
+  visual_search_efficiency: 0.38
+  risk_aversion: 0.55
+  patience: 0.5
+  frustration_tolerance: 0.45
+  exploration_tendency: 0.5
+  digital_literacy: 0.15
+  semantic_confidence: 0.25
+  initial_fatigue: 0.0
+  impulsivity: 0.5
+  learning_rate_modifier: 0.95
+  metacognitive_sensitivity: 0.55
+  fatigue_rate_modifier: 1.0

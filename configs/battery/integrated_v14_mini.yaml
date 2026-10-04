@@ -1,0 +1,25 @@
+name: integrated_battery_v14_mini
+version: 14
+description: Mini batería Fase 10 — CI smoke demo integrado
+profile: integrated_v58
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - flask_demo_smoke
+  - world3d_state_sync
+  - autonomy_contract_audit
+  - companion_dyad_smoke
+export:
+  json: results/integrated_battery/report_v14_mini.json
+  statistics: results/integrated_battery/statistics_v14_mini.json

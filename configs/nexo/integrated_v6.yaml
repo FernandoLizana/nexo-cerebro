@@ -1,0 +1,19 @@
+# Perfil integrado v6 — plasticidad, RL y neuromodulación (Sprint 6)
+
+profile: integrated_v6
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+use_legacy_adapter: false
+disable_processes: []
+
+learning:
+  td_alpha: 0.18
+  td_gamma: 0.92
+  plasticity_delta_threshold: 0.04

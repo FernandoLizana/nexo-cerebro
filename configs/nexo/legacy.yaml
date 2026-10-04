@@ -1,0 +1,7 @@
+# Perfil legacy — delega al InfantApeBrain histórico
+
+profile: legacy
+mode: legacy_brain
+seed: 42
+ticks: 8
+use_integrated_scheduler: false

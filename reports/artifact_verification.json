@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "verification_scope": "workspace_verification",
+  "report_generated_at": "2026-08-04T16:42:36.255159+00:00",
+  "report_script_version": "2.1.0",
+  "working_directory": "<REPO_ROOT>",
+  "artifact_sha256": null,
+  "commit": "NO_GIT_REPOSITORY",
+  "dirty_repository": null,
+  "python": "3.11.0",
+  "tests_collected": 0,
+  "tests_passed": 0,
+  "tests_failed": 0,
+  "missing_modules": [],
+  "reproducibility_same_seed": true,
+  "variability_different_seeds": true,
+  "warnings": [
+    "no_git_repository"
+  ],
+  "errors": [],
+  "pytest": {
+    "tests_collected": 0,
+    "tests_passed": 0,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "exit_code": 0,
+    "stdout_tail": [
+      "..............................                                           [100%]",
+      "- generated xml file: <REPO_ROOT>\\reports\\pytest-verify-subset.xml -",
+      "30 passed in 273.63s (0:04:33)",
+      "<SITE_PACKAGES>\\pytest_asyncio\\plugin.py:207: PytestDeprecationWarning: The configuration option \"asyncio_default_fixture_loop_scope\" is unset.",
+      "The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: \"function\", \"class\", \"module\", \"package\", \"session\"",
+      "",
+      "  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))"
+    ]
+  },
+  "config_verification": {
+    "roadmap100_full_v1_hash": "6091716f99088447483f3adcc19451aebfac4d408f4964645b03e7e300667c7e",
+    "baseline_legacy_hash": "8600aefcd0ff35c2fbccdd8765d977185da9c4e8c27bc5e860af8f84325739dc",
+    "roadmap100_memory_on": true
+  },
+  "agency_audit": {
+    "status": "audit_pass",
+    "ok": true,
+    "violations": [],
+    "files_scanned": 126,
+    "assignments_found": 0,
+    "approved_writers": [
+      "brain.deliberation.PrefrontalDeliberation.run"
+    ],
+    "parse_errors": [],
+    "missing_required_files": [],
+    "primary_writer": "brain/deliberation.py",
+    "limitations": [
+      "No detecta setattr dinámico en todos los casos",
+      "DeliberationResult(...) directo fuera de deliberation no siempre detectado"
+    ]
+  },
+  "smoke_results_present": true
+}

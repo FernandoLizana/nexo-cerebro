@@ -1,0 +1,21 @@
+name: battery_ci_compact
+version: 1
+description: Batería rápida para CI e integración continua
+profile_default: compact
+experiments:
+  - id: smoke_sim
+    runner: nexo.behavioral_tasks
+    seeds: 2
+    steps: 15
+    conditions: [baseline, roadmap100_safe]
+    primary_metrics: [primary_metric]
+    status: defined
+  - id: reproducibility
+    runner: tests.test_reproducibility
+    seeds: 2
+    steps: 12
+    conditions: [baseline]
+    status: defined
+  - id: agency_audit
+    runner: nexo.decision_audit
+    status: defined

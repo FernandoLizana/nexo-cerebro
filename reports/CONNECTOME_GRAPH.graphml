@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<graph id="nexo_connectome" edgedefault="directed">
+<node id="attention_selector"/>
+<node id="auditory_cortex"/>
+<node id="basal_ganglia"/>
+<node id="cerebellum"/>
+<node id="global_workspace"/>
+<node id="hippocampus"/>
+<node id="interoceptive_cortex"/>
+<node id="motor_cortex"/>
+<node id="neuromodulation"/>
+<node id="posterior_parietal"/>
+<node id="prefrontal"/>
+<node id="sensory_hub"/>
+<node id="thalamus_relay"/>
+<node id="visual_cortex"/>
+<node id="working_memory"/>
+<edge id="e0" source="sensory_hub" target="thalamus_relay"><data key="weight">1.0</data></edge>
+<edge id="e1" source="thalamus_relay" target="visual_cortex"><data key="weight">0.85</data></edge>
+<edge id="e2" source="thalamus_relay" target="auditory_cortex"><data key="weight">0.7</data></edge>
+<edge id="e3" source="interoceptive_cortex" target="thalamus_relay"><data key="weight">0.6</data></edge>
+<edge id="e4" source="visual_cortex" target="posterior_parietal"><data key="weight">0.8</data></edge>
+<edge id="e5" source="posterior_parietal" target="attention_selector"><data key="weight">0.9</data></edge>
+<edge id="e6" source="attention_selector" target="working_memory"><data key="weight">0.75</data></edge>
+<edge id="e7" source="working_memory" target="prefrontal"><data key="weight">0.8</data></edge>
+<edge id="e8" source="prefrontal" target="basal_ganglia"><data key="weight">0.85</data></edge>
+<edge id="e9" source="hippocampus" target="prefrontal"><data key="weight">0.7</data></edge>
+<edge id="e10" source="basal_ganglia" target="motor_cortex"><data key="weight">1.0</data></edge>
+<edge id="e11" source="cerebellum" target="motor_cortex"><data key="weight">0.5</data></edge>
+<edge id="e12" source="motor_cortex" target="sensory_hub"><data key="weight">0.4</data></edge>
+<edge id="e13" source="neuromodulation" target="hippocampus"><data key="weight">0.6</data></edge>
+<edge id="e14" source="global_workspace" target="prefrontal"><data key="weight">0.65</data></edge>
+</graph>
+</graphml>

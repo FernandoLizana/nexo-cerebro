@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Novice Navigation — Web Lab P5</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header { display: flex; align-items: center; padding: 0.75rem 1rem; background: #222; color: #fff; }
+    .hamburger { font-size: 1.5rem; background: none; border: none; color: #fff; cursor: pointer; }
+    nav { display: none; background: #333; padding: 0.5rem; }
+    nav.open { display: block; }
+    main { padding: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="hamburger" type="button" aria-label="Menú">☰</button>
+    <span style="margin-left: 1rem;">Portal</span>
+    <button type="button" style="margin-left: auto; background: none; border: none; color: #fff;" aria-label="Ajustes">⚙</button>
+  </header>
+  <nav id="menu">
+    <a href="plan.html">Ver planes</a>
+  </nav>
+  <main>
+    <h1>Bienvenido</h1>
+    <p>Encuentra la sección de planes usando la navegación.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+name: integrated_battery_v16_mini
+version: 16
+description: Mini batería Fase 12 — CI smoke motor único
+profile: integrated_v66
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - unified_motor_smoke
+  - world_demo_facade
+export:
+  json: results/integrated_battery/report_v16_mini.json
+  statistics: results/integrated_battery/statistics_v16_mini.json

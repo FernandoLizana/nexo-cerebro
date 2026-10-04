@@ -1,0 +1,87 @@
+# Flask unificado v2 — motor integrado primario + WorldDemoFacade
+
+profile: flask_unified_v2
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: legacy
+replication_mode: legacy
+permutation_mode: legacy
+correction_mode: legacy
+eventlog_mode: legacy
+meta_analysis_mode: legacy
+replication_batch_mode: legacy
+cross_battery_mode: legacy
+phenomenology_mode: legacy
+legacy_bridge_mode: legacy
+legacy_adapter_mode: integrated
+legacy_adapter_early_mode: integrated
+world_mode: world_demo_facade
+world2d_headless_mode: integrated
+world2d_legacy_actions_mode: integrated
+world2d_full_actions_mode: integrated
+world2d_legacy_env_mode: integrated
+roadmap100_bridge_mode: integrated
+flask_demo_bridge_mode: integrated
+world3d_sync_mode: integrated
+autonomy_guard_mode: integrated
+hypothalamus_multimodal_mode: integrated
+companion_integrated_mode: integrated
+flask_unified_mode: integrated
+unified_motor_mode: integrated
+inference_mode: legacy
+hierarchical_inference_mode: legacy
+orchestration_mode: legacy
+scale_mode: legacy
+deliberation_bridge_mode: integrated
+deliberation_fusion_mode: integrated
+deliberation_unified_mode: legacy
+deliberation_weight_mode: integrated
+legacy_advisory_weight: 0.6
+lif_scale_mode: legacy
+gpu_bench_mode: legacy
+publication_mode: legacy
+paper_pack_mode: legacy
+battery_paper_mode: legacy
+paper_figures_mode: legacy
+pipeline_paper_mode: legacy
+latex_master_mode: legacy
+battery_full_mode: legacy
+release_bundle_mode: legacy
+full_publication_mode: legacy
+lesion_profile: lesion_none
+use_legacy_adapter: true
+disable_processes: []
+
+flask_demo_bridge:
+  export_path: results/flask_bridge/flask_unified_v2_bridge.json
+
+world3d_sync:
+  export_path: results/world3d_sync/flask_unified_v2_fidelity.json
+
+autonomy_guard:
+  export_path: results/autonomy_audit/flask_unified_v2_audit.json
+
+hypothalamus_multimodal:
+  export_path: results/hypothalamus_multimodal/flask_unified_v2_probe.json
+
+companion_integrated:
+  export_path: results/companion_integrated/flask_unified_v2_dyad.json
+
+unified_motor:
+  export_path: results/unified_motor/flask_unified_v2_motor.json

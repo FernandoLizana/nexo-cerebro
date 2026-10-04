@@ -1,0 +1,19 @@
+schema_version: 1
+persona_id: fatigued
+description: Elevated initial fatigue and faster fatigue accumulation.
+traits:
+  working_memory_capacity: 4
+  attention_persistence: 0.4
+  distractibility: 0.55
+  visual_search_efficiency: 0.42
+  risk_aversion: 0.55
+  patience: 0.35
+  frustration_tolerance: 0.4
+  exploration_tendency: 0.4
+  digital_literacy: 0.5
+  semantic_confidence: 0.45
+  initial_fatigue: 0.55
+  impulsivity: 0.55
+  learning_rate_modifier: 0.85
+  metacognitive_sensitivity: 0.45
+  fatigue_rate_modifier: 1.6

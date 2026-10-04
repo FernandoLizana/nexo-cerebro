@@ -1,0 +1,14 @@
+# Perfil integrado v2 — cuerpo + homeostasis (Sprint 2)
+
+profile: integrated_v2
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+use_legacy_adapter: false
+disable_processes: []
+
+body:
+  initial_energy: 0.72
+  basal_drain: 0.0006

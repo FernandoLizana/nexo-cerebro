@@ -1,0 +1,21 @@
+browser:
+  driver: playwright
+  browser: chromium
+  headless: true
+  navigation_timeout_ms: 10000
+  action_timeout_ms: 5000
+  viewport_width: 1280
+  viewport_height: 720
+  allowed_origins:
+    - "http://127.0.0.1:*"
+    - "http://localhost:*"
+  test_data:
+    name: "Nexo Test"
+    email: "nexo@example.test"
+  screenshots:
+    on_failure: true
+    on_success: false
+
+cognitive_qa:
+  mode: browser_lab
+  enabled: false

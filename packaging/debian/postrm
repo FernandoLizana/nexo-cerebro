@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+# postrm — disable user unit if present; do not touch system units
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+  if command -v systemctl >/dev/null 2>&1; then
+    systemctl --user disable --now nexo-node.service >/dev/null 2>&1 || true
+  fi
+fi
+echo "nexo-node removed (no system service was registered by default)."
+exit 0

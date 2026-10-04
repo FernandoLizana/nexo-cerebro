@@ -1,0 +1,26 @@
+name: integrated_battery_v3
+version: 3
+description: Batería integrada con safety_escape, FDR y 4 tareas
+profile: integrated_v17
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+lesions:
+  - lesion_none
+  - lesion_sever_pfc_bg
+tasks:
+  - survival
+  - distractor_control
+  - reproducibility
+  - safety_escape
+export:
+  json: results/integrated_battery/report_v3.json
+  benchmark: results/integrated_battery/benchmark_v3.json
+  comparison: results/integrated_battery/comparison_v3.json
+  statistics: results/integrated_battery/statistics_v3.json

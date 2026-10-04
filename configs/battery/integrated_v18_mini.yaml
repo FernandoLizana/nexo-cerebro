@@ -1,0 +1,24 @@
+name: integrated_battery_v18_mini
+version: 18
+description: Mini batería Fase 14 — CI smoke memory unification + causal certificate + day timeline
+profile: integrated_v80
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - memory_unification_smoke
+  - causal_certificate_smoke
+  - day_in_the_life_smoke
+export:
+  json: results/integrated_battery/report_v18_mini.json
+  statistics: results/integrated_battery/statistics_v18_mini.json

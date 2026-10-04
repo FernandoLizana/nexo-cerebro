@@ -1,0 +1,24 @@
+name: integrated_battery_v17_mini
+version: 17
+description: Mini batería Fase 13 — CI smoke agent_loop + memory bridge
+profile: integrated_v70
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - agent_loop_sync_smoke
+  - memory_bridge_smoke
+  - flask_study_proxy_smoke
+export:
+  json: results/integrated_battery/report_v17_mini.json
+  statistics: results/integrated_battery/statistics_v17_mini.json

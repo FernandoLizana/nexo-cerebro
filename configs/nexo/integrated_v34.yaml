@@ -1,0 +1,95 @@
+# Perfil integrado v34 — Fase 4 completa (Sprints 31–34)
+
+profile: integrated_v34
+seed: 42
+ticks: 120
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+learning_mode: integrated
+consciousness_mode: integrated
+social_mode: integrated
+sleep_mode: integrated
+evaluation_mode: integrated
+intervention_mode: integrated
+latency_mode: integrated
+analysis_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+tracing_mode: integrated
+replication_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+eventlog_mode: integrated
+meta_analysis_mode: integrated
+replication_batch_mode: integrated
+cross_battery_mode: integrated
+phenomenology_mode: integrated
+legacy_bridge_mode: integrated
+legacy_adapter_mode: integrated
+world_mode: world2d_lite
+world2d_legacy_actions_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+orchestration_mode: integrated
+scale_mode: integrated
+deliberation_bridge_mode: integrated
+lif_scale_mode: integrated
+publication_mode: integrated
+lesion_profile: lesion_none
+use_legacy_adapter: false
+disable_processes: []
+
+tracing:
+  export_path: results/traces/integrated_v34_trace.json
+
+replication:
+  export_dir: results/replication/integrated_v34
+
+correction:
+  method: benjamini_hochberg
+  alpha: 0.05
+
+meta_analysis:
+  replication_root: results/replication
+  export_path: results/meta_analysis/integrated_v34_summary.json
+
+cross_battery:
+  reports:
+    v7: results/integrated_battery/report_v7.json
+    v8: results/integrated_battery/report_v8.json
+  export_path: results/cross_battery/v7_v8_comparison.json
+
+legacy_bridge:
+  auto_export: false
+  export_path: results/legacy_bridge/integrated_v34_vs_legacy.json
+
+legacy_adapter:
+  auto_export: false
+  export_path: results/legacy_adapter/integrated_v34_report.json
+
+deliberation_bridge:
+  export_path: results/deliberation_bridge/integrated_v34_audit.json
+
+scale:
+  export_path: results/scale/integrated_v34_profile.json
+
+lif_scale:
+  export_path: results/lif_scale/integrated_v34_probe.json
+  profile_key: compact
+  ticks: 2
+  run_bench: false
+
+publication:
+  export_dir: results/publication/integrated_v34
+
+pipeline:
+  auto_run: false
+  manifest: configs/battery/integrated_v8_mini.yaml
+  export_path: results/pipeline/integrated_v34_pipeline.json
+
+battery:
+  manifest: configs/battery/integrated_v8.yaml

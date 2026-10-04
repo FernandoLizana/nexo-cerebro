@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-08-18T22:07:48+00:00",
+  "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "python": "3.11.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "nexo_package_version": "0.2.0",
+  "baseline_profile": "integrated_v90",
+  "git_commit": "3a0233c3c4fe504bcad5b545d7bbc43d0e6c2608",
+  "git_branch": "feature/nexo-integrated-brain-v1",
+  "COMMIT_HASH_txt": "NO_GIT_REPOSITORY",
+  "COMMIT_HASH_txt_note": "Stale capture file; git HEAD is the P0 source of truth",
+  "pytest": "8.3.4",
+  "dependency_consistency": "OK"
+}

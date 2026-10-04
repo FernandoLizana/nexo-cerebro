@@ -1,0 +1,23 @@
+name: integrated_battery_v7_mini
+version: 7
+description: Mini batería Fase 3 para pipeline CI
+profile: integrated_v30
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42]
+ablations:
+  - integrated_full
+  - abl_no_memory
+lesions:
+  - lesion_none
+tasks:
+  - survival
+  - navigation_2d
+export:
+  json: results/integrated_battery/report_v7_mini.json
+  statistics: results/integrated_battery/statistics_v7_mini.json

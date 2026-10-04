@@ -1,0 +1,10 @@
+{
+  "label": "SYNTHETIC_PIPELINE_TEST",
+  "summaries": [
+    {"run_id": "nx-001", "task_id": "web_form_task", "task_version": "1", "environment_version": "web_lab_v1", "completed": true, "action_count": 11, "backtracks": 1, "validation_errors": 2, "recovery_episodes": 1, "abandoned": false, "ncfs": {"value": 78.0}, "crs": {"value": 72.0}, "ehfp": {"value": 22.0}, "failure_count": 2},
+    {"run_id": "nx-002", "task_id": "web_form_task", "task_version": "1", "environment_version": "web_lab_v1", "completed": false, "action_count": 20, "backtracks": 4, "validation_errors": 5, "recovery_episodes": 0, "abandoned": true, "ncfs": {"value": 45.0}, "crs": {"value": 30.0}, "ehfp": {"value": 55.0}, "failure_count": 5},
+    {"run_id": "nx-003", "task_id": "web_form_task", "task_version": "1", "environment_version": "web_lab_v1", "completed": true, "action_count": 9, "backtracks": 0, "validation_errors": 0, "recovery_episodes": 0, "abandoned": false, "ncfs": {"value": 92.0}, "crs": {"value": 88.0}, "ehfp": {"value": 8.0}, "failure_count": 0},
+    {"run_id": "nx-004", "task_id": "web_form_task", "task_version": "1", "environment_version": "web_lab_v1", "completed": true, "action_count": 13, "backtracks": 2, "validation_errors": 1, "recovery_episodes": 1, "abandoned": false, "ncfs": {"value": 80.0}, "crs": {"value": 75.0}, "ehfp": {"value": 18.0}, "failure_count": 1},
+    {"run_id": "nx-005", "task_id": "web_form_task", "task_version": "1", "environment_version": "web_lab_v1", "completed": true, "action_count": 12, "backtracks": 1, "validation_errors": 1, "recovery_episodes": 0, "abandoned": false, "ncfs": {"value": 85.0}, "crs": {"value": 80.0}, "ehfp": {"value": 15.0}, "failure_count": 1}
+  ]
+}

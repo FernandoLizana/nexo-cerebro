@@ -1,0 +1,18 @@
+# Perfil integrado v5 — ejecutivo PFC + BG + cerebelo + planificación (Sprint 5)
+
+profile: integrated_v5
+seed: 42
+ticks: 80
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: summary
+body_enabled: true
+perception_mode: predictive
+memory_mode: integrated
+executive_mode: integrated
+use_legacy_adapter: false
+disable_processes: []
+
+executive:
+  pfc_inhibition_strength: 0.55
+  hunger_plan_threshold: 0.45
+  cerebellum_buffer_size: 6

@@ -1,0 +1,8 @@
+# Smoke CI — pocos ticks, telemetría mínima
+
+profile: integrated_smoke
+seed: 42
+ticks: 20
+connectome: configs/connectome/connectome_v1.yaml
+telemetry_level: none
+disable_processes: []

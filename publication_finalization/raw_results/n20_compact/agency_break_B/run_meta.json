@@ -1,0 +1,14 @@
+{
+  "conditions": [
+    "full",
+    "agency_break"
+  ],
+  "seeds": 20,
+  "steps": 100,
+  "profile_env": "compact",
+  "git_commit": "NO_GIT_REPOSITORY",
+  "timestamp_utc": "2026-07-22T22:49:59Z",
+  "elapsed_sec": 857.27,
+  "write_jsonl": false,
+  "note": "Study wrappers for reactive/no_homeostasis/td_direct/agency_break; not core defaults."
+}

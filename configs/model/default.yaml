@@ -1,0 +1,13 @@
+deliberation:
+  noise_scale: 0.055
+  conflict_threshold: 0.28
+  pfc_threshold: 0.22
+  confidence_temperature: 0.10
+
+memory:
+  flashbulb_valence_threshold: 0.45
+  flashbulb_arousal_threshold: 0.55
+  wm_capacity: 7
+
+learning:
+  legacy_reinforce_on_selection: true

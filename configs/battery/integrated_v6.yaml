@@ -1,0 +1,31 @@
+name: integrated_battery_v6
+version: 6
+description: Batería integrada con foraging y inferencia bootstrap (Sprint 26)
+profile: integrated_v26
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+  - abl_no_social
+lesions:
+  - lesion_none
+  - lesion_sever_pfc_bg
+tasks:
+  - survival
+  - distractor_control
+  - reproducibility
+  - safety_escape
+  - curiosity_explore
+  - social_approach
+  - foraging
+export:
+  json: results/integrated_battery/report_v6.json
+  benchmark: results/integrated_battery/benchmark_v6.json
+  comparison: results/integrated_battery/comparison_v6.json
+  statistics: results/integrated_battery/statistics_v6.json

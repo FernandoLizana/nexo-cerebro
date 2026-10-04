@@ -1,0 +1,28 @@
+name: integrated_battery_v2
+version: 2
+description: Batería integrada con ablaciones, lesiones connectome y latencia
+profile: integrated_v14
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+lesions:
+  - lesion_none
+  - lesion_delay_pfc_bg
+  - lesion_sever_pfc_bg
+tasks:
+  - id: survival
+    ticks: 60
+  - id: distractor_control
+    ticks: 50
+  - id: reproducibility
+    ticks: 40
+export:
+  json: results/integrated_battery/report_v2.json
+  benchmark: results/integrated_battery/benchmark_v2.json
+  comparison: results/integrated_battery/comparison_v2.json
+  statistics: results/integrated_battery/statistics_v2.json

@@ -1,0 +1,18 @@
+# nexo-node — Debian packaging stubs (S14)
+#
+# Default scope: USER. No system service enable in postinst.
+# Optional systemd --user unit is shipped disabled.
+#
+# Kill switch: nexo-node stop
+# Disable:     systemctl --user disable --now nexo-node.service
+
+Package: nexo-node
+Version: 0.2.0
+Section: science
+Priority: optional
+Architecture: amd64
+Depends: python3 (>= 3.11)
+Maintainer: NEXO Project <nexo@localhost>
+Description: NEXO Node — voluntary distributed cognitive-agent laboratory runtime
+ User-level scientific node. Does not enable a system service by default.
+ Kill switch: nexo-node stop. Optional systemd --user unit is disabled by default.

@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "engine": "creature-mobile-tier0-v1",
+  "being_id": "being-1",
+  "seed": 7,
+  "ticks": 5,
+  "final_state": "FLEE",
+  "final_drives": {
+    "hunger": 300,
+    "curiosity": 500,
+    "energy": 630,
+    "fear": 0,
+    "sociability": 500,
+    "exploration": 500
+  },
+  "events": [
+    "1:FLEE",
+    "2:FLEE",
+    "3:FLEE",
+    "4:REST",
+    "5:FLEE"
+  ],
+  "trajectory": [
+    {
+      "tick": 1,
+      "state": "FLEE",
+      "score": 1100,
+      "cue": {
+        "food": true,
+        "threat": true,
+        "agent": true,
+        "novel": false
+      }
+    },
+    {
+      "tick": 2,
+      "state": "FLEE",
+      "score": 1020,
+      "cue": {
+        "food": true,
+        "threat": true,
+        "agent": true,
+        "novel": false
+      }
+    },
+    {
+      "tick": 3,
+      "state": "FLEE",
+      "score": 940,
+      "cue": {
+        "food": true,
+        "threat": true,
+        "agent": false,
+        "novel": false
+      }
+    },
+    {
+      "tick": 4,
+      "state": "REST",
+      "score": 580,
+      "cue": {
+        "food": true,
+        "threat": false,
+        "agent": true,
+        "novel": false
+      }
+    },
+    {
+      "tick": 5,
+      "state": "FLEE",
+      "score": 900,
+      "cue": {
+        "food": true,
+        "threat": true,
+        "agent": true,
+        "novel": true
+      }
+    }
+  ],
+  "llm_used": false
+}

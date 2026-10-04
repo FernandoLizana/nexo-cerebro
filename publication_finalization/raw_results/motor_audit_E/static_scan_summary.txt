@@ -1,0 +1,5 @@
+timestamp_utc=2026-07-22T21:38:25Z
+assignment_sites=20
+deliberation_winner_key_sites=1
+primary_writer_claim=PrefrontalDeliberation.run assigns choice_key=winner.key
+other_sites=plumbing/tests/memory — see choice_key_assignments.txt

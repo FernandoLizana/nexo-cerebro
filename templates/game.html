@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXO — observatorio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/game.css?v=26">
+</head>
+<body>
+  <header class="obs-header" role="banner">
+    <div class="obs-brand-row">
+      <a class="obs-brand" href="/" aria-label="NEXO inicio">NEXO</a>
+      <span class="badge">modo autónomo</span>
+      <span class="badge">{{ n_total }} activas · {{ (n_virtual_max // 1000000) }}M max disco</span>
+      {% if n_virtual %}<span class="badge">{{ n_virtual }} virtuales ahora</span>{% endif %}
+      <span class="badge">{{ compute_backend }}</span>
+      {% if state_loaded %}<span class="badge">memorias cargadas</span>{% endif %}
+      {% if language_backend == 'neural' %}<span class="badge">Corteza neural · lenguaje</span>
+      {% elif language_available %}<span class="badge">Ollama · corteza del lenguaje</span>{% endif %}
+    </div>
+    <nav class="obs-nav" aria-label="Secciones del observatorio" id="obs-nav">
+      <button type="button" class="obs-nav-btn is-active" data-section="observatorio" aria-current="page">Observatorio</button>
+      <button type="button" class="obs-nav-btn" data-section="constelacion">Constelación</button>
+      <button type="button" class="obs-nav-btn" data-section="memoria">Memoria</button>
+      <button type="button" class="obs-nav-btn" data-section="laboratorio">Laboratorio</button>
+      <button type="button" class="obs-nav-btn" data-section="conexiones">Conexiones</button>
+    </nav>
+  </header>
+
+  <div class="objective-box" id="objective">
+    Observa a Nexus y Nira — usa la línea de tiempo para controlar el flujo del día o vuelve a la hora real del PC.
+  </div>
+
+  <div class="timeline-panel" id="timeline-panel">
+    <div class="timeline-head">
+      <strong>Línea de tiempo</strong>
+      <span id="timeline-mode" class="tag">hora real</span>
+      <span id="timeline-nexo-felt" class="muted timeline-felt">—</span>
+    </div>
+    <div class="timeline-row">
+      <input type="range" id="time-slider" min="0" max="1439" step="15" value="720" aria-label="Hora del día">
+      <span id="time-slider-label" class="timeline-clock">12:00</span>
+    </div>
+    <div class="timeline-controls">
+      <button type="button" id="btn-time-realtime" class="secondary small">Hora real</button>
+      <button type="button" id="btn-time-play" class="secondary small">Pausa</button>
+      <label class="timeline-scale">Velocidad
+        <select id="time-scale">
+          <option value="1">1×</option>
+          <option value="3">3×</option>
+          <option value="10">10×</option>
+          <option value="30">30×</option>
+          <option value="60">60×</option>
+          <option value="120">120×</option>
+        </select>
+      </label>
+      <button type="button" id="btn-time-turbo" class="secondary small turbo-btn" title="Acelera días y aprendizaje">Acelerar</button>
+      <button type="button" id="btn-time-back" class="secondary small" title="-1 hora">◀ 1h</button>
+      <button type="button" id="btn-time-fwd" class="secondary small" title="+1 hora">1h ▶</button>
+    </div>
+  </div>
+
+  <div class="presence-equal" aria-label="Presencias en escena">
+    <div class="presence-chip" data-who="nexus">
+      <span class="presence-name">Nexus</span>
+      <span class="presence-role muted">conciencia activa</span>
+    </div>
+    <div class="presence-chip" data-who="nira">
+      <span class="presence-name">Nira</span>
+      <span class="presence-role muted">subconsciente receptivo</span>
+    </div>
+  </div>
+
+  <p class="interact-hint" id="interact-hint">Observando… Nexus y Nira viven en la casa</p>
+
+  <div class="game-wrap">
+    <div id="game-3d" class="game-viewport">
+      <canvas id="game-canvas" width="640" height="400" class="hidden-canvas"></canvas>
+    </div>
+    <div class="bubble hidden" id="bubble"></div>
+    <div class="thought-bubble hidden" id="thought-bubble"></div>
+    <div class="night-overlay" id="night-overlay"></div>
+    <div class="dream-overlay hidden" id="dream-overlay"></div>
+  </div>
+
+  <div class="meta-panels obs-section-shared" data-show-in="observatorio constelacion">
+    <div class="meta-panel" id="lifecycle-panel">
+      <strong>Ciclo vital</strong>
+      <span id="lc-age">—</span> · vitalidad <span id="lc-vit">—</span>
+      <span id="lc-stage" class="tag">—</span>
+    </div>
+    <div class="meta-panel" id="journey-panel">
+      <strong>Camino</strong> <span id="journey-stage">—</span>
+      <span id="journey-ordeal" class="tag muted"></span>
+    </div>
+    <div class="meta-panel" id="env-panel">
+      <strong>Tiempo</strong> <span id="env-clock">—</span>
+      · <span id="env-phase" class="tag">—</span>
+      · <span id="env-season" class="muted">—</span>
+    </div>
+    <div class="meta-panel" id="drive-panel">
+      <strong>Impulso</strong> curiosidad <span id="drive-curiosity">—</span>
+      · meta <span id="drive-goal" class="tag">—</span>
+    </div>
+    <div class="meta-panel" id="archetype-card-panel">
+      <strong>Símbolos</strong> <span id="archetype-card-stats">—</span>
+    </div>
+    <div class="meta-panel" id="bond-panel">
+      <strong>Vínculo</strong> atracción <span id="bond-attr">—</span>
+      · oxitocina <span id="bond-oxy">—</span>
+    </div>
+  </div>
+
+  <!-- Observatorio -->
+  <section class="obs-section is-active" id="section-observatorio" data-section="observatorio" aria-labelledby="nav-observatorio">
+    <div class="section-head">
+      <h2 class="section-title">Observatorio</h2>
+      <p class="section-lede muted">Telemetría vivida de la escena. Detalle técnico bajo demanda.</p>
+    </div>
+    <div class="cortex-panels">
+      <div class="cortex-panel" id="temporal-panel">
+        <strong>Percepción del tiempo</strong>
+        <p id="temporal-felt" class="temporal-felt">—</p>
+        <p class="muted" id="temporal-detail">—</p>
+      </div>
+      <div class="cortex-panel" id="vision-panel">
+        <strong>Visión</strong>
+        <p id="vision-gist" class="muted">—</p>
+        <ul id="vision-percepts" class="flow-list"></ul>
+      </div>
+      <div class="cortex-panel" id="imagination-panel">
+        <strong>Ojo de la mente</strong>
+        <p id="imagination-source" class="imagination-source muted">Flujo interior continuo…</p>
+        <div class="imagination-frame imagination-stream stream-waiting">
+          <div id="imagination-placeholder" class="imagination-placeholder">Generando flujo interior…</div>
+          <img id="imagination-img-a" alt="" class="stream-layer stream-back hidden">
+          <img id="imagination-img-b" alt="" class="stream-layer stream-front hidden" aria-hidden="true">
+          <span id="imagination-live" class="stream-badge">● en vivo</span>
+        </div>
+        <p id="imagination-caption" class="imagination-caption muted">—</p>
+      </div>
+      <div class="cortex-panel" id="affect-panel">
+        <strong>Química emocional</strong>
+        <p><span class="muted">Siente:</span> <span id="affect-felt" class="affect-felt">—</span></p>
+        <div id="affect-pools" class="affect-pools"></div>
+        <ul id="affect-log" class="flow-list affect-log"></ul>
+      </div>
+      <div class="cortex-panel" id="thought-flow-panel">
+        <strong>Flujo de pensamiento</strong>
+        <div id="thought-flow" class="thought-flow"></div>
+      </div>
+      <div class="cortex-panel" id="consciousness-panel">
+        <strong>Momento consciente</strong>
+        <div id="consciousness-panel-body" class="consciousness-body"></div>
+      </div>
+      <div class="cortex-panel" id="hedonics-panel">
+        <strong>Placer y bienestar</strong>
+        <div id="hedonics-panel-body" class="hedonics-body"></div>
+      </div>
+      <div class="cortex-panel" id="pain-panel">
+        <strong>Nocicepción</strong>
+        <div id="pain-map" class="pain-map"></div>
+      </div>
+      <div class="cortex-panel" id="observatory-panel">
+        <strong>Telemetría observacional</strong>
+        <p class="muted" id="obs-oneliner">—</p>
+        <details class="tech-disclosure">
+          <summary>Detalle técnico</summary>
+          <p><span class="muted">TD δ:</span> <span id="obs-td">—</span></p>
+          <p><span class="muted">WM:</span> <span id="obs-wm">—</span></p>
+          <p><span class="muted">Atención:</span> <span id="obs-attention">—</span></p>
+          <p><span class="muted">Tracks:</span> <span id="obs-tracks">—</span></p>
+          <p class="muted" id="obs-guard">Telemetría observacional · PFC soberano</p>
+        </details>
+      </div>
+      <div class="cortex-panel" id="cognition-panel">
+        <strong>Ciclo cognitivo</strong>
+        <p><span class="muted">Atención:</span> <span id="cog-attention">—</span></p>
+        <p><span class="muted">Decisión:</span> <span id="cog-decision">—</span></p>
+        <p class="muted" id="cog-intention">—</p>
+        <details class="tech-disclosure">
+          <summary>Competencia PFC ↔ límbico</summary>
+          <div id="cog-deliberation" class="delib-panel"></div>
+          <p><span class="muted">Predicción:</span> <span id="cog-predict">—</span></p>
+          <p><span class="muted">Consciente ahora:</span> <span id="cog-conscious">—</span></p>
+          <p class="muted inner-voice" id="cog-inner">—</p>
+        </details>
+      </div>
+    </div>
+    <div class="feelings-wrap">
+      <h2>Qué siente</h2>
+      <div id="feelings-panel" class="feelings-panel"></div>
+      <div id="tv-panel" class="tv-panel"></div>
+      <div id="web-panel" class="web-panel"></div>
+    </div>
+    <div class="hud">
+      <div>Recuerdos: <span id="hud-mem">—</span></div>
+      <div>Ánimo: <span id="hud-mood">—</span></div>
+      <div>Energía: <span id="hud-energy">—</span></div>
+      <div>Habitación: <span id="hud-room">—</span></div>
+      <div>Sensación: <span id="hud-body">—</span></div>
+    </div>
+  </section>
+
+  <!-- Constelación -->
+  <section class="obs-section" id="section-constelacion" data-section="constelacion" hidden>
+    <div class="section-head">
+      <h2 class="section-title">Constelación</h2>
+      <p class="section-lede muted">Nexus y Nira — perfiles y diálogos. Los presets son arquetipos de diseño inspirados en Jung, no tipología clínica.</p>
+    </div>
+    <div class="cortex-panels">
+      <div class="cortex-panel inspector-panel" id="personalities-inspector">
+        <strong>Personalidades</strong>
+        <span class="data-badge" data-badge-for="personalities">…</span>
+        <div id="insp-personalities" class="inspector-body muted">Cargando…</div>
+      </div>
+      <div class="cortex-panel inspector-panel" id="relationships-inspector">
+        <strong>Modelo de vínculo</strong>
+        <span class="data-badge" data-badge-for="relationships">…</span>
+        <div id="insp-relationships" class="inspector-body muted">Cargando…</div>
+      </div>
+      <div class="cortex-panel" id="dialogue-panel">
+        <strong>Diálogo Nexus ↔ Nira</strong>
+        <div id="dialogue-log" class="dialogue-log"></div>
+      </div>
+      <div class="cortex-panel" id="autonomy-panel">
+        <strong>Libre albedrío</strong>
+        <p class="muted autonomy-note">Deciden solos — el cuidador conversa y nutre, pero no da órdenes motoras.</p>
+        <ul id="autonomy-log" class="flow-list"></ul>
+        <details class="tech-disclosure">
+          <summary>Decisiones de autonomía (API)</summary>
+          <span class="data-badge" data-badge-for="autonomy">…</span>
+          <div id="insp-autonomy" class="inspector-body muted">Cargando…</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Memoria -->
+  <section class="obs-section" id="section-memoria" data-section="memoria" hidden>
+    <div class="section-head">
+      <h2 class="section-title">Memoria</h2>
+      <p class="section-lede muted">Aprendizaje, sueño y tracks de estudio. Asociaciones Nira no se auto-promueven.</p>
+    </div>
+    <div class="cortex-panels">
+      <div class="cortex-panel inspector-panel" id="dyad-inspector">
+        <strong>Aprendizaje diádico</strong>
+        <span class="data-badge" data-badge-for="dyad">…</span>
+        <div id="insp-dyad" class="inspector-body muted">Cargando…</div>
+      </div>
+      <div class="cortex-panel" id="learning-panel">
+        <strong>Aprendizaje reciente</strong>
+        <ul id="learning-log" class="flow-list"></ul>
+      </div>
+      <div class="cortex-panel sleep-study-panel" id="sleep-study-panel">
+        <strong>Estudio nocturno</strong>
+        <p class="muted sleep-study-note">Mientras duerme — búsquedas y repaso autónomo (sin elegir acciones).</p>
+        <p id="sleep-study-status" class="sleep-study-status">—</p>
+        <ul id="sleep-study-log" class="flow-list sleep-study-list"></ul>
+      </div>
+      <div class="cortex-panel" id="curriculum-panel">
+        <strong>Currículo neurociencia</strong>
+        <p class="muted" id="curriculum-progress">—</p>
+        <p id="curriculum-current" class="curriculum-current">—</p>
+        <ul id="curriculum-recent" class="flow-list curriculum-list"></ul>
+      </div>
+      <div class="cortex-panel" id="brain-facts-panel">
+        <strong>Brain Facts 2018</strong>
+        <p class="muted" id="brain-facts-progress">—</p>
+        <p id="brain-facts-current" class="curriculum-current">—</p>
+        <p class="muted anatomy-subtitle">Circuitos activos (SfN)</p>
+        <p class="muted" id="memory-types-hint">—</p>
+        <ul id="circuit-flows" class="flow-list curriculum-list"></ul>
+      </div>
+      <div class="cortex-panel" id="anatomy-book-panel">
+        <strong>Anatomía Humana 2022</strong>
+        <p class="muted" id="anatomy-book-progress">—</p>
+        <p id="anatomy-book-current" class="curriculum-current">—</p>
+        <ul id="anatomy-book-recent" class="flow-list curriculum-list"></ul>
+      </div>
+      <div class="cortex-panel" id="clinical-panel">
+        <strong>Neurología clínica (Manual UDD)</strong>
+        <p class="muted" id="clinical-progress">—</p>
+        <p id="clinical-current" class="curriculum-current">—</p>
+        <ul id="clinical-recent" class="flow-list curriculum-list"></ul>
+      </div>
+      <div class="cortex-panel" id="biopsych-panel">
+        <strong>Biological Psychology</strong>
+        <p class="muted" id="biopsych-progress">—</p>
+        <p id="biopsych-current" class="curriculum-current">—</p>
+        <ul id="biopsych-recent" class="flow-list curriculum-list"></ul>
+      </div>
+      <div class="cortex-panel" id="infant-brain-panel">
+        <strong>Mi primer libro del cerebro</strong>
+        <p class="muted" id="infant-brain-progress">—</p>
+        <p id="infant-brain-current" class="curriculum-current">—</p>
+        <ul id="infant-brain-recent" class="flow-list curriculum-list"></ul>
+      </div>
+    </div>
+    <div class="journal-panel cortex-panel-wide">
+      <div class="journal-head">
+        <strong>Diario de experiencias</strong>
+        <span id="journal-stats" class="muted">—</span>
+        <button type="button" id="btn-journal-refresh" class="secondary small">Actualizar</button>
+      </div>
+      <p class="muted journal-intro">Sugerencias según impulsos — nutrir sin dar órdenes motoras.</p>
+      <div id="journal-suggestions" class="journal-suggestions"></div>
+      <div class="journal-columns">
+        <div>
+          <p class="muted"><strong>Episodios recientes</strong></p>
+          <ul id="journal-entries" class="flow-list journal-list"></ul>
+        </div>
+        <div>
+          <p class="muted"><strong>Rutinas del cuidador</strong></p>
+          <div id="journal-routines" class="journal-routines"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Laboratorio -->
+  <section class="obs-section" id="section-laboratorio" data-section="laboratorio" hidden>
+    <div class="section-head">
+      <h2 class="section-title">Laboratorio</h2>
+      <p class="section-lede muted">Cuerpo, anatomía y decisión causal. El mapa cortical JSON vive en /lab.</p>
+    </div>
+    <div class="cortex-panels">
+      <div class="cortex-panel" id="biomech-panel">
+        <strong>Física y biomecánica</strong>
+        <div id="biomech-panel-body" class="biomech-body"></div>
+      </div>
+      <div class="cortex-panel" id="virtual-cortex-panel">
+        <strong>Corteza virtual (codec)</strong>
+        <div id="virtual-cortex-panel-body" class="virtual-cortex-body"></div>
+      </div>
+      <div class="cortex-panel" id="pantry-panel">
+        <strong>Despensa y jardín</strong>
+        <div id="pantry-panel-body" class="pantry-body"></div>
+      </div>
+      <div class="cortex-panel anatomy-panel" id="anatomy-panel">
+        <strong>Neuroanatomía</strong>
+        <p class="muted anatomy-orchestra" id="anatomy-orchestra">—</p>
+        <details class="tech-disclosure">
+          <summary>Estructuras y transmisores</summary>
+          <div id="anatomy-hemispheres" class="anatomy-hemi"></div>
+          <div id="anatomy-structures" class="anatomy-grid"></div>
+          <p class="muted anatomy-subtitle">Lóbulos (rutas)</p>
+          <div id="anatomy-lobes" class="anatomy-transmitters"></div>
+          <p class="muted anatomy-subtitle">Neurotransmisores</p>
+          <div id="anatomy-transmitters" class="anatomy-transmitters"></div>
+        </details>
+      </div>
+      <div class="cortex-panel" id="causal-hud-panel">
+        <strong>Decisión causal</strong>
+        <p class="muted" id="causal-oneliner">—</p>
+        <details class="tech-disclosure">
+          <summary>Detalle causal</summary>
+          <p><span class="muted">Drive:</span> <span id="causal-drive">—</span></p>
+          <p><span class="muted">Elección PFC:</span> <span id="causal-choice">—</span></p>
+          <p><span class="muted">Agency:</span> <span id="causal-agency">—</span></p>
+          <p><span class="muted">Affordances:</span> <span id="causal-aff">—</span></p>
+          <p><span class="muted">Contrafactual:</span> <span id="causal-cf">—</span></p>
+          <p class="muted" id="causal-guard">PFC elige · LLM/affordances no fuerzan</p>
+        </details>
+      </div>
+    </div>
+    <a class="lab-link" href="/lab">Vista laboratorio (mapa cortical, JSON)</a>
+  </section>
+
+  <!-- Conexiones -->
+  <section class="obs-section" id="section-conexiones" data-section="conexiones" hidden>
+    <div class="section-head">
+      <h2 class="section-title">Conexiones</h2>
+      <p class="section-lede muted">Hub de presencia real (127.0.0.1:8770). Sin dispositivos inventados.</p>
+    </div>
+    <div class="cortex-panels">
+      <div class="cortex-panel inspector-panel" id="hub-inspector">
+        <strong>Presence hub</strong>
+        <span class="data-badge" data-badge-for="hub">…</span>
+        <div id="insp-hub" class="inspector-body muted">Cargando…</div>
+      </div>
+      <div class="cortex-panel inspector-panel" id="collective-inspector">
+        <strong>Capacidad colectiva</strong>
+        <span class="data-badge" data-badge-for="collective">…</span>
+        <div id="insp-collective" class="inspector-body muted">Cargando…</div>
+      </div>
+    </div>
+    <div class="controls caregiver-panel">
+      <div class="caregiver-head">
+        <strong>Presencia del cuidador</strong>
+        <span id="caregiver-status" class="caregiver-status muted">Desconectado</span>
+      </div>
+      <video id="caregiver-preview" class="caregiver-preview hidden" autoplay playsinline muted></video>
+      <p id="caregiver-transcript" class="caregiver-transcript muted">Activa cámara y micrófono para que te vean y escuchen.</p>
+      <label class="caregiver-sky-voice">
+        <input type="checkbox" id="chk-sky-voice" checked>
+        Voz celeste (tu voz desde el cielo)
+      </label>
+      <div class="caregiver-btns">
+        <button type="button" id="btn-caregiver-toggle" class="secondary">Conectar cámara y micrófono</button>
+        <button type="button" id="btn-caregiver-speak-now" class="secondary small" title="Enviar texto del cuadro como voz">Hablar (texto)</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="controls echo-controls obs-always">
+    <input type="text" id="chat-in" placeholder="Habla (texto) o sembra un eco introspectivo…" autocomplete="off">
+    <button type="button" id="btn-say">Eco / Chat</button>
+  </div>
+
+  <div class="btn-row obs-always">
+    <button type="button" id="btn-library" class="secondary">Archivar en biblioteca</button>
+    <button type="button" id="btn-faint" class="secondary" title="Se desmaya, duerme y muestra si guardó lo del estante">Desmayo</button>
+    <button type="button" id="btn-reborn" class="secondary hidden" title="Tras la muerte">Renacer</button>
+  </div>
+
+  <div class="library-panel hidden" id="library-panel">
+    <div class="library-head">
+      <strong>Biblioteca (archivo)</strong>
+      <span class="muted">Eligen solos si les interesa</span>
+      <button type="button" id="btn-lib-close" class="link-btn">✕</button>
+    </div>
+    <div class="library-actions">
+      <label class="btn-file small">
+        Explorar archivos
+        <input type="file" id="lib-import" accept=".pdf,.txt,.md,.epub" multiple hidden>
+      </label>
+      <button type="button" id="btn-lib-refresh" class="secondary small">Actualizar</button>
+    </div>
+    <ul id="library-list" class="library-list"></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="/static/js/material_qualities.js?v=1"></script>
+  <script src="/static/js/game3d.js?v=38"></script>
+  <script src="/static/js/sky_voice.js?v=1"></script>
+  <script src="/static/js/game.js?v=52"></script>
+  <script src="/static/js/caregiver_sensors.js?v=4"></script>
+  <script src="/static/js/experience_journal.js?v=1"></script>
+  <script src="/static/js/observatory_nav.js?v=1"></script>
+</body>
+</html>

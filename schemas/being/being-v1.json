@@ -1,0 +1,24 @@
+{
+  "format_version": "being-v1",
+  "layers": ["IDENTITY", "MEMORY", "STATE", "COGNITIVE_CONFIGURATION"],
+  "species": ["HUMANOID", "ANIMAL", "CREATURE", "EXPERIMENTAL"],
+  "personality_traits_experimental": [
+    "curiosity",
+    "sociability",
+    "impulsivity",
+    "patience",
+    "exploration",
+    "caution",
+    "cooperation",
+    "competitiveness",
+    "persistence",
+    "trust"
+  ],
+  "disclaimer": "These personality and drive parameters are experimental controls for synthetic agents. They do not represent validated human psychology, emotions, or consciousness.",
+  "split_layout": {
+    "identity.json": "IDENTITY + core_personality",
+    "memory/index.json": "episodic/semantic/relationships/summaries indexes",
+    "state.json": "TEMPORARY_STATE",
+    "cognitive.json": "COGNITIVE_CONFIGURATION"
+  }
+}

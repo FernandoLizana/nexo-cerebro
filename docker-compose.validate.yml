@@ -1,0 +1,14 @@
+# Local validation via Docker (does not publish ports by default)
+services:
+  nexo-validate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nexo-collective-swarm:validate
+    working_dir: /app
+    # Read-only mount optional when iterating; default uses baked COPY
+    command: ["python", "scripts/validate_pre_release.py"]
+    security_opt:
+      - no-new-privileges:true
+    read_only: false
+    network_mode: none

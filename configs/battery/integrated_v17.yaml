@@ -1,0 +1,54 @@
+name: integrated_battery_v17
+version: 17
+description: Batería Fase 13 — agent_loop sync + memory bridge + study proxy + E-block
+profile: integrated_v70
+latency_mode: integrated
+routing_mode: integrated
+statistics_mode: integrated
+permutation_mode: integrated
+correction_mode: integrated
+inference_mode: integrated
+hierarchical_inference_mode: integrated
+seeds: [42, 99]
+ablations:
+  - integrated_full
+  - abl_no_pfc
+  - abl_no_social
+  - abl_no_memory
+lesions:
+  - lesion_none
+  - lesion_sever_pfc_bg
+tasks:
+  - survival
+  - distractor_control
+  - reproducibility
+  - safety_escape
+  - curiosity_explore
+  - social_approach
+  - foraging
+  - navigation_2d
+  - legacy_navigation
+  - world2d_full_navigation
+  - deliberation_conflict_resolution
+  - world2d_legacy_env_navigation
+  - deliberation_weight_sweep
+  - legacy_adapter_timing
+  - world2d_headless_navigation
+  - roadmap100_bridge_smoke
+  - flask_demo_smoke
+  - world3d_state_sync
+  - autonomy_contract_audit
+  - hypothalamus_multimodal_smoke
+  - companion_dyad_smoke
+  - flask_unified_e2e
+  - world_demo_facade
+  - unified_motor_smoke
+  - agent_loop_sync_smoke
+  - memory_bridge_smoke
+  - flask_study_proxy_smoke
+  - roadmap100_e_block_smoke
+export:
+  json: results/integrated_battery/report_v17.json
+  benchmark: results/integrated_battery/benchmark_v17.json
+  comparison: results/integrated_battery/comparison_v17.json
+  statistics: results/integrated_battery/statistics_v17.json

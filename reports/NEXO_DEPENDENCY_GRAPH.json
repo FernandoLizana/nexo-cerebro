@@ -1,0 +1,1427 @@
+{
+  "generated_at": "2026-08-04T19:16:24.217962+00:00",
+  "edges": [
+    {
+      "source": "brain.deliberation",
+      "target": "nexo.agency_metrics"
+    },
+    {
+      "source": "brain.deliberation",
+      "target": "nexo.decision_port"
+    },
+    {
+      "source": "brain.mind",
+      "target": "brain_facts"
+    },
+    {
+      "source": "brain.mind",
+      "target": "brain_states"
+    },
+    {
+      "source": "brain.persist",
+      "target": "brain_facts"
+    },
+    {
+      "source": "brain.sleep_study",
+      "target": "brain_facts"
+    },
+    {
+      "source": "nexo.behavioral_tasks",
+      "target": "brain.mind"
+    },
+    {
+      "source": "nexo.behavioral_tasks",
+      "target": "brain.profile"
+    },
+    {
+      "source": "nexo.behavioral_tasks",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "nexo.connectome.__init__",
+      "target": "nexo.connectome.connection"
+    },
+    {
+      "source": "nexo.connectome.__init__",
+      "target": "nexo.connectome.graph"
+    },
+    {
+      "source": "nexo.connectome.__init__",
+      "target": "nexo.connectome.routing"
+    },
+    {
+      "source": "nexo.connectome.graph",
+      "target": "nexo.connectome.connection"
+    },
+    {
+      "source": "nexo.connectome.routing",
+      "target": "nexo.connectome.connection"
+    },
+    {
+      "source": "nexo.connectome.routing",
+      "target": "nexo.connectome.graph"
+    },
+    {
+      "source": "nexo.connectome.routing",
+      "target": "nexo.connectome.plastic_connectivity"
+    },
+    {
+      "source": "nexo.core.__init__",
+      "target": "nexo.core.clock"
+    },
+    {
+      "source": "nexo.core.__init__",
+      "target": "nexo.core.cognitive_state"
+    },
+    {
+      "source": "nexo.core.__init__",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "nexo.core.__init__",
+      "target": "nexo.core.scheduler"
+    },
+    {
+      "source": "nexo.core.__init__",
+      "target": "nexo.core.state_store"
+    },
+    {
+      "source": "nexo.core.module_protocol",
+      "target": "nexo.connectome.routing"
+    },
+    {
+      "source": "nexo.core.module_protocol",
+      "target": "nexo.core.clock"
+    },
+    {
+      "source": "nexo.core.module_protocol",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "nexo.core.module_protocol",
+      "target": "nexo.core.messages"
+    },
+    {
+      "source": "nexo.core.module_protocol",
+      "target": "nexo.core.state_store"
+    },
+    {
+      "source": "nexo.core.process",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "nexo.core.process",
+      "target": "nexo.core.module_protocol"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.connectome.routing"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.core.clock"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.core.messages"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.core.module_protocol"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.core.state_store"
+    },
+    {
+      "source": "nexo.core.scheduler",
+      "target": "nexo.telemetry.recorder"
+    },
+    {
+      "source": "nexo.core.state_store",
+      "target": "nexo.core.cognitive_state"
+    },
+    {
+      "source": "nexo.core.state_store",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "nexo.decision_audit",
+      "target": "nexo.paths"
+    },
+    {
+      "source": "nexo.decision_port",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "nexo.environment",
+      "target": "nexo.paths"
+    },
+    {
+      "source": "nexo.experiment_conditions",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.connectome.graph"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.connectome.routing"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.core.clock"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.core.process"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.core.scheduler"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.core.state_store"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.demo.room_scenario"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.random_streams"
+    },
+    {
+      "source": "nexo.integrated_runtime",
+      "target": "nexo.telemetry.recorder"
+    },
+    {
+      "source": "nexo.run",
+      "target": "brain.mind"
+    },
+    {
+      "source": "nexo.run",
+      "target": "brain.profile"
+    },
+    {
+      "source": "nexo.run",
+      "target": "nexo.integrated_runtime"
+    },
+    {
+      "source": "nexo.telemetry.__init__",
+      "target": "nexo.telemetry.recorder"
+    },
+    {
+      "source": "experiments.ablation_flags",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_discrimination",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_discrimination",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_dry_fountain",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_dry_fountain",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_hunger_unknown_bowl",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_hunger_unknown_bowl",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_hygiene_unknown_bath",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_hygiene_unknown_bath",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_physics_locomotion",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_physics_locomotion",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_thirst_unknown_water",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_thirst_unknown_water",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.arena.task_transfer_fountain",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.arena.task_transfer_fountain",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.bench_tick_gpu",
+      "target": "brain.backend"
+    },
+    {
+      "source": "experiments.bench_tick_gpu",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.bench_tick_gpu",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.bench_tick_gpu",
+      "target": "brain.profile"
+    },
+    {
+      "source": "experiments.gpu_env",
+      "target": "brain.backend"
+    },
+    {
+      "source": "experiments.integrated_demo.run_recurrent_demo",
+      "target": "nexo.integrated_runtime"
+    },
+    {
+      "source": "experiments.metrics",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "experiments.profile_select",
+      "target": "brain.profile"
+    },
+    {
+      "source": "experiments.run_all",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_batch",
+      "target": "brain.backend"
+    },
+    {
+      "source": "experiments.run_batch",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_batch",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_batch",
+      "target": "brain.profile"
+    },
+    {
+      "source": "experiments.run_batch",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "experiments.run_battery",
+      "target": "nexo.paths"
+    },
+    {
+      "source": "experiments.run_battery_10k",
+      "target": "brain.agency_audit"
+    },
+    {
+      "source": "experiments.run_battery_10k",
+      "target": "brain.validation_dynamics"
+    },
+    {
+      "source": "experiments.run_e1_parallel",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_e4_sleep_selective",
+      "target": "brain.encode"
+    },
+    {
+      "source": "experiments.run_e4_sleep_selective",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_e5_grounding",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_e5_grounding",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_e7_multimodal",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_e7_multimodal",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_parallel",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "experiments.run_sensitivity_analysis",
+      "target": "nexo.paths"
+    },
+    {
+      "source": "experiments.run_sleep",
+      "target": "brain.encode"
+    },
+    {
+      "source": "experiments.run_sleep",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_smoke_experiments",
+      "target": "brain.mind"
+    },
+    {
+      "source": "experiments.run_smoke_experiments",
+      "target": "brain.profile"
+    },
+    {
+      "source": "experiments.run_smoke_experiments",
+      "target": "nexo.environment"
+    },
+    {
+      "source": "experiments.run_smoke_experiments",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "experiments.run_smoke_experiments",
+      "target": "nexo.result_schema"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain.affect"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain.affect_dynamics"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain.goal_stack"
+    },
+    {
+      "source": "tests.test_affect_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_affordance_map",
+      "target": "brain.affordance_map"
+    },
+    {
+      "source": "tests.test_affordance_map",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_affordance_map",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_affordance_map",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_agent_loop",
+      "target": "brain.connectome_blueprint"
+    },
+    {
+      "source": "tests.test_agent_loop",
+      "target": "brain.cortical_chunks"
+    },
+    {
+      "source": "tests.test_agent_loop",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_agent_loop",
+      "target": "brain.goal_stack"
+    },
+    {
+      "source": "tests.test_agent_loop",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_arena_thirst",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_arena_thirst",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_arena_thirst",
+      "target": "brain.neural_telemetry"
+    },
+    {
+      "source": "tests.test_arena_thirst",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_behavior_integration",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_behavior_integration",
+      "target": "brain.behavior_integration"
+    },
+    {
+      "source": "tests.test_behavior_integration",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_behavior_integration",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_bench_e7",
+      "target": "brain.backend"
+    },
+    {
+      "source": "tests.test_bench_e7",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_bench_e7",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_bench_e7",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_biomechanics",
+      "target": "brain.biomechanics"
+    },
+    {
+      "source": "tests.test_biomechanics",
+      "target": "brain.body"
+    },
+    {
+      "source": "tests.test_biomechanics",
+      "target": "brain.nociception"
+    },
+    {
+      "source": "tests.test_biomechanics",
+      "target": "brain.ragdoll_skeleton"
+    },
+    {
+      "source": "tests.test_biomechanics",
+      "target": "brain.world"
+    },
+    {
+      "source": "tests.test_brain_facts",
+      "target": "brain.brain_facts"
+    },
+    {
+      "source": "tests.test_brain_facts",
+      "target": "brain.circuit_hub"
+    },
+    {
+      "source": "tests.test_brain_facts",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_caregiver_dialogue",
+      "target": "brain.caregiver_dialogue"
+    },
+    {
+      "source": "tests.test_circadian",
+      "target": "brain.environment"
+    },
+    {
+      "source": "tests.test_circadian",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_circadian",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_circadian",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_consciousness",
+      "target": "brain.consciousness"
+    },
+    {
+      "source": "tests.test_consciousness",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_consciousness",
+      "target": "brain.memory_store"
+    },
+    {
+      "source": "tests.test_consciousness",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_curriculum",
+      "target": "brain.curriculum"
+    },
+    {
+      "source": "tests.test_curriculum",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_decision_audit",
+      "target": "nexo.decision_audit"
+    },
+    {
+      "source": "tests.test_decision_audit",
+      "target": "nexo.decision_port"
+    },
+    {
+      "source": "tests.test_decision_audit",
+      "target": "nexo.paths"
+    },
+    {
+      "source": "tests.test_decompression_governor",
+      "target": "brain.decompression_governor"
+    },
+    {
+      "source": "tests.test_decompression_prefetch",
+      "target": "brain.decompression_governor"
+    },
+    {
+      "source": "tests.test_decompression_prefetch",
+      "target": "brain.decompression_prefetch"
+    },
+    {
+      "source": "tests.test_decompression_prefetch",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_decompression_prefetch",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_demo_hud",
+      "target": "brain.causal_hud"
+    },
+    {
+      "source": "tests.test_demo_hud",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_demo_hud",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_demo_hud",
+      "target": "brain.observatory_hud"
+    },
+    {
+      "source": "tests.test_demo_hud",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_dialogue_engine",
+      "target": "brain.dialogue_engine"
+    },
+    {
+      "source": "tests.test_dialogue_engine",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_engram_codec",
+      "target": "brain.engram_codec"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.attention"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.consciousness"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.executive_cognition"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.goal_stack"
+    },
+    {
+      "source": "tests.test_executive_cognition",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_experiment_conditions",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "tests.test_food_system",
+      "target": "brain.food_system"
+    },
+    {
+      "source": "tests.test_food_system",
+      "target": "brain.world"
+    },
+    {
+      "source": "tests.test_grounding",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_grounding",
+      "target": "brain.grounding"
+    },
+    {
+      "source": "tests.test_grounding",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_grounding",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_hedonics",
+      "target": "brain.hedonics"
+    },
+    {
+      "source": "tests.test_hedonics",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.memory_systems"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.regional_latency"
+    },
+    {
+      "source": "tests.test_human_brain_features",
+      "target": "brain.sleep_architecture"
+    },
+    {
+      "source": "tests.test_imagination_stream",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.connectome.graph"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.connectome.routing"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.core.clock"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.core.events"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.core.process"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.core.scheduler"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.core.state_store"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.demo.room_scenario"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.integrated_runtime"
+    },
+    {
+      "source": "tests.test_integrated_core",
+      "target": "nexo.random_streams"
+    },
+    {
+      "source": "tests.test_intention_circuit",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_intention_circuit",
+      "target": "brain.intention"
+    },
+    {
+      "source": "tests.test_intention_circuit",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_intention_circuit",
+      "target": "brain.subcortex"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.language_dynamics"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.language_network"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.neural_language"
+    },
+    {
+      "source": "tests.test_language_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_language_network",
+      "target": "brain.caregiver_dialogue"
+    },
+    {
+      "source": "tests.test_language_network",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_language_tutor_rag",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_language_tutor_rag",
+      "target": "brain.language_network"
+    },
+    {
+      "source": "tests.test_language_tutor_rag",
+      "target": "brain.language_tutor_rag"
+    },
+    {
+      "source": "tests.test_language_tutor_rag",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_learned_schemas",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_learned_schemas",
+      "target": "brain.learned_schemas"
+    },
+    {
+      "source": "tests.test_learned_schemas",
+      "target": "brain.lifecycle"
+    },
+    {
+      "source": "tests.test_learned_schemas",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_learned_schemas",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.affordance_map"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.causal_hud"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.counterfactual_simulator"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.dialogue_engine"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_level23",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_level24",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_level24",
+      "target": "brain.learned_schemas"
+    },
+    {
+      "source": "tests.test_level24",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_level24",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_level25",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_level25",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_level25",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain.lifecycle_dynamics"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain.memory_dynamics"
+    },
+    {
+      "source": "tests.test_lifecycle_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_lobe_columns_replay",
+      "target": "brain.daytime_replay"
+    },
+    {
+      "source": "tests.test_lobe_columns_replay",
+      "target": "brain.lobe_cortex"
+    },
+    {
+      "source": "tests.test_lobe_columns_replay",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_lobes_circuit",
+      "target": "brain.hippocampus_core"
+    },
+    {
+      "source": "tests.test_lobes_circuit",
+      "target": "brain.intention"
+    },
+    {
+      "source": "tests.test_lobes_circuit",
+      "target": "brain.lobes"
+    },
+    {
+      "source": "tests.test_lobes_circuit",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_lobes_circuit",
+      "target": "brain.reflexes"
+    },
+    {
+      "source": "tests.test_material_qualities",
+      "target": "brain.material_qualities"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain.consolidation"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain.episodic_context"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain.memory_dynamics"
+    },
+    {
+      "source": "tests.test_memory_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain.motor_dynamics"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_motor_dynamics",
+      "target": "brain.somatic_affordances"
+    },
+    {
+      "source": "tests.test_neural_language",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_neural_language",
+      "target": "brain.neural_language"
+    },
+    {
+      "source": "tests.test_nociception",
+      "target": "brain.body"
+    },
+    {
+      "source": "tests.test_nociception",
+      "target": "brain.nociception"
+    },
+    {
+      "source": "tests.test_nociception",
+      "target": "brain.somatic_affordances"
+    },
+    {
+      "source": "tests.test_nociception",
+      "target": "brain.world"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "nexo.experiment_conditions"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "nexo.random_streams"
+    },
+    {
+      "source": "tests.test_reproducibility",
+      "target": "nexo.result_schema"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.affordance_map"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.deliberation"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.learned_schemas"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.reward_learning"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.td_reward"
+    },
+    {
+      "source": "tests.test_reward_learning",
+      "target": "brain.world"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.neuroanatomy"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.oscillations"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.regional_latency"
+    },
+    {
+      "source": "tests.test_rhythm_dynamics",
+      "target": "brain.scn_clock"
+    },
+    {
+      "source": "tests.test_s7_scale_motor_multi",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_s7_scale_motor_multi",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_s7_scale_motor_multi",
+      "target": "brain.motor_policy"
+    },
+    {
+      "source": "tests.test_s7_scale_motor_multi",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_s7_scale_motor_multi",
+      "target": "brain.sensory_hub"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.cortical_layers"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.decompression_governor"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.hippocampus_core"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.inhibition"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.lifecycle"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_scale_architecture",
+      "target": "brain.vascular"
+    },
+    {
+      "source": "tests.test_selective_sleep",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_selective_sleep",
+      "target": "brain.memory_store"
+    },
+    {
+      "source": "tests.test_selective_sleep",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_selective_sleep",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.audition"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.body"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.nociception"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.superior_colliculus"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.vestibular"
+    },
+    {
+      "source": "tests.test_sensory_perception",
+      "target": "brain.vision"
+    },
+    {
+      "source": "tests.test_sleep_study",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_sleep_study",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_sleep_study",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_sleep_study",
+      "target": "brain.sleep_study"
+    },
+    {
+      "source": "tests.test_statistics",
+      "target": "nexo.statistics"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.biopsych_curriculum"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.clinical_neurology"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.infant_brain_curriculum"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.library"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_study_tracks",
+      "target": "brain.study_track"
+    },
+    {
+      "source": "tests.test_td_reward",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_td_reward",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_td_reward",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_td_reward",
+      "target": "brain.td_reward"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain.agency_audit"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain.observatory_hud"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_validation_dynamics",
+      "target": "brain.validation_dynamics"
+    },
+    {
+      "source": "tests.test_verbalize",
+      "target": "brain.verbalize"
+    },
+    {
+      "source": "tests.test_verbalize_feelings",
+      "target": "brain.language_cortex"
+    },
+    {
+      "source": "tests.test_verbalize_feelings",
+      "target": "brain.verbalize"
+    },
+    {
+      "source": "tests.test_virtual_assembly_codec",
+      "target": "brain.virtual_assembly"
+    },
+    {
+      "source": "tests.test_web_search",
+      "target": "brain.web_search"
+    },
+    {
+      "source": "tests.test_wm_attention",
+      "target": "brain.attention"
+    },
+    {
+      "source": "tests.test_wm_attention",
+      "target": "brain.experiment_flags"
+    },
+    {
+      "source": "tests.test_wm_attention",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_wm_attention",
+      "target": "brain.profile"
+    },
+    {
+      "source": "tests.test_wm_attention",
+      "target": "brain.working_memory"
+    },
+    {
+      "source": "tests.test_world_movement",
+      "target": "brain.mind"
+    },
+    {
+      "source": "tests.test_world_movement",
+      "target": "brain.profile"
+    },
+    {
+      "source": "scripts.import_user_books",
+      "target": "brain.library"
+    },
+    {
+      "source": "scripts.import_user_books",
+      "target": "brain.text_extract"
+    },
+    {
+      "source": "scripts.ocr_infant_book",
+      "target": "brain.library"
+    },
+    {
+      "source": "scripts.ocr_infant_book",
+      "target": "brain.text_extract"
+    }
+  ],
+  "node_count": 267,
+  "edge_count": 355
+}

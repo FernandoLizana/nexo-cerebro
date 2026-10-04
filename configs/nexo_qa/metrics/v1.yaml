@@ -1,0 +1,19 @@
+metrics_version: metrics-v1
+ncfs_v1:
+  weights:
+    perceptual: 0.15
+    attention: 0.18
+    semantic: 0.12
+    memory: 0.12
+    decision: 0.13
+    navigation: 0.15
+    recovery: 0.15
+  range: [0, 100]
+  disclaimer: simulation-derived; not human-calibrated
+ehfp_v1:
+  range: [0, 100]
+  is_probability: false
+  disclaimer: EHFP IS NOT A PROBABILITY IN P6
+crs_v1:
+  range: [0, 100]
+  disclaimer: simulation-derived; not human-calibrated

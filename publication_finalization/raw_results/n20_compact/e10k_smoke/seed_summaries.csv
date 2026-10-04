@@ -1,0 +1,5 @@
+seed,condition,steps,n_ticks,mean_agency,mean_spike_aligned,pfc_veto_rate,inhibited_rate,remembered_rate,mean_surprise,mean_drive_coherent,mean_homeostatic_abs_dev,final_homeostatic_abs_dev,agency_override_rate,action_entropy_bits,critical_state_tick_count,critical_state_tick_rate,profile,n_neurons,git_commit,timestamp_utc,survival_time
+0,full,40,40,0.2000000000000001,0.575,1.0,1.0,0.975,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,0.16866093149667025,0,0.0,neuro-10k,10290,NO_GIT_REPOSITORY,2026-07-22T23:00:26Z,MISSING_not_formalized
+1,full,40,40,0.2000000000000001,0.575,1.0,1.0,0.975,1.0,0.0,0.41119887486043905,0.6560229125605821,0.0,0.16866093149667025,0,0.0,neuro-10k,10290,NO_GIT_REPOSITORY,2026-07-22T23:00:40Z,MISSING_not_formalized
+0,nopfc,40,40,0.0,0.275,0.0,0.0,0.975,1.0,0.5,0.41119887486043905,0.6560229125605821,0.0,1.4854752972273344,0,0.0,neuro-10k,10290,NO_GIT_REPOSITORY,2026-07-22T23:00:57Z,MISSING_not_formalized
+1,nopfc,40,40,0.0,0.275,0.0,0.0,0.975,1.0,0.5,0.41119887486043905,0.6560229125605821,0.0,1.4854752972273344,0,0.0,neuro-10k,10290,NO_GIT_REPOSITORY,2026-07-22T23:01:13Z,MISSING_not_formalized
