@@ -428,7 +428,7 @@ Lista ampliada: [`KNOWN_LIMITATIONS.md`](KNOWN_LIMITATIONS.md).
 
 ## Licencia
 
-Este software se publica bajo la [licencia MIT](LICENSE). Copyright (c) 2026 NEXO Project. Puedes usarlo, copiarlo, modificarlo y distribuirlo, incluido con fines comerciales, siempre que conserves el aviso de copyright y el texto de la licencia.
+Este software se publica bajo la [licencia MIT](LICENSE). Copyright (c) 2026 Fernando Lizana. Puedes usarlo, copiarlo, modificarlo y distribuirlo, incluido con fines comerciales, siempre que conserves el aviso de copyright y el texto de la licencia.
 
 Si citas experimentos, usa la versión, el commit y el identificador de condición (`CITATION.cff`).
 

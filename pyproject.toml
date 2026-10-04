@@ -9,7 +9,7 @@ description = "NEXO — experimental distributed cognitive-agent laboratory (Cor
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "NEXO Project" }]
+authors = [{ name = "Fernando Lizana" }]
 classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
