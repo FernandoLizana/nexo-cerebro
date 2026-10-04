@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "NEXO Project" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
 dependencies = [
     "flask>=3.0,<4",
     "numpy>=1.26,<3",
